@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { DESSERT_RECIPES } from "@/lib/data/desserts";
-import { Cake, Sparkles, Clock, Flame, IndianRupee, Search, ShieldCheck } from "lucide-react";
+import { Cake, Sparkles, Clock, Flame, IndianRupee, Search, ShieldCheck, Download } from "lucide-react";
 
 export default function DessertsStudioPage() {
   const [selectedSubcategory, setSelectedSubcategory] = useState<string>("all");
@@ -47,6 +47,24 @@ export default function DessertsStudioPage() {
           </p>
           <div className="text-xs sm:text-sm font-semibold text-brand-primary font-serif">
             പരമ്പരാഗത പായസങ്ങളും ലോകോത്തര മധുരപലഹാരങ്ങളും
+          </div>
+
+          <div className="flex flex-wrap items-center gap-3 pt-2">
+            <a
+              href="/exports/miseva_desserts_master.csv"
+              download="miseva_desserts_master.csv"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-glass-card hover:bg-emerald-500/20 border border-glass-border text-xs font-bold text-foreground transition-all hover:scale-105 active:scale-95"
+            >
+              <Download className="w-3.5 h-3.5 text-emerald-400" />
+              <span>Download Desserts CSV (Excel)</span>
+            </a>
+            <Link
+              href="/exports"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-glass-card hover:bg-amber-500/20 border border-glass-border text-xs font-bold text-foreground transition-all hover:scale-105 active:scale-95"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+              <span>Gemini Image Prompts</span>
+            </Link>
           </div>
         </div>
       </div>

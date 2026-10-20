@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Sparkles, Heart, Shield, Award, ExternalLink } from "lucide-react";
+import { Sparkles, Heart, Shield, Award, ExternalLink, Download } from "lucide-react";
 
 export function Footer() {
   return (
@@ -88,7 +88,12 @@ export function Footer() {
             <ul className="space-y-2 text-xs text-foreground/75">
               <li>
                 <Link href="/about" className="hover:text-brand-primary transition-colors flex items-center gap-1.5">
-                  <Shield className="w-3.5 h-3.5 text-brand-primary" /> About CulinaryVerse
+                  <Shield className="w-3.5 h-3.5 text-brand-primary" /> About Miseva AI
+                </Link>
+              </li>
+              <li>
+                <Link href="/exports" className="hover:text-brand-primary transition-colors flex items-center gap-1.5 font-semibold text-brand-primary">
+                  <Download className="w-3.5 h-3.5 text-brand-primary" /> Recipe Database (CSV/Excel) & Gemini Prompts
                 </Link>
               </li>
               <li>
