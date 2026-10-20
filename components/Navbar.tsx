@@ -19,9 +19,12 @@ import {
   Smartphone,
 } from "lucide-react";
 import { ThemeSelector } from "./ThemeSelector";
+import { useTheme } from "@/lib/theme/theme-context";
 
 export function Navbar() {
   const pathname = usePathname();
+  const { theme } = useTheme();
+  const isCyber = theme === "cyber";
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [globalLang, setGlobalLang] = useState<"en" | "ml">("en");
 
@@ -34,6 +37,7 @@ export function Navbar() {
     { href: "/ai-chef", label: "AI Chef", labelMl: "എ.ഐ ഷെഫ്", icon: Bot },
     { href: "/shopping", label: "Prices", labelMl: "വിലകൾ", icon: ShoppingCart },
     { href: "/meal-planner", label: "Meal Plan", labelMl: "പ്ലാനർ", icon: Calendar },
+    { href: "/marketing", label: "Marketing", labelMl: "മാർക്കറ്റിംഗ്", icon: Sparkles, highlight: true },
     { href: "/app", label: "Android App", labelMl: "ആപ്പ്", icon: Smartphone },
   ];
 
@@ -48,25 +52,53 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full px-4 sm:px-6 lg:px-8 py-3 transition-all duration-300">
-      <nav className="max-w-7xl mx-auto glass-panel px-4 sm:px-6 py-2.5 flex items-center justify-between shadow-glass">
+      <nav
+        className={`max-w-7xl mx-auto glass-panel px-4 sm:px-6 py-2.5 flex items-center justify-between shadow-glass transition-all duration-500 ${
+          isCyber
+            ? "border-cyan-400/50 shadow-cyan-500/15 cyber-hud-bracket bg-[#030712]/80"
+            : ""
+        }`}
+      >
         {/* Brand Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-primary via-emerald-500 to-amber-500 p-0.5 shadow-md group-hover:scale-105 transition-transform">
+          <div
+            className={`w-10 h-10 rounded-xl p-0.5 shadow-md group-hover:scale-105 transition-transform ${
+              isCyber
+                ? "bg-gradient-to-tr from-cyan-400 via-indigo-500 to-rose-500 shadow-cyan-400/30"
+                : "bg-gradient-to-tr from-brand-primary via-emerald-500 to-amber-500"
+            }`}
+          >
             <div className="w-full h-full rounded-[10px] bg-[#062419] flex items-center justify-center backdrop-blur-sm overflow-hidden p-1">
               <img src="/brand/logo-mark.svg" alt="Miseva AI" className="w-full h-full object-contain" />
             </div>
           </div>
           <div>
             <div className="flex items-center gap-1.5">
-              <span className="font-extrabold text-lg sm:text-xl tracking-tight bg-gradient-to-r from-emerald-400 via-amber-400 to-yellow-300 bg-clip-text text-transparent">
+              <span
+                className={`font-extrabold text-lg sm:text-xl tracking-tight bg-clip-text text-transparent ${
+                  isCyber
+                    ? "bg-gradient-to-r from-cyan-400 via-sky-300 to-fuchsia-400 cyber-glow-text"
+                    : "bg-gradient-to-r from-emerald-400 via-amber-400 to-yellow-300"
+                }`}
+              >
                 Miseva
               </span>
-              <span className="text-xs font-black text-white px-1.5 py-0.5 rounded-md bg-emerald-600/90 border border-emerald-400/40 shadow-sm">
-                AI
+              <span
+                className={`text-xs font-black text-white px-1.5 py-0.5 rounded-md shadow-sm ${
+                  isCyber
+                    ? "bg-cyan-500 text-black border border-cyan-300 font-mono"
+                    : "bg-emerald-600/90 border border-emerald-400/40"
+                }`}
+              >
+                {isCyber ? "CYBER" : "AI"}
               </span>
             </div>
             <div className="hidden sm:block text-[10px] text-foreground/60 font-semibold tracking-wider uppercase">
-              {globalLang === "ml" ? "നിങ്ങളുടെ ലോകം. നിങ്ങളുടെ അടുക്കള." : "Your World. Your Kitchen. Your AI Chef."}
+              {globalLang === "ml"
+                ? "നിങ്ങളുടെ ലോകം. നിങ്ങളുടെ അടുക്കള."
+                : isCyber
+                ? "QUANTUM CULINARY SYSTEM 2099"
+                : "Your World. Your Kitchen. Your AI Chef."}
             </div>
           </div>
         </Link>

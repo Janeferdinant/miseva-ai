@@ -8,7 +8,8 @@ export type ThemeType =
   | "ocean"
   | "midnight"
   | "rose"
-  | "ivory";
+  | "ivory"
+  | "cyber";
 
 export type ModeType = "dark" | "light";
 
@@ -19,6 +20,7 @@ export interface ThemeMeta {
   accent: string;
   description: string;
   glow: string;
+  isFuturistic?: boolean;
 }
 
 export const THEMES: Record<ThemeType, ThemeMeta> = {
@@ -69,6 +71,15 @@ export const THEMES: Record<ThemeType, ThemeMeta> = {
     accent: "#eab308",
     description: "Champagne, ivory & imperial golden royalty",
     glow: "rgba(234, 179, 8, 0.4)",
+  },
+  cyber: {
+    id: "cyber",
+    name: "Cyber Kitchen 2099",
+    nameMalayalam: "ക്വാണ്ടം അടുക്കള (Cyber 2099)",
+    accent: "#00f0ff",
+    description: "Electric cyan, neon violet & holographic quantum culinary HUD",
+    glow: "rgba(0, 240, 255, 0.45)",
+    isFuturistic: true,
   },
 };
 

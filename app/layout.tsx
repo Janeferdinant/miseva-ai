@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/lib/theme/theme-context";
+import { MotionProvider } from "@/components/motion/motion-context";
+import { MotionGraphicsCanvas } from "@/components/motion/MotionGraphicsCanvas";
+import { MotionControlDock } from "@/components/motion/MotionControlDock";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
@@ -71,18 +74,24 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen flex flex-col selection:bg-brand-primary selection:text-white">
         <ThemeProvider>
-          {/* Subtle liquid backdrop glows */}
-          <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
-            <div className="absolute -top-40 -left-40 w-96 h-96 rounded-full bg-brand-primary/10 blur-3xl animate-pulse-slow" />
-            <div className="absolute top-1/3 -right-40 w-96 h-96 rounded-full bg-brand-secondary/10 blur-3xl animate-pulse-slow delay-1000" />
-            <div className="absolute -bottom-40 left-1/3 w-96 h-96 rounded-full bg-brand-accent/10 blur-3xl animate-pulse-slow delay-2000" />
-          </div>
+          <MotionProvider>
+            {/* Motion Graphics Canvas (Cyber Grid & Floating Culinary Quantum Embers) */}
+            <MotionGraphicsCanvas />
 
-          <Navbar />
-          <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            {children}
-          </main>
-          <Footer />
+            {/* Subtle liquid backdrop glows */}
+            <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+              <div className="absolute -top-40 -left-40 w-96 h-96 rounded-full bg-brand-primary/10 blur-3xl animate-pulse-slow" />
+              <div className="absolute top-1/3 -right-40 w-96 h-96 rounded-full bg-brand-secondary/10 blur-3xl animate-pulse-slow delay-1000" />
+              <div className="absolute -bottom-40 left-1/3 w-96 h-96 rounded-full bg-brand-accent/10 blur-3xl animate-pulse-slow delay-2000" />
+            </div>
+
+            <Navbar />
+            <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+              {children}
+            </main>
+            <Footer />
+            <MotionControlDock />
+          </MotionProvider>
         </ThemeProvider>
       </body>
     </html>

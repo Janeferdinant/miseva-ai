@@ -200,6 +200,38 @@
     --card-bg: rgba(255, 255, 255, 0.85);
   }
 
+  /* 7. Cyber Kitchen 2099 (Futuristic Quantum Neon) */
+  :root[data-theme="cyber"][data-mode="dark"] {
+    --background: #030712;
+    --foreground: #e0f2fe;
+    --glass-surface: rgba(8, 15, 30, 0.72);
+    --glass-border: rgba(0, 240, 255, 0.32);
+    --glass-highlight: rgba(56, 189, 248, 0.22);
+    --glass-glow: rgba(0, 240, 255, 0.42);
+    --glass-shadow: rgba(0, 0, 0, 0.75);
+    --glass-shadow-hover: rgba(0, 240, 255, 0.35);
+    --brand-primary: #00f0ff;
+    --brand-secondary: #8b5cf6;
+    --brand-accent: #f43f5e;
+    --brand-muted: #083344;
+    --card-bg: rgba(10, 20, 38, 0.7);
+  }
+  :root[data-theme="cyber"][data-mode="light"] {
+    --background: #f0fdfa;
+    --foreground: #082f49;
+    --glass-surface: rgba(255, 255, 255, 0.86);
+    --glass-border: rgba(6, 182, 212, 0.35);
+    --glass-highlight: rgba(255, 255, 255, 0.95);
+    --glass-glow: rgba(6, 182, 212, 0.25);
+    --glass-shadow: rgba(8, 47, 73, 0.1);
+    --glass-shadow-hover: rgba(6, 182, 212, 0.25);
+    --brand-primary: #0891b2;
+    --brand-secondary: #7c3aed;
+    --brand-accent: #e11d48;
+    --brand-muted: #cffafe;
+    --card-bg: rgba(255, 255, 255, 0.88);
+  }
+
   body {
     background-color: var(--background);
     color: var(--foreground);
@@ -412,4 +444,106 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--brand-primary);
+}
+
+/* ==========================================================================
+   Futuristic Cyber Kitchen 2099 & Motion Graphics Enhancements
+   ========================================================================== */
+
+/* Cyber Perspective Grid Background */
+.cyber-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 240, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 240, 255, 0.08) 1px, transparent 1px);
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, #000 60%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, #000 60%, transparent 100%);
+}
+
+:root[data-theme="cyber"][data-mode="light"] .cyber-grid {
+  background-image: 
+    linear-gradient(to right, rgba(8, 145, 178, 0.09) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(8, 145, 178, 0.09) 1px, transparent 1px);
+}
+
+/* Cyber Glow Text Effect */
+.cyber-glow-text {
+  text-shadow: 0 0 10px var(--brand-primary), 0 0 20px var(--glass-glow);
+}
+
+/* Sci-Fi Corner HUD Bracket */
+.cyber-hud-bracket {
+  position: relative;
+}
+
+.cyber-hud-bracket::before,
+.cyber-hud-bracket::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-color: var(--brand-primary);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.cyber-hud-bracket::before {
+  top: -1px;
+  left: -1px;
+  border-top: 2px solid var(--brand-primary);
+  border-left: 2px solid var(--brand-primary);
+}
+
+.cyber-hud-bracket::after {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 2px solid var(--brand-primary);
+  border-right: 2px solid var(--brand-primary);
+}
+
+.cyber-hud-bracket:hover::before,
+.cyber-hud-bracket:hover::after {
+  width: 14px;
+  height: 14px;
+  border-color: #f43f5e;
+}
+
+/* Holographic Radar Pulse Rings */
+@keyframes radar-sweep {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes holographic-flicker {
+  0%, 100% { opacity: 0.98; }
+  50% { opacity: 0.88; }
+  75% { opacity: 0.94; }
+}
+
+@keyframes cyber-scan-move {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(1000%); }
+}
+
+.animate-radar-sweep {
+  animation: radar-sweep 8s linear infinite;
+}
+
+.animate-holo-flicker {
+  animation: holographic-flicker 4s ease-in-out infinite;
+}
+
+.cyber-scanner-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, var(--brand-primary) 50%, transparent 100%);
+  box-shadow: 0 0 8px var(--brand-primary);
+  animation: cyber-scan-move 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  pointer-events: none;
 }

@@ -20,6 +20,7 @@ import {
 import { RECIPES } from "@/lib/data/recipes";
 import { INDIAN_REGIONS, GLOBAL_CUISINES } from "@/lib/data/cuisines";
 import { RecipeCard } from "@/components/RecipeCard";
+import { HoloCulinaryRadar } from "@/components/motion/HoloCulinaryRadar";
 
 export default function HomePage() {
   const router = useRouter();
@@ -199,6 +200,11 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Holographic Culinary Telemetry HUD Module */}
+      <section className="space-y-4">
+        <HoloCulinaryRadar />
       </section>
 
       {/* 2. Dedicated Studios Trio: Desserts, Beverages, and Table Styling */}
