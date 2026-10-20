@@ -122,3 +122,65 @@ export interface GeneratedTablePlan {
     category: string;
   }[];
 }
+
+export type CutleryFinish = "gold" | "polished-silver" | "matte-noir" | "antique-brass" | "rose-gold";
+export type PlateStyle = "fine-bone-china" | "handcrafted-stoneware" | "bell-metal-thali" | "fresh-banana-leaf" | "rustic-terracotta" | "scalloped-porcelain";
+export type GlasswareStyle = "cut-crystal-goblet" | "fluted-champagne-glass" | "lead-free-crystal-stemware" | "hammered-brass-tumbler" | "organic-coupe-glass" | "smoked-gray-tumbler";
+export type LinensStyle = "belgian-linen-white" | "kasavu-gold-brocade" | "crimson-zardozi-silk" | "oatmeal-rustic-linen" | "dusty-rose-linen" | "sage-botanical-linen" | "emerald-marigold-silk" | "bare-dark-oak";
+
+export interface LuxuryTheme {
+  id: string;
+  slug: string;
+  title: string;
+  titleMalayalam: string;
+  catchphrase: string;
+  catchphraseMalayalam: string;
+  description: string;
+  descriptionMalayalam: string;
+  tableware: {
+    cutleryFinish: CutleryFinish;
+    cutleryDescription: string;
+    plateStyle: PlateStyle;
+    plateDescription: string;
+    glasswareStyle: GlasswareStyle;
+    glasswareDescription: string;
+    linensStyle: LinensStyle;
+    linensDescription: string;
+    napkinFoldName: string;
+    centerpieceDescription: string;
+  };
+  lightingAndAmbiance: string;
+  colorPalette: {
+    primary: string;
+    secondary: string;
+    accent: string;
+    neutral: string;
+  };
+  moodBoardImageUrl: string;
+  culturalStory: string;
+  recommendedOccasion: string;
+  recommendedGuestCount: { min: number; max: number };
+}
+
+export interface CuratedMealCollection {
+  id: string;
+  slug: string;
+  title: string;
+  titleMalayalam: string;
+  catchphrase: string;
+  description: string;
+  dishes: {
+    name: string;
+    course: "starter" | "main" | "accompaniment" | "side" | "dessert";
+    description: string;
+  }[];
+  beveragePairing: {
+    name: string;
+    type: "traditional-digestive" | "mocktail" | "tea-infusion" | "sparkling-cooler";
+    servingVessel: string;
+  };
+  courseOrder: string[];
+  idealThemeId: string;
+  occasion: string;
+  stylingNotes: string;
+}
