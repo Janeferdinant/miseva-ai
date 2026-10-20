@@ -20,11 +20,15 @@ import {
   Info,
   ArrowLeft,
   Mic,
+  ShoppingCart,
+  BookOpen,
 } from "lucide-react";
 import { getRecipeById, RECIPES } from "@/lib/data/recipes";
 import { scaleRecipe } from "@/lib/recipes/scaling";
 import { AudioNarrationPlayer } from "@/features/recipes/components/AudioNarrationPlayer";
 import { HandsFreeCookingModal } from "@/features/recipes/components/HandsFreeCookingModal";
+import { StepByStepCookingMode } from "@/components/recipes/StepByStepCookingMode";
+import { RecipeCard } from "@/components/RecipeCard";
 import { RetailerPriceTable } from "@/features/recipes/components/RetailerPriceTable";
 import { toggleFavoriteRecipe, getFavoriteRecipeIds } from "@/lib/storage/user-store";
 import { MalayalamRecipeView } from "@/components/MalayalamRecipeView";
@@ -45,9 +49,25 @@ export default function RecipeDetailPage({
   const [heroImg, setHeroImg] = useState(recipe.imageUrl);
   const [servings, setServings] = useState(recipe.servings);
   const [checkedIngredients, setCheckedIngredients] = useState<Record<string, boolean>>({});
+  const [isCookingModeOpen, setIsCookingModeOpen] = useState(false);
   const [isHandsFreeOpen, setIsHandsFreeOpen] = useState(false);
   const [isFavorite, setIsFavorite] = useState(false);
   const [copiedLink, setCopiedLink] = useState(false);
+
+  const relatedRecipes = React.useMemo(() => {
+    const list = RECIPES.filter(
+      (r) =>
+        r.id !== recipe.id &&
+        (r.cuisine === recipe.cuisine || r.stateOrCountry === recipe.stateOrCountry)
+    ).slice(0, 3);
+    if (list.length < 3) {
+      const additional = RECIPES.filter(
+        (r) => r.id !== recipe.id && !list.some((item) => item.id === r.id)
+      ).slice(0, 3 - list.length);
+      return [...list, ...additional];
+    }
+    return list;
+  }, [recipe.id, recipe.cuisine, recipe.stateOrCountry]);
 
   React.useEffect(() => {
     setHeroImg(recipe.imageUrl);
@@ -126,11 +146,21 @@ export default function RecipeDetailPage({
           </button>
 
           <button
+            onClick={() => setIsCookingModeOpen(true)}
+            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-brand-primary text-background text-xs font-black shadow-md hover:bg-brand-primary/90 transition-all hover:scale-105"
+            title="Start Step-by-Step Cooking Mode"
+          >
+            <ChefHat className="w-4 h-4" />
+            <span>Start Cooking</span>
+          </button>
+
+          <button
             onClick={() => setIsHandsFreeOpen(true)}
             className="flex items-center gap-2 px-4 py-2 rounded-xl glass-button text-xs font-bold shadow-md"
+            title="Open Voice-Guided Hands-Free Mode"
           >
             <Mic className="w-4 h-4" />
-            <span className="hidden sm:inline">Hands-Free Mode</span>
+            <span className="hidden sm:inline">Voice Mode</span>
           </button>
         </div>
       </div>
@@ -322,6 +352,17 @@ export default function RecipeDetailPage({
               })}
             </div>
 
+            {/* Add Ingredients to Shopping List Action */}
+            <div className="pt-2">
+              <Link
+                href={`/shopping?query=${encodeURIComponent(recipe.title)}`}
+                className="w-full flex items-center justify-center gap-2 py-3 rounded-2xl glass-card hover:bg-brand-primary/10 border border-brand-primary/30 text-xs font-extrabold text-brand-primary transition-all shadow-sm"
+              >
+                <ShoppingCart className="w-4 h-4" />
+                <span>Add Ingredients to Shopping List</span>
+              </Link>
+            </div>
+
             {/* Nutritional Breakdown Box */}
             <div className="pt-4 border-t border-glass-border/60 space-y-3">
               <h4 className="text-xs font-bold uppercase tracking-wider text-foreground/70">
@@ -364,6 +405,28 @@ export default function RecipeDetailPage({
                   <strong>Internal Cooking Temp: </strong> {recipe.foodSafety.internalTemp}
                 </div>
               )}
+            </div>
+          </div>
+
+          {/* Substitutions & Practical Tips */}
+          <div className="rounded-3xl glass-panel p-6 border border-glass-border shadow-glass space-y-4">
+            <div className="flex items-center gap-2 font-bold text-sm text-foreground">
+              <Sparkles className="w-4 h-4 text-brand-primary" />
+              <span>Substitutions & Practical Kitchen Tips</span>
+            </div>
+            <div className="space-y-3 text-xs text-foreground/80 leading-relaxed">
+              <div className="p-3 rounded-xl glass-card border border-white/10 space-y-1">
+                <span className="font-bold text-brand-primary">Traditional Alternative: </span>
+                <span>
+                  If fresh grated coconut is unavailable, unsweetened frozen grated coconut thawed to room temperature yields identical aroma and richness.
+                </span>
+              </div>
+              <div className="p-3 rounded-xl glass-card border border-white/10 space-y-1">
+                <span className="font-bold text-brand-accent">Oil Selection: </span>
+                <span>
+                  Virgin coconut oil or pure ghee provides authentic regional tempering; cold-pressed sesame or peanut oil can be substituted for a milder profile.
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -438,6 +501,34 @@ export default function RecipeDetailPage({
         <RetailerPriceTable recipe={recipe} servings={servings} />
       </section>
 
+      {/* Related Recipes from the same cuisine */}
+      {relatedRecipes.length > 0 && (
+        <section className="space-y-5">
+          <div className="flex items-center justify-between">
+            <div>
+              <div className="text-xs font-bold uppercase tracking-wider text-brand-primary">
+                Explore More Flavours
+              </div>
+              <h3 className="text-xl sm:text-2xl font-black text-foreground tracking-tight">
+                More Recipes from {recipe.cuisine} & {recipe.stateOrCountry}
+              </h3>
+            </div>
+            <Link
+              href="/recipes"
+              className="text-xs font-bold text-brand-primary hover:underline"
+            >
+              View Full Catalog →
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {relatedRecipes.map((rel) => (
+              <RecipeCard key={rel.id} recipe={rel} />
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* Cultural Heritage & Provenance Attribution */}
       <section className="rounded-3xl glass-panel p-6 sm:p-8 border border-glass-border/60 text-xs text-foreground/70 space-y-3">
         <div className="flex items-center gap-2 font-bold text-foreground uppercase tracking-wider">
@@ -451,6 +542,14 @@ export default function RecipeDetailPage({
           Source Citation: {recipe.sourceAttribution}. Formatted for educational, non-commercial culinary preservation under academic research direction.
         </div>
       </section>
+
+      {/* Focused Step-by-Step Cooking Mode Modal */}
+      {isCookingModeOpen && (
+        <StepByStepCookingMode
+          recipe={recipe}
+          onClose={() => setIsCookingModeOpen(false)}
+        />
+      )}
 
       {/* Hands Free Fullscreen Modal */}
       {isHandsFreeOpen && (
