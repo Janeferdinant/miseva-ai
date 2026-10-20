@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_primary">#0F5132</color>
+    <color name="brand_secondary">#D97706</color>
+    <color name="brand_accent">#F59E0B</color>
+    <color name="background_dark">#062419</color>
+    <color name="glass_surface">#1E293B</color>
+    <color name="glass_border">#334155</color>
+    <color name="text_primary">#F8FAFC</color>
+    <color name="text_secondary">#94A3B8</color>
+</resources>

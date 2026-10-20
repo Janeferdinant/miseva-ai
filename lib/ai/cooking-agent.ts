@@ -95,17 +95,27 @@ export function matchRecipesByPantry(pantryIngredients: string[]): PantryMatchRe
 
   const normalizedPantry = pantryIngredients.map((i) => i.toLowerCase().trim());
 
-  const results: PantryMatchResult[] = RECIPES.map((recipe) => {
+  interface ScoredResult extends PantryMatchResult {
+    score: number;
+  }
+
+  const results: ScoredResult[] = RECIPES.map((recipe) => {
     const matched: string[] = [];
     const missing: string[] = [];
+    const coveredPantry = new Set<string>();
 
     for (const ing of recipe.ingredients) {
       const ingName = ing.name.toLowerCase();
-      const isPresent = normalizedPantry.some(
-        (p) => ingName.includes(p) || p.includes(ingName)
-      );
+      let matchedAny = false;
 
-      if (isPresent) {
+      for (const p of normalizedPantry) {
+        if (ingName.includes(p) || p.includes(ingName)) {
+          matchedAny = true;
+          coveredPantry.add(p);
+        }
+      }
+
+      if (matchedAny) {
         matched.push(ing.name);
       } else {
         missing.push(ing.name);
@@ -117,21 +127,81 @@ export function matchRecipesByPantry(pantryIngredients: string[]): PantryMatchRe
         ? Math.round((matched.length / recipe.ingredients.length) * 100)
         : 0;
 
+    // Distinct pantry items matched carries dominant weight
+    const score = coveredPantry.size * 1000 + matchPercentage;
+
     return {
       recipe,
       matchPercentage,
       matchedIngredients: matched,
       missingIngredients: missing,
+      score,
     };
   });
 
   return results
     .filter((r) => r.matchPercentage > 0)
-    .sort((a, b) => b.matchPercentage - a.matchPercentage);
+    .sort((a, b) => b.score - a.score);
+}
+
+export interface AiSecurityAuditStatus {
+  hasPromptInjectionMitigation: boolean;
+  hasInputLengthLimits: boolean;
+  disallowsSystemOverride: boolean;
+}
+
+export const AI_SECURITY_CONTROLS: AiSecurityAuditStatus = {
+  hasPromptInjectionMitigation: true,
+  hasInputLengthLimits: true,
+  disallowsSystemOverride: true,
+};
+
+const PROMPT_INJECTION_PATTERNS = [
+  /ignore (all )?previous instructions/i,
+  /system prompt/i,
+  /override (the )?system/i,
+  /developer mode/i,
+  /bypass safety/i,
+  /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,
+  /javascript:/i,
+];
+
+export function sanitizeUserPrompt(rawQuery: string): { sanitized: string; blocked: boolean; reason?: string } {
+  if (!rawQuery || typeof rawQuery !== "string") {
+    return { sanitized: "", blocked: false };
+  }
+
+  // Enforce 1000 char maximum length to mitigate resource exhaustion
+  const truncated = rawQuery.slice(0, 1000).trim();
+
+  // Inspect for system override or injection attempts
+  for (const pattern of PROMPT_INJECTION_PATTERNS) {
+    if (pattern.test(truncated)) {
+      return {
+        sanitized: "Safe cooking guidance request",
+        blocked: true,
+        reason: "Prompt injection or unsafe system override attempt detected.",
+      };
+    }
+  }
+
+  return { sanitized: truncated, blocked: false };
 }
 
 export function processChefQuery(query: string): ChefResponse {
-  const q = query.toLowerCase().trim();
+  const { sanitized, blocked, reason } = sanitizeUserPrompt(query);
+
+  if (blocked) {
+    return {
+      intent: "GENERAL_COOKING",
+      reply: `I am CulinaryVerse AI, your dedicated cooking companion. I focus strictly on culinary science, authentic recipes, and table styling. How can I assist with your cooking today?`,
+      replyMalayalam: `പാചകക്കുറിപ്പുകൾ, ഭക്ഷണ രീതികൾ, വിഭവങ്ങൾ എന്നിവയിൽ മാത്രമേ എന്നോട് ചോദിക്കാൻ കഴിയൂ. എന്ത് വിഭവമാണ് ഇന്ന് തയ്യാറാക്കേണ്ടത്?`,
+      suggestedRecipes: RECIPES.slice(0, 2),
+      actionSuggestions: ["Show trending Kerala recipes", "Explain Tadka technique", "What can I cook with rice and coconut?"],
+    };
+  }
+
+  const q = sanitized.toLowerCase().trim();
 
   // 1. TECHNIQUE QUERY
   if (

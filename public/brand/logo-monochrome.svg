@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" height="100%">
+  <!-- LOGO EMBLEM MONOCHROME -->
+  <g transform="translate(10, 10) scale(0.35)">
+    <circle cx="256" cy="256" r="216" fill="none" stroke="#111827" stroke-width="12"/>
+    <!-- Flame & Leaf Silhouette -->
+    <path d="M 256 100 C 290 160 340 220 340 286 C 340 336 304 374 256 374 C 248 374 240 372 232 368 C 260 348 276 316 276 278 C 276 226 238 184 216 150 C 230 134 244 116 256 100 Z" fill="#111827" />
+    <path d="M 256 100 C 220 160 172 220 172 286 C 172 336 208 374 256 374 C 234 350 222 316 222 278 C 222 226 250 178 256 100 Z" fill="#4B5563" />
+    <circle cx="256" cy="286" r="38" fill="#FFFFFF" stroke="#111827" stroke-width="8"/>
+  </g>
+
+  <!-- WORDMARK -->
+  <text x="220" y="115" font-family="'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif" font-size="76" font-weight="800" fill="#111827" letter-spacing="-1.5">Miseva</text>
+  <rect x="500" y="58" width="105" height="66" rx="16" fill="#111827"/>
+  <text x="522" y="108" font-family="'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif" font-size="44" font-weight="900" fill="#FFFFFF" letter-spacing="1">AI</text>
+  <text x="224" y="152" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#4B5563" letter-spacing="1.5">YOUR WORLD. YOUR KITCHEN. YOUR AI CHEF.</text>
+</svg>

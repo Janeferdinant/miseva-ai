@@ -1,14 +1,17 @@
 {
-  "name": "culinaryverse-ai",
+  "name": "miseva-ai",
   "version": "1.0.0",
-  "description": "CulinaryVerse AI — The World's Intelligent Cooking Agent",
+  "description": "Miseva AI — Your World. Your Kitchen. Your AI Chef.",
   "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "test": "vitest run",
-    "lint": "next lint"
+    "lint": "next lint",
+    "security:audit": "npx tsx scripts/security-guardian.ts",
+    "release:android-audit": "npx tsx scripts/android-release-readiness.ts",
+    "deploy:verify": "npx tsx scripts/deploy-verification.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",

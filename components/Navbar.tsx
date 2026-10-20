@@ -8,11 +8,15 @@ import {
   Compass,
   BookOpen,
   Bot,
+  Cake,
+  GlassWater,
+  UtensilsCrossed,
   ShoppingCart,
   Calendar,
   Menu,
   X,
   Languages,
+  Smartphone,
 } from "lucide-react";
 import { ThemeSelector } from "./ThemeSelector";
 
@@ -22,11 +26,15 @@ export function Navbar() {
   const [globalLang, setGlobalLang] = useState<"en" | "ml">("en");
 
   const navLinks = [
-    { href: "/explore", label: "Explore Cuisines", labelMl: "സംസ്ഥാനങ്ങൾ & വിഭവങ്ങൾ", icon: Compass },
-    { href: "/recipes", label: "Recipes", labelMl: "പാചകക്കുറിപ്പുകൾ", icon: BookOpen },
-    { href: "/ai-chef", label: "AI Chef Studio", labelMl: "എ.ഐ ഷെഫ് സ്റ്റുഡിയോ", icon: Bot, highlight: true },
-    { href: "/shopping", label: "Price Compare", labelMl: "വില താരതമ്യം", icon: ShoppingCart },
-    { href: "/meal-planner", label: "Meal Planner", labelMl: "മീൽ പ്ലാനർ", icon: Calendar },
+    { href: "/explore", label: "Cuisines", labelMl: "സംസ്ഥാനങ്ങൾ", icon: Compass },
+    { href: "/recipes", label: "Recipes", labelMl: "വിഭവങ്ങൾ", icon: BookOpen },
+    { href: "/desserts", label: "Desserts", labelMl: "മധുരങ്ങൾ", icon: Cake },
+    { href: "/beverages", label: "Beverages", labelMl: "പാനീയങ്ങൾ", icon: GlassWater },
+    { href: "/table-styling", label: "Table Styling", labelMl: "മേശാലങ്കാരം", icon: UtensilsCrossed, highlight: true },
+    { href: "/ai-chef", label: "AI Chef", labelMl: "എ.ഐ ഷെഫ്", icon: Bot },
+    { href: "/shopping", label: "Prices", labelMl: "വിലകൾ", icon: ShoppingCart },
+    { href: "/meal-planner", label: "Meal Plan", labelMl: "പ്ലാനർ", icon: Calendar },
+    { href: "/app", label: "Android App", labelMl: "ആപ്പ്", icon: Smartphone },
   ];
 
   const toggleLanguage = () => {
@@ -43,20 +51,22 @@ export function Navbar() {
       <nav className="max-w-7xl mx-auto glass-panel px-4 sm:px-6 py-2.5 flex items-center justify-between shadow-glass">
         {/* Brand Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-accent p-0.5 shadow-md group-hover:scale-105 transition-transform">
-            <div className="w-full h-full rounded-[10px] bg-background/80 flex items-center justify-center backdrop-blur-sm">
-              <Sparkles className="w-5 h-5 text-brand-primary animate-pulse" />
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-primary via-emerald-500 to-amber-500 p-0.5 shadow-md group-hover:scale-105 transition-transform">
+            <div className="w-full h-full rounded-[10px] bg-[#062419] flex items-center justify-center backdrop-blur-sm overflow-hidden p-1">
+              <img src="/brand/logo-mark.svg" alt="Miseva AI" className="w-full h-full object-contain" />
             </div>
           </div>
           <div>
-            <span className="font-extrabold text-lg sm:text-xl tracking-tight bg-gradient-to-r from-brand-primary via-brand-accent to-brand-secondary bg-clip-text text-transparent">
-              CulinaryVerse
-            </span>
-            <span className="text-xs font-bold text-brand-primary ml-1 px-1.5 py-0.5 rounded-full bg-brand-primary/10 border border-brand-primary/20">
-              AI
-            </span>
-            <div className="hidden sm:block text-[10px] text-foreground/50 font-medium tracking-wide">
-              {globalLang === "ml" ? "ലോകോത്തര പാചക സഹായി" : "The World's Intelligent Cooking Agent"}
+            <div className="flex items-center gap-1.5">
+              <span className="font-extrabold text-lg sm:text-xl tracking-tight bg-gradient-to-r from-emerald-400 via-amber-400 to-yellow-300 bg-clip-text text-transparent">
+                Miseva
+              </span>
+              <span className="text-xs font-black text-white px-1.5 py-0.5 rounded-md bg-emerald-600/90 border border-emerald-400/40 shadow-sm">
+                AI
+              </span>
+            </div>
+            <div className="hidden sm:block text-[10px] text-foreground/60 font-semibold tracking-wider uppercase">
+              {globalLang === "ml" ? "നിങ്ങളുടെ ലോകം. നിങ്ങളുടെ അടുക്കള." : "Your World. Your Kitchen. Your AI Chef."}
             </div>
           </div>
         </Link>

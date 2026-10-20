@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Miseva AI</string>
+    <string name="app_tagline">Your World. Your Kitchen. Your AI Chef.</string>
+    <string name="academic_supervisor">Jane Rose</string>
+    <string name="academic_title">Assistant Professor, CSE</string>
+    <string name="channel_cooking_reminders">Cooking Reminders & Timers</string>
+    <string name="channel_cooking_reminders_desc">Timers for baking, braising, and tempering</string>
+</resources>

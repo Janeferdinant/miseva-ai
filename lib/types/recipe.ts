@@ -15,7 +15,15 @@ export type DietaryType =
   | "gluten-free"
   | "dairy-free"
   | "high-protein"
-  | "budget";
+  | "budget"
+  | "budget-friendly"
+  | "healthy-everyday"
+  | "festive-special"
+  | "street-food"
+  | "trending-now"
+  | "most-popular"
+  | "quick-easy"
+  | "traditional-heritage";
 
 export type MealType =
   | "breakfast"

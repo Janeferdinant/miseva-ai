@@ -1,0 +1,44 @@
+name: Security Guardian & Compliance Gate
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  security-audit:
+    name: Full Codebase Security & Google Play Audit
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Secret Scan & Vulnerability Audit
+        run: npm run security:audit
+
+      - name: Verify Android Release Policy & Target API 36
+        run: npm run release:android-audit
+
+      - name: Verify Deployment Integrity
+        run: npm run deploy:verify
+
+      - name: Upload Security Report Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: security-and-compliance-reports
+          path: |
+            docs/security/
+            docs/release/

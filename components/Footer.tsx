@@ -10,22 +10,22 @@ export function Footer() {
           {/* Column 1: Brand & Academic Supervision */}
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-accent p-0.5 shadow-md">
-                <div className="w-full h-full rounded-[10px] bg-background/80 flex items-center justify-center backdrop-blur-sm">
-                  <Sparkles className="w-4 h-4 text-brand-primary" />
+              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-primary via-emerald-500 to-amber-500 p-0.5 shadow-md">
+                <div className="w-full h-full rounded-[10px] bg-[#062419] flex items-center justify-center backdrop-blur-sm p-1">
+                  <img src="/brand/logo-mark.svg" alt="Miseva AI" className="w-full h-full object-contain" />
                 </div>
               </div>
-              <span className="font-extrabold text-xl bg-gradient-to-r from-brand-primary via-brand-accent to-brand-secondary bg-clip-text text-transparent">
-                CulinaryVerse AI
+              <span className="font-extrabold text-xl bg-gradient-to-r from-emerald-400 via-amber-400 to-yellow-300 bg-clip-text text-transparent">
+                Miseva AI
               </span>
             </div>
 
             <p className="text-sm text-foreground/80 leading-relaxed max-w-md font-medium">
-              “CulinaryVerse AI — Discover cuisines, learn techniques, and cook with confidence.”
+              “Miseva AI — Discover cuisines, learn techniques, style your table, and cook with confidence.”
             </p>
 
             <p className="text-xs text-foreground/60 leading-relaxed max-w-md">
-              An intelligent, multilingual culinary intelligence platform bridging traditional Indian heritage across all 28 states, 8 Union Territories, and celebrated world cuisines with interactive AI guidance, Malayalam voice synthesis, and transparent grocery pricing.
+              Your World. Your Kitchen. Your AI Chef. Inspired by the culinary discipline of <em>mise en place</em> and devoted service (<em>seva</em>), Miseva AI combines bilingual English & Malayalam voice guidance, live grocery price intelligence, and holistic tablescaping art.
             </p>
 
             {/* Academic Credential Card (Mandatory Spec 19) */}
@@ -128,7 +128,7 @@ export function Footer() {
             <span>for authentic culinary heritage and multilingual accessibility.</span>
           </div>
           <div>
-            © {new Date().getFullYear()} CulinaryVerse AI. Academic Research Prototype. All rights reserved.
+            © {new Date().getFullYear()} Miseva AI. Academic Supervision: Jane Rose, Assistant Professor, CSE. All rights reserved.
           </div>
         </div>
       </div>

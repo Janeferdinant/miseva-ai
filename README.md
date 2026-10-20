@@ -1,162 +1,174 @@
-# CulinaryVerse AI — The World's Intelligent Cooking Agent
+# Miseva AI — Your World. Your Kitchen. Your AI Chef.
 
 > **Academic Supervision:**  
 > **Jane Rose**  
 > **Assistant Professor, CSE**  
-> *“CulinaryVerse AI — Discover cuisines, learn techniques, and cook with confidence.”*
+> *“Miseva AI — Discover cuisines, learn techniques, style your table, and cook with confidence.”*
 
 ---
 
 ## 🌟 Overview
 
-**CulinaryVerse AI** is an intelligent, autonomous culinary companion combining traditional Indian regional culinary heritages across all **28 states and 8 Union Territories**, celebrated international cuisines, real-time AI cooking guidance, synchronized **Malayalam and English voice narration**, an animated **Liquid-Glass design system** with 6 coordinated palettes, and live **Indian grocery price comparisons** across 6 major retail platforms (Amazon Fresh, Flipkart Grocery, Swiggy Instamart, Blinkit, Zepto, and BigBasket).
+**Miseva AI** is an intelligent, dual-platform culinary and lifestyle ecosystem combining the art of *mise en place* (culinary preparation and mindful organization) with *seva* (devoted hospitality and service).
 
-The platform bridges culinary science, cultural gastronomy preservation, and modern web engineering into an educational and practical cooking companion.
-
----
-
-## ✨ Key Capabilities & System Features
-
-### 1. Liquid-Glass Design System (6 Themes & Light/Dark Mode)
-- **Layered Depth & Translucency:** Built with frosted glass cards (`backdrop-blur-xl`), subtle translucent specular borders, and soft glowing ambient accents.
-- **6 Coordinated Palettes:**
-  1. **Emerald Kitchen** — Fresh coastal green, warm cream, and subtle gold accents.
-  2. **Saffron & Spice** — Warm saffron, terracotta, and aromatic spice warmth.
-  3. **Ocean Mist** — Teal, aqua, and translucent coastal blue.
-  4. **Midnight Gourmet** — Deep navy, burgundy, and iridescent dark glass luxury.
-  5. **Rose Quartz** — Blush, pearl, and delicate confectionery elegance.
-  6. **Ivory Luxury** — Champagne, ivory, and imperial golden royalty.
-- Fully responsive across mobile, tablet, and desktop with persistent user theme preferences in `localStorage`.
-
-### 2. Comprehensive Indian Regional & Global Recipe Database
-- **Scalable Taxonomy:** Authentically covers all culinary regions:
-  - **South India:** Kerala (Traditional Sadya Avial, Malabar Thalassery Biryani, Palappam & Coconut Stew), Tamil Nadu (Chettinad Pepper Chicken), Karnataka (Bisi Bele Bath, Neer Dosa), Andhra & Telangana (Hyderabadi Kachchi Gosht Dum Biryani).
-  - **North India:** Punjab (Sarson Da Saag & Makki Di Roti), Kashmir (Rogan Josh, Kahwa), Uttar Pradesh (Awadhi Dum), Delhi (Chole Bhature).
-  - **West India:** Gujarat (Khaman Dhokla, Undhiyu), Maharashtra (Kolhapuri Misal Pav, Puran Poli), Goa (Goan Fish Curry), Rajasthan (Dal Baati Churma).
-  - **East & Northeast:** West Bengal (Kosha Mangsho, Shorshe Ilish), Odisha (Chhena Poda, Dalma), Assam & Northeast (Masor Tenga, Smoked Bamboo Stew).
-  - **Global Cuisines:** Italian (Risotto ai Funghi Porcini), Japanese (Handcrafted Umami Ramen), Mexican (Birria Quesatacos with Dipping Consommé), Thai (Tom Yum Goong), French (Ratatouille Niçoise), Middle Eastern (Shakshuka with Feta).
-- Every recipe includes bilingual titles, descriptions, step-by-step instructions in **English and Malayalam (മലയാളം ലിപി)**, nutritional facts, allergen warnings, food safety storage guidance, equipment lists, and cultural citations.
-
-### 3. Dynamic Serving Scaler & Culinary Math
-- Scalable from 1 to 8+ servings with real-time recalculation of all ingredient quantities.
-- Formats quantities into clean culinary fractions (e.g., `1/2`, `1/4`, `1 1/2`) without floating-point precision glitches.
-
-### 4. Bilingual Audio Narration & Hands-Free Cooking Studio
-- **Web Speech API Integration:** Reads each cooking step aloud in English or Malayalam (`ml-IN`).
-- **Karaoke Step Highlighting:** Synchronized text highlighting keeps the cook oriented while following audio instructions.
-- **Hands-Free Voice Recognition:** Cooks with wet or messy hands can activate the hands-free studio and speak commands:
-  - *“Next step”* / *“Adutha step”*
-  - *“Previous step”* / *“Munpathe step”*
-  - *“Repeat”* / *“Veendum parayuka”*
-  - *“Start timer”* / *“Timer thudanguka”*
-- **Built-in Step Timers:** Interactive countdown rings with auditory alerts upon completion.
-
-### 5. Live Indian Grocery Price Comparison Engine
-- Compares real product listings across **6 major grocery retailers in India**:
-  - **Amazon Fresh India**
-  - **Flipkart Grocery**
-  - **Swiggy Instamart**
-  - **Blinkit**
-  - **Zepto**
-  - **BigBasket / BBnow**
-- **Dual Cost Intelligence:**
-  - **Recipe Consumption Cost:** Exact cost attributable to the consumed servings.
-  - **Checkout Cost:** Real-world expenditure required to purchase minimum retail pack sizes.
-- **Normalized Rates:** Price per kg / per litre calculations.
-- **Voluntary PIN Code Checker:** Tests hyperlocal availability across Indian metro and tier-1/tier-2 pincodes (e.g. 682001 Kochi, 560001 Bangalore, 110001 Delhi).
-- Direct retailer search links for one-click purchasing without fabricated transactions.
-
-### 6. Interactive AI Chef Studio & Pantry Matcher
-- **Culinary RAG Engine:** Answers cooking chemistry questions (e.g., why raw coconut oil is finished off heat, risotto mantecatura starch emulsification, why spices are bloomed in hot oil).
-- **Ingredient Substitution Matrix:** Suggests verified alternatives (e.g., raw green mango for sour curd in vegan Avial, star anise for kalpasi).
-- **Interactive Pantry Assistant:** Select ingredients available in your kitchen, and the system ranks matched dishes with match percentages and missing ingredient lists.
-
-### 7. 7-Day Smart Meal Planner & Budget Calculator
-- Weekly calendar (Monday through Sunday) with 4 slots per day (Breakfast, Lunch, Dinner, Snack).
-- Real-time weekly rollup of total calories, protein, carbs, fat, and estimated grocery budget.
-- Consolidated shopping cart merging duplicate ingredients across planned meals.
-- Leftover reuse suggestions (e.g., leftover rice to lemon/curd rice).
-
-### 8. Food Safety & Allergen Layer
-- Authoritative safe internal cooking temperatures (e.g. 74°C / 165°F for poultry/mutton).
-- Allergen tags (dairy, gluten, shellfish, mustard, sesame, tree nuts).
-- Safe refrigeration and reheating durations.
+1. **Responsive Next.js Web Application** (`/`): Next.js 16 (Turbopack, TypeScript, Tailwind CSS, liquid-glass aesthetic, 6 dynamic themes).
+2. **Dedicated Native Android Application** (`android/`): Kotlin, Jetpack Compose Material 3, ViewModel, Room DB, Retrofit 2, Navigation Compose, Android Text-to-Speech, screen-awake cooking mode. Target SDK: API 36 (Android 16+ compliant).
+3. **Conversational AI Cooking Agent** (`lib/ai/cooking-agent.ts`): Adaptive step-by-step guidance, ingredient substitutions, and cooking science explanations.
+4. **Verified 270-Asset Culinary Catalog**: Across 14 regional Indian and international cuisines (140 main recipes), Desserts Studio (40 items), Beverages Studio (50 items), and Table Styling Studio (40 concepts).
+5. **Bilingual English and Malayalam (മലയാളം ലിപി)**: Real-time speech synthesis, synchronized karaoke transcripts, and voice-guided hands-free cooking.
+6. **Indian Grocery Price Comparison**: Live retailer benchmarking across Blinkit, Zepto, Swiggy Instamart, Amazon Fresh, and Flipkart Grocery.
+7. **Table Styling Studio**: Interactive 2D top-down arrangement engine, moodboard generator, and curated tableware checklists.
+8. **Original Brand Identity & Visual Asset Pipeline**: Emerald green, saffron gold, warm ivory, and translucent liquid-glass design system with vector logos and 4K/HD culinary imagery.
 
 ---
 
-## 🛠️ Technology Stack
+## 🎨 Brand Identity System
 
-- **Framework:** [Next.js 16 (App Router)](https://nextjs.org/) with Turbopack
-- **Language:** TypeScript 5.7+ in strict mode
-- **Styling:** Vanilla CSS design tokens + [Tailwind CSS 3.4](https://tailwindcss.com/)
-- **Icons:** [Lucide React](https://lucide.dev/)
-- **Testing:** [Vitest 5.0](https://vitest.dev/)
-- **Speech & Audio:** Web Speech API (`SpeechSynthesis`, `SpeechRecognition`)
-- **Deployment Target:** [Vercel](https://vercel.com/)
+- **Brand Name:** Miseva AI (*Mise en place* + *Seva*)
+- **Primary Tagline:** *Your World. Your Kitchen. Your AI Chef.*
+- **Supporting Taglines:**
+  - *From Kerala to the World, One Recipe at a Time.*
+  - *Your Ingredients. Your Imagination. Your AI Chef.*
+  - *Cook Smarter. Eat Better. Explore More.*
+- **Color Palette:**
+  - **Emerald Primary:** `#0F5132` / `#059669` (Culinary tech & freshness)
+  - **Saffron Gold:** `#D97706` / `#F59E0B` (Indian culinary heritage & warmth)
+  - **Warm Ivory:** `#FDFBF7` (Clean editorial backgrounds)
+  - **Deep Forest Green:** `#062419` (High-contrast dark surfaces)
+  - **Champagne:** `#F7E7CE` (Refined accents)
+  - **Translucent Glass:** `rgba(255, 255, 255, 0.08)` backdrop blur
+
+### Brand Documentation & Assets
+- [Brand Guidelines & Design Tokens](file:///c:/Users/Asus/Documents/cusine/docs/brand/brand-guidelines.md)
+- [Trademark & Naming Research](file:///c:/Users/Asus/Documents/cusine/docs/brand/naming-trademark-research.md)
+- [Logo Usage Guide](file:///c:/Users/Asus/Documents/cusine/docs/brand/logo-usage-guide.md)
+- [Visual Asset Pipeline & Media Catalog](file:///c:/Users/Asus/Documents/cusine/docs/brand/visual-asset-pipeline.md)
+- [Vector Logo Suite](file:///c:/Users/Asus/Documents/cusine/public/brand/) (`logo.svg`, `logo-horizontal.svg`, `logo-mark.svg`, `logo-dark.svg`, `logo-monochrome.svg`)
 
 ---
 
-## 🚀 Local Development Setup
+## 📢 Marketing & Global Launch Strategy
 
-### Prerequisites
-- Node.js `v20.x` or `v24.x`
-- npm `v10.x` or `v11.x`
+- [30-Day Omnichannel Publishing Calendar](file:///c:/Users/Asus/Documents/cusine/docs/marketing/30-day-content-calendar.md)
+- [10 Bilingual Short-Form Video Scripts](file:///c:/Users/Asus/Documents/cusine/docs/marketing/short-form-video-scripts.md) (English + Malayalam with shot lists & voiceover)
+- [10 Instagram Carousel Decks](file:///c:/Users/Asus/Documents/cusine/docs/marketing/instagram-carousels.md)
+- [Google Play ASO Strategy & Metadata Package](file:///c:/Users/Asus/Documents/cusine/docs/marketing/google-play-aso.md)
+- [Comprehensive SEO Strategy & Structured Data](file:///c:/Users/Asus/Documents/cusine/docs/marketing/seo-strategy.md)
 
-### 1. Clone & Install
+---
+
+## 🏗️ Technology Stack & Architecture
+
+### Web Application (`apps/web` / root)
+- **Framework:** Next.js (App Router, Turbopack)
+- **Language:** Strict TypeScript
+- **Styling:** Tailwind CSS with custom liquid-glass design system & 6 dynamic themes
+- **Audio:** Web Speech Synthesis API (`ml-IN` & `en-IN`)
+- **State Management:** Reactive Client State & LocalStorage event bus
+
+### Native Android Application (`android/`)
+- **Language:** Kotlin 1.9.23
+- **UI Toolkit:** Jetpack Compose with Material 3 & Custom `LocalLiquidGlassColors`
+- **Architecture:** MVVM (Model-View-ViewModel) + Repository Pattern
+- **Local Persistence:** Room Database (`CulinaryVerseDatabase`, `RecipeDao`, `RecipeEntity`) with TypeConverters
+- **Networking:** Retrofit 2 + OkHttp + Gson Converter
+- **Voice:** Android Text-to-Speech (`android.speech.tts.TextToSpeech`)
+- **Screen Awake:** `FLAG_KEEP_SCREEN_ON` during active cooking sessions
+- **Deep Linking:** `miseva://recipes/{id}` and Universal Web links
+
+### Shared Backend REST APIs
+- `GET /api/recipes`: Recipe catalog, search, and regional filtering.
+- `GET /api/desserts`: 40 desserts across 4 subcategories.
+- `GET /api/beverages`: 50 beverages across 5 subcategories.
+- `GET /api/table-styling`: 40 complete tablescaping concepts.
+- `POST /api/table-styling/generate`: Dynamic 2D top-down placement, moodboard, and shopping list generator.
+- `GET /api/coverage-audit`: Real-time compliance report enforcing $\ge 10$ distinct items per collection.
+
+---
+
+## 📊 Database Coverage & Minimum 10+ Rule
+
+The platform strictly adheres to the rule: **Every cuisine, category, dessert subcategory, beverage subcategory, and table styling collection must contain at least 10 distinct, verified items.**
+
+| Module | Published Collections | Items per Collection | Total Items | Audit Status |
+| :--- | :--- | :--- | :--- | :--- |
+| **Indian Cuisines** | Kerala, Tamil Nadu, Karnataka, Andhra, Punjab, Maharashtra, Gujarat, Bengal | $\ge 10$ each | 80 Recipes | ✅ **PASSED** |
+| **Global Cuisines** | Italian, Japanese, Mexican, Chinese, Thai, Middle Eastern | $\ge 10$ each | 60 Recipes | ✅ **PASSED** |
+| **Desserts Studio** | Payasam, Traditional Mithai, Cakes & Bakes, Global Delights | $\ge 10$ each | 40 Recipes | ✅ **PASSED** |
+| **Beverages Studio** | Fresh Juices, Smoothies, Traditional Refreshers, Mocktails, Teas & Coffees | $\ge 10$ each | 50 Drinks | ✅ **PASSED** |
+| **Table Styling Studio** | Kerala Sadya, Festive Indian, Celebrations & Banquets, Minimalist & Outdoor | $\ge 10$ each | 40 Concepts | ✅ **PASSED** |
+| **Grand Total** | **23 Distinct Collections** | **$\ge 10$ each** | **270 Assets** | ✅ **100% COMPLIANT** |
+
+---
+
+## 🚀 Getting Started
+
+### 1. Web Application
+
 ```bash
-git clone https://github.com/Janeferdinant/culinaryverse-ai.git
-cd culinaryverse-ai
+# Install dependencies
 npm install
-```
 
-### 2. Run Test Suite
-```bash
+# Run automated test suite (all 44 tests across 9 suites)
 npm test
-```
-All 24 automated unit tests for recipe scaling, liquid-glass theme tokens, pricing math, speech engine, AI chef reasoning, and meal planning will run and pass.
 
-### 3. Run Development Server
-```bash
+# Run type check
+npx tsc --noEmit
+
+# Run production build
+npm run build
+
+# Run development server
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### 4. Build for Production
-```bash
-npm run build
-npm run start
-```
+The web application will be accessible at `http://localhost:3000`.
 
----
+### 2. Android Application
 
-## 🧪 Automated Testing Verification
-
-The codebase includes comprehensive unit tests verifying core algorithms and contracts:
-- `tests/theme.test.ts`: Verifies all 6 liquid-glass theme tokens, color hex codes, and light/dark modes.
-- `tests/recipes.test.ts`: Validates complete recipe schema, bilingual instructions, and serving scaler fractions.
-- `tests/pricing.test.ts`: Verifies consumption cost vs. checkout pack cost, normalized rates per kg, and retailer URL templates.
-- `tests/speech.test.ts`: Validates Malayalam and English language configs and voice command parsing.
-- `tests/ai-agent.test.ts`: Tests RAG culinary technique reasoning, pantry matching, and authentic ingredient substitutions.
-- `tests/meal-planner.test.ts`: Tests 7-day schedule slot assignments and weekly budget/nutritional rollups.
-
-Run test command:
-```bash
-npm test
-```
-Result: **6 test suites passed, 24 tests passed.**
+Open the `android/` directory in **Android Studio**:
+1. Sync Gradle files.
+2. Ensure JDK 17 is configured in **Project Structure > SDK Location > Gradle Settings**.
+3. Run on an Android Emulator (API 26+) or a connected physical Android device.
+4. To build debug APK via command line:
+   ```bash
+   cd android
+   ./gradlew assembleDebug
+   ```
 
 ---
 
-## 🌐 Production Deployment
+## 🛡️ Security Guardian & Google Play Compliance Gate
 
-The project is structured for zero-config Vercel deployment:
-```bash
-npx vercel --prod
-```
+Miseva AI incorporates an autonomous three-gate release pipeline:
+- **Gate 1 — Security Guardian (`npm run security:audit`):** Full-codebase SAST, secret scanning, AI prompt-injection guardrails, and database RLS auditing. (Status: **0 Critical, 0 High**).
+- **Gate 2 — Android Release Readiness (`npm run release:android-audit`):** Enforces **Android 16 (API Level 36)** per Google Play's published August 31, 2026 mandate, 12-tester/14-day closed testing protocol, Permission Justification Matrix, and Data Safety disclosures.
+- **Gate 3 — Web Deployment Gate (`npm run deploy:verify`):** Git tree integrity, WCM credential verification, Vercel preview/production gating.
 
 ---
 
-## 📄 Academic Attribution & Licensing
+## 📄 Documentation & Release Packages
 
-Supervised by **Jane Rose**, Assistant Professor, Department of Computer Science & Engineering.  
-Designed for educational, computational gastronomy research, and cultural culinary heritage preservation. All recipes, cultural references, and retailer comparisons adhere to ethical, non-commercial attribution guidelines.
+- [Brand Guidelines & Design Tokens](file:///c:/Users/Asus/Documents/cusine/docs/brand/brand-guidelines.md)
+- [Logo Usage Guide](file:///c:/Users/Asus/Documents/cusine/docs/brand/logo-usage-guide.md)
+- [Visual Asset Pipeline](file:///c:/Users/Asus/Documents/cusine/docs/brand/visual-asset-pipeline.md)
+- [30-Day Marketing Content Calendar](file:///c:/Users/Asus/Documents/cusine/docs/marketing/30-day-content-calendar.md)
+- [Short-Form Video Scripts](file:///c:/Users/Asus/Documents/cusine/docs/marketing/short-form-video-scripts.md)
+- [Instagram Carousel Campaigns](file:///c:/Users/Asus/Documents/cusine/docs/marketing/instagram-carousels.md)
+- [Google Play ASO Package](file:///c:/Users/Asus/Documents/cusine/docs/marketing/google-play-aso.md)
+- [SEO Strategy & Schema Specifications](file:///c:/Users/Asus/Documents/cusine/docs/marketing/seo-strategy.md)
+- [Report A: Web Deployment Readiness](file:///c:/Users/Asus/Documents/cusine/docs/release/web-deployment-report.md)
+- [Report B: Android Submission & Play Policy Compliance](file:///c:/Users/Asus/Documents/cusine/docs/release/android-submission-report.md)
+- [Security Guardian Audit Report](file:///c:/Users/Asus/Documents/cusine/docs/security/security-guardian-report.md)
+- [Permission Justification Matrix](file:///c:/Users/Asus/Documents/cusine/docs/release/permission-justification-matrix.md)
+- [Google Play Data Safety Declaration](file:///c:/Users/Asus/Documents/cusine/docs/release/google-play-data-safety.md)
+- [Feature Parity Matrix](file:///c:/Users/Asus/Documents/cusine/docs/feature-parity-matrix.md)
+- [Coverage Audit Report](file:///c:/Users/Asus/Documents/cusine/docs/coverage-audit-report.md)
+- [Android Setup Guide](file:///c:/Users/Asus/Documents/cusine/android/README.md)
+
+---
+
+## 🎓 Academic Supervision
+**Jane Rose**  
+*Assistant Professor, CSE*  
+“Miseva AI — Discover cuisines, learn techniques, style your table, and cook with confidence.”

@@ -1,0 +1,46 @@
+name: Android Release Readiness Gate
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'android/**'
+      - '.github/workflows/android-release-gate.yml'
+  workflow_dispatch:
+
+jobs:
+  android-build-and-verify:
+    name: Validate Android Build, Target API 36, and AAB Signing Config
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Node Dependencies
+        run: npm ci
+
+      - name: Audit Android Target API 36 & Google Play Compliance
+        run: npm run release:android-audit
+
+      - name: Verify Android Manifest & Minimal Permissions
+        run: |
+          echo "Verifying AndroidManifest.xml usesCleartextTraffic=false..."
+          grep -q 'android:usesCleartextTraffic="false"' android/app/src/main/AndroidManifest.xml
+          echo "Verifying AndroidManifest.xml allowBackup=false..."
+          grep -q 'android:allowBackup="false"' android/app/src/main/AndroidManifest.xml
+          echo "Verifying compileSdk and targetSdk are 36..."
+          grep -q 'targetSdk = 36' android/app/build.gradle.kts
+          grep -q 'compileSdk = 36' android/app/build.gradle.kts
+          echo "Android Build & Manifest Checks: PASSED"

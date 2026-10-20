@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Outer Ring -->
+    <path
+        android:strokeColor="#F59E0B"
+        android:strokeWidth="2"
+        android:pathData="M54,20 A34,34 0 1,1 53.9,20 Z" />
+
+    <!-- Flame Shape (Right / Saffron) -->
+    <path
+        android:fillColor="#D97706"
+        android:pathData="M54,28 C61,40 71,52 71,65 C71,75 64,83 54,83 C52,83 50,82 48,81 C54,77 57,70 57,63 C57,52 49,44 45,37 C48,34 51,31 54,28 Z" />
+
+    <!-- Leaf Shape (Left / Emerald) -->
+    <path
+        android:fillColor="#059669"
+        android:pathData="M54,28 C47,40 37,52 37,65 C37,75 44,83 54,83 C49,78 47,71 47,63 C47,52 53,42 54,28 Z" />
+
+    <!-- AI Core Center Node -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,65 A7,7 0 1,1 53.9,65 Z" />
+    <path
+        android:fillColor="#FDE68A"
+        android:pathData="M54,65 A4,4 0 1,1 53.9,65 Z" />
+</vector>
