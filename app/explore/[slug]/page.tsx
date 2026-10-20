@@ -20,6 +20,7 @@ import { RECIPES } from "@/lib/data/recipes";
 import { RecipeCard } from "@/components/RecipeCard";
 import { DietaryType, MealType } from "@/lib/types/recipe";
 import { CuisineEmblem, getCuisineEmblemMeta } from "@/components/CuisineEmblem";
+import { generateCuisineBreadcrumb, getContinentForRegion } from "@/lib/cuisines/hierarchy";
 
 export default function CountryCuisineDetailPage({
   params,
@@ -36,6 +37,10 @@ export default function CountryCuisineDetailPage({
   const [search, setSearch] = useState("");
   const [selectedDiet, setSelectedDiet] = useState<string>("All");
   const [selectedMeal, setSelectedMeal] = useState<string>("All");
+
+  const breadcrumbs = useMemo(() => {
+    return generateCuisineBreadcrumb(region.id);
+  }, [region.id]);
 
   const dietaryList = [
     "All",
@@ -88,8 +93,8 @@ export default function CountryCuisineDetailPage({
 
   return (
     <div className="space-y-8 py-4">
-      {/* Breadcrumb & Navigation */}
-      <div className="flex items-center justify-between gap-4">
+      {/* 4-Level Breadcrumb & Navigation */}
+      <div className="flex items-center justify-between gap-4 flex-wrap">
         <Link
           href="/explore"
           className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl glass-card text-xs font-bold text-foreground/80 hover:text-foreground hover:scale-[1.02] transition-all"
@@ -98,11 +103,20 @@ export default function CountryCuisineDetailPage({
           <span>Back to All Cuisines</span>
         </Link>
 
-        <div className="flex items-center gap-2 text-xs font-semibold text-foreground/60">
-          <Link href="/explore" className="hover:underline">Explore</Link>
-          <span>/</span>
-          <span className="text-brand-primary font-bold">{region.name}</span>
-        </div>
+        <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs font-semibold text-foreground/60 flex-wrap">
+          {breadcrumbs.map((crumb, idx) => (
+            <React.Fragment key={crumb.label}>
+              {idx > 0 && <span className="opacity-40">/</span>}
+              {crumb.isCurrent ? (
+                <span className="text-brand-primary font-bold">{crumb.label}</span>
+              ) : (
+                <Link href={crumb.href} className="hover:text-foreground hover:underline">
+                  {crumb.label}
+                </Link>
+              )}
+            </React.Fragment>
+          ))}
+        </nav>
       </div>
 
       {/* Hero Header Card */}
@@ -119,6 +133,9 @@ export default function CountryCuisineDetailPage({
                 </span>
                 <span className="text-xs font-semibold px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-foreground/80">
                   {getCuisineEmblemMeta(region.id).primaryElement}
+                </span>
+                <span className="text-xs font-bold px-2.5 py-0.5 rounded-md bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
+                  {matchingRecipes.length} Verified Dishes
                 </span>
                 <span className="text-2xl">{region.icon}</span>
               </div>

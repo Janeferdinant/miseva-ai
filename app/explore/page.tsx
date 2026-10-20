@@ -7,8 +7,14 @@ import { INDIAN_REGIONS, GLOBAL_CUISINES, CulinaryRegion } from "@/lib/data/cuis
 import { RECIPES } from "@/lib/data/recipes";
 import { RecipeCard } from "@/components/RecipeCard";
 import { CuisineEmblem, getCuisineEmblemMeta } from "@/components/CuisineEmblem";
+import {
+  getContinentForRegion,
+  countVerifiedRecipesForRegion,
+  CONTINENT_NAMES,
+} from "@/lib/cuisines/hierarchy";
 
 export default function ExploreCuisinesPage() {
+  const [selectedContinent, setSelectedContinent] = useState<string>("All Continents");
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const [searchFilter, setSearchFilter] = useState<string>("");
   const [activeRegion, setActiveRegion] = useState<CulinaryRegion | null>(INDIAN_REGIONS[0]);
@@ -29,15 +35,19 @@ export default function ExploreCuisinesPage() {
 
   const filteredRegions = useMemo(() => {
     return allRegions.filter((reg) => {
+      const continent = getContinentForRegion(reg.id);
+      const matchContinent =
+        selectedContinent === "All Continents" || continent === selectedContinent;
       const matchCat = selectedCategory === "All" || reg.category === selectedCategory;
       const matchSearch =
         searchFilter === "" ||
         reg.name.toLowerCase().includes(searchFilter.toLowerCase()) ||
         reg.nameMalayalam.includes(searchFilter) ||
+        continent.toLowerCase().includes(searchFilter.toLowerCase()) ||
         reg.specialties.some((s) => s.toLowerCase().includes(searchFilter.toLowerCase()));
-      return matchCat && matchSearch;
+      return matchContinent && matchCat && matchSearch;
     });
-  }, [allRegions, selectedCategory, searchFilter]);
+  }, [allRegions, selectedContinent, selectedCategory, searchFilter]);
 
   const regionRecipes = useMemo(() => {
     if (!activeRegion) return [];
@@ -55,30 +65,58 @@ export default function ExploreCuisinesPage() {
       <div className="rounded-3xl glass-panel p-6 sm:p-10 border border-glass-border shadow-glass">
         <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-primary">
           <Compass className="w-4 h-4" />
-          <span>Interactive Cultural Geography</span>
+          <span>Interactive Cultural Geography • Continent → Country → Region</span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-black text-foreground mt-2">
           Explore Indian Regional States & Global Cuisines
         </h1>
         <p className="text-sm sm:text-base text-foreground/80 mt-2 max-w-3xl leading-relaxed">
-          Journey through the authentic spices of Kerala's spice coast, the clay tandoors of Punjab, the mustard traditions of Bengal, and renowned culinary arts of Italy, Japan, and Mexico.
+          Journey through authentic culinary territories: Kerala's spice coast, Punjab's clay tandoor heritage, Bengal's mustard traditions, and celebrated kitchens of Italy, Japan, and Mexico.
         </p>
         <p className="text-sm text-brand-primary font-semibold lang-ml mt-1">
           ഇന്ത്യയിലെ എല്ലാ സംസ്ഥാനങ്ങളുടെയും തനത് രുചികളും ലോകോത്തര പാചക സംസ്കാരങ്ങളും ഇവിടെ പരിചയപ്പെടാം.
         </p>
 
-        {/* Search & Category Pills */}
-        <div className="mt-6 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
+        {/* Level 1: Continent Filter Pills */}
+        <div className="mt-6 pt-4 border-t border-glass-border/40 space-y-3">
+          <div className="text-[11px] font-bold uppercase tracking-wider text-foreground/60 flex items-center gap-1.5">
+            <Globe className="w-3.5 h-3.5 text-brand-primary" />
+            <span>Filter by Continent / Broad Region:</span>
+          </div>
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-2 scrollbar-none">
+            {CONTINENT_NAMES.map((cont) => (
+              <button
+                key={cont}
+                onClick={() => {
+                  setSelectedContinent(cont);
+                  if (cont !== "All Continents" && cont !== "South Asia") {
+                    setSelectedCategory("All");
+                  }
+                }}
+                className={`px-3.5 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all ${
+                  selectedContinent === cont
+                    ? "bg-brand-primary text-background shadow-md scale-105"
+                    : "glass-card text-foreground/75 hover:text-foreground"
+                }`}
+              >
+                {cont}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Level 2: Sub-Category Pills & Search */}
+        <div className="mt-4 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
           {/* Category Tabs */}
           <div className="flex items-center gap-1.5 overflow-x-auto pb-2 scrollbar-none">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
-                className={`px-3.5 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all ${
+                className={`px-3 py-1 rounded-xl text-xs font-semibold whitespace-nowrap transition-all ${
                   selectedCategory === cat
-                    ? "bg-brand-primary text-white shadow-md scale-105"
-                    : "glass-card text-foreground/75 hover:text-foreground"
+                    ? "bg-white/20 text-foreground border border-brand-primary/40 shadow-sm"
+                    : "glass-card text-foreground/60 hover:text-foreground"
                 }`}
               >
                 {cat}
@@ -103,6 +141,8 @@ export default function ExploreCuisinesPage() {
       {/* Grid of Regions */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3.5">
         {filteredRegions.map((reg) => {
+          const verifiedCount = countVerifiedRecipesForRegion(reg.id);
+          const continent = getContinentForRegion(reg.id);
           return (
             <Link
               key={reg.id}
@@ -116,7 +156,7 @@ export default function ExploreCuisinesPage() {
                     <span className="text-xl group-hover:scale-110 transition-transform">{reg.icon}</span>
                   </div>
                   <span className="text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-white/10 text-foreground/70">
-                    {reg.category}
+                    {continent}
                   </span>
                 </div>
                 <div className="text-sm font-bold text-foreground mt-2 line-clamp-1 group-hover:text-brand-primary transition-colors">
@@ -124,6 +164,15 @@ export default function ExploreCuisinesPage() {
                 </div>
                 <div className="text-[11px] text-foreground/60 lang-ml line-clamp-1">
                   {reg.nameMalayalam}
+                </div>
+
+                {/* Validated Recipe Count Badge */}
+                <div className="mt-2 text-[10px] font-bold text-brand-primary/90">
+                  {verifiedCount > 0 ? (
+                    <span>{verifiedCount} Verified Dishes</span>
+                  ) : (
+                    <span className="text-foreground/50 italic">In Curation</span>
+                  )}
                 </div>
               </div>
 
