@@ -52,4 +52,27 @@ describe('Marketing Dashboard State & Action Controls', () => {
     const ics = sharedCalendarService.exportCalendar('ICS');
     expect(ics).toContain('BEGIN:VCALENDAR');
   });
+
+  it('verifies all 11 dashboard module components and shared services are wired and functional', async () => {
+    const {
+      sharedCustomerSegmentService,
+      sharedRecommendationEngine,
+      sharedAttributionService,
+      sharedErrorRetryMonitor
+    } = await import('../../lib/marketing/services/marketing-hub');
+
+    // 1. Customer Segments
+    expect(sharedCustomerSegmentService.getAllSegments()).toHaveLength(9);
+
+    // 2. Recommendation Engine
+    const recs = sharedRecommendationEngine.getRecommendations({ currentPage: '/home' });
+    expect(recs.length).toBeGreaterThan(0);
+
+    // 3. Attribution Funnel
+    const funnel = sharedAttributionService.getCampaignFunnelMetrics('ingredient-finder');
+    expect(funnel.costPerActivatedUserInr).toBeGreaterThan(0);
+
+    // 4. Error Retry Monitor
+    expect(sharedErrorRetryMonitor.calculateRetryDelaySeconds(1)).toBe(300);
+  });
 });

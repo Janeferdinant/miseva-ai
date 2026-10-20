@@ -10,7 +10,13 @@ import {
   ShieldCheck,
   Image as ImageIcon,
   Send,
-  Plus
+  Plus,
+  Users,
+  Compass,
+  AlertTriangle,
+  Lock,
+  Film,
+  IndianRupee
 } from "lucide-react";
 import { MarketingHeader } from "./components/MarketingHeader";
 import { CampaignCalendarView } from "./components/CampaignCalendarView";
@@ -20,6 +26,12 @@ import { MediaAssetGallery } from "./components/MediaAssetGallery";
 import { GrowthExperimentsView } from "./components/GrowthExperimentsView";
 import { AnalyticsDigestView } from "./components/AnalyticsDigestView";
 import { ChannelIntegrationsView } from "./components/ChannelIntegrationsView";
+import { CustomerSegmentManagerView } from "./components/CustomerSegmentManagerView";
+import { RecommendationEngineView } from "./components/RecommendationEngineView";
+import { ConsentPrivacyView } from "./components/ConsentPrivacyView";
+import { ErrorRetryMonitorView } from "./components/ErrorRetryMonitorView";
+import { AiContentStudioView } from "./components/AiContentStudioView";
+import { BudgetExperimentView } from "./components/BudgetExperimentView";
 
 import {
   sharedCalendarService,
@@ -31,7 +43,18 @@ import {
 } from "@/lib/marketing/services/marketing-hub";
 import { MarketingPost } from "@/lib/marketing/types/marketing-types";
 
-type DashboardTab = "CALENDAR" | "QUEUE" | "ASSETS" | "EXPERIMENTS" | "ANALYTICS" | "CHANNELS";
+type DashboardTab =
+  | "CALENDAR"
+  | "QUEUE"
+  | "STUDIO"
+  | "SEGMENTS"
+  | "RECOMMENDATIONS"
+  | "CHANNELS"
+  | "ERRORS"
+  | "ASSETS"
+  | "BUDGET"
+  | "ANALYTICS"
+  | "PRIVACY";
 
 export default function MarketingDashboardPage() {
   const [activeTab, setActiveTab] = useState<DashboardTab>("CALENDAR");
@@ -125,77 +148,137 @@ export default function MarketingDashboardPage() {
       <div className="flex items-center gap-1.5 overflow-x-auto pb-2 border-b border-white/10 scrollbar-none">
         <button
           onClick={() => setActiveTab("CALENDAR")}
-          className={`flex items-center gap-2 px-4 py-2.5 rounded-2xl text-xs font-bold transition-all shrink-0 ${
+          className={`flex items-center gap-2 px-3.5 py-2.5 rounded-2xl text-xs font-bold transition-all shrink-0 ${
             activeTab === "CALENDAR"
               ? "bg-emerald-600 text-white shadow-md border border-emerald-400/40"
               : "glass-card text-foreground/75 hover:text-foreground"
           }`}
         >
-          <CalendarIcon className="w-4 h-4" />
+          <CalendarIcon className="w-3.5 h-3.5" />
           <span>30-Day Calendar</span>
         </button>
 
         <button
           onClick={() => setActiveTab("QUEUE")}
-          className={`flex items-center gap-2 px-4 py-2.5 rounded-2xl text-xs font-bold transition-all shrink-0 ${
+          className={`flex items-center gap-2 px-3.5 py-2.5 rounded-2xl text-xs font-bold transition-all shrink-0 ${
             activeTab === "QUEUE"
               ? "bg-emerald-600 text-white shadow-md border border-emerald-400/40"
               : "glass-card text-foreground/75 hover:text-foreground"
           }`}
         >
-          <Clock className="w-4 h-4" />
-          <span>Publishing Queue</span>
+          <Clock className="w-3.5 h-3.5" />
+          <span>Daily Queue</span>
           {summary.scheduledCount > 0 && (
             <span className="w-2 h-2 rounded-full bg-amber-400" />
           )}
         </button>
 
         <button
-          onClick={() => setActiveTab("ASSETS")}
-          className={`flex items-center gap-2 px-4 py-2.5 rounded-2xl text-xs font-bold transition-all shrink-0 ${
-            activeTab === "ASSETS"
+          onClick={() => setActiveTab("STUDIO")}
+          className={`flex items-center gap-2 px-3.5 py-2.5 rounded-2xl text-xs font-bold transition-all shrink-0 ${
+            activeTab === "STUDIO"
               ? "bg-emerald-600 text-white shadow-md border border-emerald-400/40"
               : "glass-card text-foreground/75 hover:text-foreground"
           }`}
         >
-          <ImageIcon className="w-4 h-4" />
-          <span>Asset Library</span>
+          <Film className="w-3.5 h-3.5 text-teal-400" />
+          <span>AI Content Studio</span>
         </button>
 
         <button
-          onClick={() => setActiveTab("EXPERIMENTS")}
-          className={`flex items-center gap-2 px-4 py-2.5 rounded-2xl text-xs font-bold transition-all shrink-0 ${
-            activeTab === "EXPERIMENTS"
+          onClick={() => setActiveTab("SEGMENTS")}
+          className={`flex items-center gap-2 px-3.5 py-2.5 rounded-2xl text-xs font-bold transition-all shrink-0 ${
+            activeTab === "SEGMENTS"
               ? "bg-emerald-600 text-white shadow-md border border-emerald-400/40"
               : "glass-card text-foreground/75 hover:text-foreground"
           }`}
         >
-          <Sparkles className="w-4 h-4" />
-          <span>A/B Experiments</span>
+          <Users className="w-3.5 h-3.5 text-amber-400" />
+          <span>Customer Segments</span>
         </button>
 
         <button
-          onClick={() => setActiveTab("ANALYTICS")}
-          className={`flex items-center gap-2 px-4 py-2.5 rounded-2xl text-xs font-bold transition-all shrink-0 ${
-            activeTab === "ANALYTICS"
+          onClick={() => setActiveTab("RECOMMENDATIONS")}
+          className={`flex items-center gap-2 px-3.5 py-2.5 rounded-2xl text-xs font-bold transition-all shrink-0 ${
+            activeTab === "RECOMMENDATIONS"
               ? "bg-emerald-600 text-white shadow-md border border-emerald-400/40"
               : "glass-card text-foreground/75 hover:text-foreground"
           }`}
         >
-          <BarChart3 className="w-4 h-4" />
-          <span>Analytics & Funnel</span>
+          <Compass className="w-3.5 h-3.5 text-emerald-400" />
+          <span>Recommendation Engine</span>
         </button>
 
         <button
           onClick={() => setActiveTab("CHANNELS")}
-          className={`flex items-center gap-2 px-4 py-2.5 rounded-2xl text-xs font-bold transition-all shrink-0 ${
+          className={`flex items-center gap-2 px-3.5 py-2.5 rounded-2xl text-xs font-bold transition-all shrink-0 ${
             activeTab === "CHANNELS"
               ? "bg-emerald-600 text-white shadow-md border border-emerald-400/40"
               : "glass-card text-foreground/75 hover:text-foreground"
           }`}
         >
-          <ShieldCheck className="w-4 h-4" />
-          <span>Channels & Vault</span>
+          <ShieldCheck className="w-3.5 h-3.5" />
+          <span>Social Connections</span>
+        </button>
+
+        <button
+          onClick={() => setActiveTab("ERRORS")}
+          className={`flex items-center gap-2 px-3.5 py-2.5 rounded-2xl text-xs font-bold transition-all shrink-0 ${
+            activeTab === "ERRORS"
+              ? "bg-emerald-600 text-white shadow-md border border-emerald-400/40"
+              : "glass-card text-foreground/75 hover:text-foreground"
+          }`}
+        >
+          <AlertTriangle className="w-3.5 h-3.5 text-amber-400" />
+          <span>Error & Retry Monitor</span>
+        </button>
+
+        <button
+          onClick={() => setActiveTab("ASSETS")}
+          className={`flex items-center gap-2 px-3.5 py-2.5 rounded-2xl text-xs font-bold transition-all shrink-0 ${
+            activeTab === "ASSETS"
+              ? "bg-emerald-600 text-white shadow-md border border-emerald-400/40"
+              : "glass-card text-foreground/75 hover:text-foreground"
+          }`}
+        >
+          <ImageIcon className="w-3.5 h-3.5" />
+          <span>Media Assets</span>
+        </button>
+
+        <button
+          onClick={() => setActiveTab("BUDGET")}
+          className={`flex items-center gap-2 px-3.5 py-2.5 rounded-2xl text-xs font-bold transition-all shrink-0 ${
+            activeTab === "BUDGET"
+              ? "bg-emerald-600 text-white shadow-md border border-emerald-400/40"
+              : "glass-card text-foreground/75 hover:text-foreground"
+          }`}
+        >
+          <IndianRupee className="w-3.5 h-3.5 text-emerald-400" />
+          <span>Budget & Experiments</span>
+        </button>
+
+        <button
+          onClick={() => setActiveTab("ANALYTICS")}
+          className={`flex items-center gap-2 px-3.5 py-2.5 rounded-2xl text-xs font-bold transition-all shrink-0 ${
+            activeTab === "ANALYTICS"
+              ? "bg-emerald-600 text-white shadow-md border border-emerald-400/40"
+              : "glass-card text-foreground/75 hover:text-foreground"
+          }`}
+        >
+          <BarChart3 className="w-3.5 h-3.5" />
+          <span>Funnel Analytics</span>
+        </button>
+
+        <button
+          onClick={() => setActiveTab("PRIVACY")}
+          className={`flex items-center gap-2 px-3.5 py-2.5 rounded-2xl text-xs font-bold transition-all shrink-0 ${
+            activeTab === "PRIVACY"
+              ? "bg-emerald-600 text-white shadow-md border border-emerald-400/40"
+              : "glass-card text-foreground/75 hover:text-foreground"
+          }`}
+        >
+          <Lock className="w-3.5 h-3.5 text-emerald-400" />
+          <span>Consent & Privacy</span>
         </button>
       </div>
 
@@ -216,20 +299,40 @@ export default function MarketingDashboardPage() {
         />
       )}
 
+      {activeTab === "STUDIO" && (
+        <AiContentStudioView />
+      )}
+
+      {activeTab === "SEGMENTS" && (
+        <CustomerSegmentManagerView />
+      )}
+
+      {activeTab === "RECOMMENDATIONS" && (
+        <RecommendationEngineView />
+      )}
+
+      {activeTab === "CHANNELS" && (
+        <ChannelIntegrationsView />
+      )}
+
+      {activeTab === "ERRORS" && (
+        <ErrorRetryMonitorView />
+      )}
+
       {activeTab === "ASSETS" && (
         <MediaAssetGallery assetLibrary={sharedAssetLibrary} />
       )}
 
-      {activeTab === "EXPERIMENTS" && (
-        <GrowthExperimentsView experimentsService={sharedExperimentsService} />
+      {activeTab === "BUDGET" && (
+        <BudgetExperimentView />
       )}
 
       {activeTab === "ANALYTICS" && (
         <AnalyticsDigestView analyticsService={sharedAnalyticsService} />
       )}
 
-      {activeTab === "CHANNELS" && (
-        <ChannelIntegrationsView />
+      {activeTab === "PRIVACY" && (
+        <ConsentPrivacyView />
       )}
 
       {/* Post Detail & Production Studio Modal */}
