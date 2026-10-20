@@ -178,7 +178,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 10,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1621996346565-e3d5d6281724?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Penne Rigate", nameMalayalam: "പെന്നെ പാസ്ത", amount: 350, unit: "g", notes: "Durum wheat ridged penne", category: "staple" },
       { name: "San Marzano Whole Tomatoes", nameMalayalam: "സാൻ മാർസാനോ തക്കാളി", amount: 400, unit: "g", notes: "Crushed by hand", category: "produce" },
@@ -256,7 +256,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 150,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1544025162-d7669426594a?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Cross-Cut Beef or Veal Shanks", nameMalayalam: "ബീഫ് ഷാങ്ക് (മജ്ജയോടുകൂടിയത്)", amount: 4, unit: "pieces", notes: "Thick cut with center marrow", category: "protein" },
       { name: "Dry White Wine", nameMalayalam: "വൈറ്റ് വൈൻ", amount: 1, unit: "cup", notes: "Pinot Grigio", category: "condiment" },
@@ -295,7 +295,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 5,
     cookTime: 10,
     servings: 2,
-    imageUrl: "https://images.unsplash.com/photo-1612874742237-6526221588e3?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1645112411341-6c4fd023714a?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Fresh Egg Fettuccine", nameMalayalam: "ഫ്രഷ് ഫെത്തുച്ചീനി പാസ്ത", amount: 250, unit: "g", notes: "Thin fresh ribbons", category: "staple" },
       { name: "High-Fat European Butter", nameMalayalam: "വെണ്ണ", amount: 80, unit: "g", notes: "Softened at room temp", category: "dairy" },
@@ -331,7 +331,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 40,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1621996346565-e3d5d6281724?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1551183053-bf91a1d81142?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Russet or Yukon Gold Potatoes", nameMalayalam: "ഉരുളക്കിഴങ്ങ്", amount: 800, unit: "g", notes: "Baked dry and riced", category: "produce" },
       { name: "Tipo 00 Flour", nameMalayalam: "മൈദ", amount: 150, unit: "g", notes: "Minimal flour for pillowy lightness", category: "staple" },
@@ -370,7 +370,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 30,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1547496502-affa22d38843?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Cannellini Beans (Cooked)", nameMalayalam: "വെള്ള ബീൻസ്", amount: 1.5, unit: "cups", notes: "Tender white beans", category: "staple" },
       { name: "Ditalini Pasta", nameMalayalam: "ഡിതാലിനി പാസ്ത", amount: 0.5, unit: "cup", notes: "Small soup pasta", category: "staple" },
@@ -450,7 +450,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1604382354936-07c5d9983bd5?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Chicken Breast Fillets", nameMalayalam: "ചിക്കൻ ബ്രെസ്റ്റ്", amount: 4, unit: "pieces", notes: "Pounded to 1/2-inch thickness", category: "protein" },
       { name: "Japanese Panko Breadcrumbs", nameMalayalam: "പാങ്കോ ബ്രെഡ്ക്രംബ്സ്", amount: 2, unit: "cups", notes: "Airy Japanese flakes", category: "staple" },
@@ -489,7 +489,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 5,
     cookTime: 10,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1547496502-affa22d38844?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Dashi Broth (Kombu & Shiitake or Bonito)", nameMalayalam: "ഡാഷി സൂപ്പ്", amount: 4, unit: "cups", notes: "Fresh umami stock", category: "produce" },
       { name: "Japanese Miso Paste (Awase or Shiro Miso)", nameMalayalam: "മിസോ പേസ്റ്റ്", amount: 3, unit: "tbsp", notes: "Fermented soybean paste", category: "condiment" },
@@ -527,7 +527,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 10,
     cookTime: 15,
     servings: 2,
-    imageUrl: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae39d?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Boneless Chicken Thighs (Skin-on)", nameMalayalam: "ചിക്കൻ തുടക്കഷണങ്ങൾ", amount: 400, unit: "g", notes: "Skin on for crispy glaze", category: "protein" },
       { name: "Japanese Soy Sauce (Shoyu)", nameMalayalam: "സോയ സോസ്", amount: 2, unit: "tbsp", notes: "Brewed soy", category: "condiment" },
@@ -566,7 +566,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1565557623262-b51c2513a647?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Assorted Vegetables (Lotus root, Kabocha pumpkin, Sweet potato, Shiitake)", nameMalayalam: "പച്ചക്കറികൾ", amount: 350, unit: "g", notes: "Thinly sliced", category: "produce" },
       { name: "Ice-Cold Water with Ice Cubes", nameMalayalam: "ഐസ് വെള്ളം", amount: 1, unit: "cup", notes: "Prevents gluten formation", category: "condiment" },
@@ -605,7 +605,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 40,
     cookTime: 20,
     servings: 2,
-    imageUrl: "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Japanese Sushi Rice", nameMalayalam: "സുഷി അരി", amount: 2, unit: "cups", notes: "Seasoned with rice vinegar, sugar, salt", category: "staple" },
       { name: "Sashimi-Grade Salmon Fillet", nameMalayalam: "സാൽമൺ മീൻ", amount: 200, unit: "g", notes: "Sliced into 10 nigiri cuts", category: "protein" },
@@ -643,7 +643,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 15,
     servings: 2,
-    imageUrl: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Finely Shredded Green Cabbage", nameMalayalam: "കാബേജ്", amount: 4, unit: "cups", notes: "Finely chopped", category: "produce" },
       { name: "Pork Belly Slices (Thinly Cut)", nameMalayalam: "പോർക്ക് ബെല്ലി", amount: 6, unit: "slices", notes: "Thin bacon-style", category: "protein" },
@@ -682,7 +682,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 10,
     cookTime: 12,
     servings: 2,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1534939561126-855b8675edd8?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Thinly Shaved Beef (Ribeye / Chuck)", nameMalayalam: "നേർത്ത ബീഫ് കഷണങ്ങൾ", amount: 250, unit: "g", notes: "Hot-pot thin", category: "protein" },
       { name: "Sweet Onions", nameMalayalam: "സവാള", amount: 1, unit: "large", notes: "Thinly sliced", category: "produce" },
@@ -721,7 +721,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 15,
     servings: 2,
-    imageUrl: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1618841557871-b4664fbf0cb3?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Fresh Sanuki Udon Noodles", nameMalayalam: "ഉഡോൺ നൂഡിൽസ്", amount: 400, unit: "g", notes: "Thick chewy noodles", category: "staple" },
       { name: "Shrimp Tempura (Ebi Tempura)", nameMalayalam: "ചെമ്മീൻ തെമ്പുറ", amount: 4, unit: "pieces", notes: "Crispy fried", category: "protein" },
@@ -759,7 +759,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 12,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Chicken Thighs", nameMalayalam: "ചിക്കൻ തുടക്കഷണങ്ങൾ", amount: 500, unit: "g", notes: "Cut into 1-inch bite pieces", category: "protein" },
       { name: "Tokyo Scallions / Leeks (Tokyo Negi)", nameMalayalam: "സ്പ്രിംഗ് ഒനിയൻ / ലീക്സ്", amount: 3, unit: "stalks", notes: "Cut into 1-inch lengths", category: "produce" },

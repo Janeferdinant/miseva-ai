@@ -20,7 +20,7 @@ export const BENGALI_RECIPES: Recipe[] = [
     prepTime: 480,
     cookTime: 70,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae39c?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Goat Mutton (Curry Cut with marrow bone)", nameMalayalam: "മട്ടൺ", amount: 800, unit: "g", notes: "Bone-in chunks", category: "protein" },
       { name: "Mustard Oil (Kachi Ghani)", nameMalayalam: "കടുക് എണ്ണ", amount: 4, unit: "tbsp", notes: "Authentic pungent oil", category: "oil" },
@@ -60,7 +60,7 @@ export const BENGALI_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a4?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Fresh Ilish (Hilsa) Fish Steaks", nameMalayalam: "ഇലിഷ് മീൻ കഷണങ്ങൾ", amount: 500, unit: "g", notes: "Rinsed and pat dry", category: "protein" },
       { name: "Yellow and Black Mustard Seeds", nameMalayalam: "മഞ്ഞയും കറുപ്പും കടുക്", amount: 3, unit: "tbsp", notes: "Soaked and stone-ground with salt and chili", category: "spice" },
@@ -99,7 +99,7 @@ export const BENGALI_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 20,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1559847844-5315695dadaf?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Jumbo Golda Chingri (Prawns)", nameMalayalam: "വലിയ ചെമ്മീൻ", amount: 8, unit: "pieces", notes: "Cleaned, head and tail intact for flavor", category: "protein" },
       { name: "Thick Coconut Milk", nameMalayalam: "കട്ടി തേങ്ങാപ്പാൽ", amount: 1.5, unit: "cups", notes: "Fresh first extract", category: "dairy" },
@@ -139,7 +139,7 @@ export const BENGALI_RECIPES: Recipe[] = [
     prepTime: 120,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a19974?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Chana Dal (Split Bengal Gram)", nameMalayalam: "കടലപ്പരിപ്പ്", amount: 1.5, unit: "cups", notes: "Soaked for 2 hours", category: "staple" },
       { name: "Fresh Coconut Bites (Narkel Kuchi)", nameMalayalam: "തേങ്ങാക്കൊത്ത്", amount: 0.25, unit: "cup", notes: "Thinly sliced flakes", category: "produce" },
@@ -178,7 +178,7 @@ export const BENGALI_RECIPES: Recipe[] = [
     prepTime: 45,
     cookTime: 50,
     servings: 5,
-    imageUrl: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1633945274405-b6c8069047b1?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Long-Grain Aged Basmati Rice", nameMalayalam: "ബസ്മതി അരി", amount: 500, unit: "g", notes: "Soaked for 45 mins", category: "staple" },
       { name: "Chicken (Curry Cut)", nameMalayalam: "കോഴിയിറച്ചി", amount: 750, unit: "g", notes: "Large pieces", category: "protein" },
@@ -220,7 +220,7 @@ export const BENGALI_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 20,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1589302168068-964664d93dc3?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Potatoes", nameMalayalam: "ഉരുളക്കിഴങ്ങ്", amount: 4, unit: "pieces", notes: "Peeled and cut into 1/2-inch cubes", category: "produce" },
       { name: "White Poppy Seeds (Posto / Khus Khus)", nameMalayalam: "കസ്കസ് (പോപ്പി സീഡ്)", amount: 4, unit: "tbsp", notes: "Soaked in warm water for 20 mins", category: "staple" },
@@ -259,7 +259,7 @@ export const BENGALI_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1540420773420-3366772f499b?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Bitter Gourd (Korola)", nameMalayalam: "കയ്പക്ക", amount: 1, unit: "piece", notes: "Thinly sliced and lightly fried", category: "produce" },
       { name: "Raw Plantain and Sweet Potato", nameMalayalam: "പച്ചക്കായ, മധുരക്കിഴങ്ങ്", amount: 200, unit: "g", notes: "Cut into batons", category: "produce" },
@@ -299,7 +299,7 @@ export const BENGALI_RECIPES: Recipe[] = [
     prepTime: 10,
     cookTime: 10,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1596797038530-2c1072296550?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Large Purple Eggplant (Gol Begun)", nameMalayalam: "വലിയ വഴുതനങ്ങ", amount: 1, unit: "large", notes: "Cut into 1/2-inch thick discs", category: "produce" },
       { name: "Turmeric Powder and Kashmiri Chili", nameMalayalam: "മഞ്ഞൾപ്പൊടിയും മുളകുപൊടിയും", amount: 1.5, unit: "tbsp", notes: "Dry rub", category: "spice" },
@@ -336,7 +336,7 @@ export const BENGALI_RECIPES: Recipe[] = [
     prepTime: 120,
     cookTime: 35,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1565557623262-b51c2513a646?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Chana Dal (Bengal Gram)", nameMalayalam: "കടലപ്പരിപ്പ്", amount: 1.5, unit: "cups", notes: "Soaked for 4 hours", category: "staple" },
       { name: "Ginger and Green Chili Paste", nameMalayalam: "ഇഞ്ചി പച്ചമുളക് അരച്ചത്", amount: 2, unit: "tbsp", notes: "For dhoka and gravy", category: "produce" },
@@ -375,7 +375,7 @@ export const BENGALI_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 20,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a5?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Rohu Fish Steaks (Rui Mach)", nameMalayalam: "റുയി മീൻ കഷണങ്ങൾ", amount: 500, unit: "g", notes: "Fresh river carp", category: "protein" },
       { name: "Potatoes (Cut into lengthwise wedges)", nameMalayalam: "ഉരുളക്കിഴങ്ങ്", amount: 2, unit: "pieces", notes: "Wedges", category: "produce" },

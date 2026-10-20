@@ -112,7 +112,7 @@ export const SOUTH_INDIAN_RECIPES: Recipe[] = [
     prepTime: 480,
     cookTime: 30,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Raw White Rice", nameMalayalam: "പച്ചരി", amount: 2, unit: "cups", notes: "Soaked for 4 hours", category: "staple" },
       { name: "Fresh Grated Coconut", nameMalayalam: "ചിരകിയ തേങ്ങ", amount: 1, unit: "cup", notes: "For batter and fresh milk", category: "produce" },
@@ -155,7 +155,7 @@ export const SOUTH_INDIAN_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Seer Fish / Kingfish Steaks", nameMalayalam: "നെയ്മീൻ കഷണങ്ങൾ", amount: 500, unit: "g", notes: "Cleaned and sliced", category: "protein" },
       { name: "Kudampuli (Malabar Tamarind)", nameMalayalam: "കുടമ്പുളി", amount: 3, unit: "pieces", notes: "Soaked in warm water", category: "produce" },
@@ -198,7 +198,7 @@ export const SOUTH_INDIAN_RECIPES: Recipe[] = [
     prepTime: 25,
     cookTime: 20,
     servings: 2,
-    imageUrl: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Whole Karimeen (Pearl Spot Fish)", nameMalayalam: "കരിമീൻ", amount: 2, unit: "pieces", notes: "Cleaned and scored with diagonal cuts", category: "protein" },
       { name: "Fresh Banana Leaves", nameMalayalam: "വാഴയില", amount: 2, unit: "pieces", notes: "Wilted over open flame for pliability", category: "produce" },
@@ -239,7 +239,7 @@ export const SOUTH_INDIAN_RECIPES: Recipe[] = [
     prepTime: 480,
     cookTime: 35,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1546833998-877b37c2e5c6?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Black Chickpeas (Kadala)", nameMalayalam: "കടല", amount: 1.5, unit: "cups", notes: "Soaked overnight for 8 hours", category: "staple" },
       { name: "Fresh Grated Coconut", nameMalayalam: "ചിരകിയ തേങ്ങ", amount: 1, unit: "cup", notes: "For roasting dark brown", category: "produce" },
@@ -280,7 +280,7 @@ export const SOUTH_INDIAN_RECIPES: Recipe[] = [
     prepTime: 10,
     cookTime: 20,
     servings: 3,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Farm Fresh Eggs", nameMalayalam: "കോഴിമുട്ട", amount: 6, unit: "pieces", notes: "Hard boiled and peeled", category: "protein" },
       { name: "Red Onions", nameMalayalam: "സവാള", amount: 3, unit: "pieces", notes: "Thinly sliced", category: "produce" },
@@ -320,7 +320,7 @@ export const SOUTH_INDIAN_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 40,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1534939561126-855b8675edd7?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Beef Chuck / Curry Cut", nameMalayalam: "പോത്തിറച്ചി", amount: 600, unit: "g", notes: "Cut into 1-inch cubes", category: "protein" },
       { name: "Coconut Bites (Thenga Kothu)", nameMalayalam: "തേങ്ങാക്കൊത്ത്", amount: 3, unit: "tbsp", notes: "Sliced coconut", category: "produce" },
@@ -360,7 +360,7 @@ export const SOUTH_INDIAN_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 30,
     servings: 6,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Raw Nendran Plantain", nameMalayalam: "നേന്ത്രക്കായ", amount: 1, unit: "piece", notes: "Cubed", category: "produce" },
       { name: "Elephant Foot Yam (Chena)", nameMalayalam: "ചേന", amount: 150, unit: "g", notes: "Diced into cubes", category: "produce" },
@@ -400,7 +400,7 @@ export const SOUTH_INDIAN_RECIPES: Recipe[] = [
     prepTime: 120,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Yellow Pumpkin (Mathanga)", nameMalayalam: "മത്തങ്ങ", amount: 300, unit: "g", notes: "Peeled and cubed", category: "produce" },
       { name: "Red Cowpeas (Vanpayar)", nameMalayalam: "വൻപയർ", amount: 0.5, unit: "cup", notes: "Soaked for 2 hours", category: "staple" },
@@ -441,7 +441,7 @@ export const SOUTH_INDIAN_RECIPES: Recipe[] = [
     prepTime: 25,
     cookTime: 35,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Country Chicken (Nattu Kozhi) or Broiler", nameMalayalam: "കോഴിയിറച്ചി", amount: 750, unit: "g", notes: "Bone-in curry pieces", category: "protein" },
       { name: "Chettinad Kalpasi (Black Stone Flower)", nameMalayalam: "കൽപ്പാസി", amount: 1, unit: "tsp", notes: "Signature Chettinad earthiness", category: "spice" },
@@ -481,7 +481,7 @@ export const SOUTH_INDIAN_RECIPES: Recipe[] = [
     prepTime: 480,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1589301760014-d929f3979dbd?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Idli Rice (Parboiled)", nameMalayalam: "ഇഡ്ഡലി അരി", amount: 3, unit: "cups", notes: "Soaked for 4 hours", category: "staple" },
       { name: "Whole White Urad Dal (Gota)", nameMalayalam: "ഉഴുന്ന്", amount: 1, unit: "cup", notes: "Fluffy stone ground", category: "staple" },
@@ -520,7 +520,7 @@ export const SOUTH_INDIAN_RECIPES: Recipe[] = [
     prepTime: 10,
     cookTime: 20,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Raw White Rice (Ponni or Sona Masoori)", nameMalayalam: "പച്ചരി", amount: 1, unit: "cup", notes: "Rinsed", category: "staple" },
       { name: "Yellow Moong Dal (Pasi Paruppu)", nameMalayalam: "ചെറുപയർ പരിപ്പ്", amount: 0.5, unit: "cup", notes: "Lightly dry-roasted", category: "staple" },
@@ -561,7 +561,7 @@ export const SOUTH_INDIAN_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996e?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Garlic Cloves (Poondu)", nameMalayalam: "വെളുത്തുള്ളി", amount: 25, unit: "pieces", notes: "Peeled whole", category: "produce" },
       { name: "Small Shallots", nameMalayalam: "ചെറിയ ഉള്ളി", amount: 15, unit: "pieces", notes: "Whole peeled", category: "produce" },
@@ -600,7 +600,7 @@ export const SOUTH_INDIAN_RECIPES: Recipe[] = [
     prepTime: 30,
     cookTime: 45,
     servings: 5,
-    imageUrl: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Seeraga Samba Rice", nameMalayalam: "ജീരക സാംബാ അരി", amount: 500, unit: "g", notes: "Short grain fragrant rice", category: "staple" },
       { name: "Tender Goat Mutton", nameMalayalam: "മട്ടൺ", amount: 700, unit: "g", notes: "Bone-in chunks", category: "protein" },
@@ -639,7 +639,7 @@ export const SOUTH_INDIAN_RECIPES: Recipe[] = [
     prepTime: 10,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1547496502-affa22d38842?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Ripe Country Tomatoes (Naatu Thakkali)", nameMalayalam: "നാടൻ തക്കാളി", amount: 3, unit: "pieces", notes: "Crushed by hand", category: "produce" },
       { name: "Cooked Toor Dal Water", nameMalayalam: "പരിപ്പുവെള്ളം", amount: 1.5, unit: "cups", notes: "Clear cooked lentil water", category: "staple" },
@@ -679,7 +679,7 @@ export const SOUTH_INDIAN_RECIPES: Recipe[] = [
     prepTime: 90,
     cookTime: 30,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Chana Dal and Toor Dal", nameMalayalam: "കടലപ്പരിപ്പും തുവരപ്പരിപ്പും", amount: 1, unit: "cup", notes: "Soaked for 1.5 hours", category: "staple" },
       { name: "Fennel Seeds (Sombu)", nameMalayalam: "പെരുംജീരകം", amount: 1, unit: "tsp", notes: "Ground in dumplings", category: "spice" },
@@ -718,7 +718,7 @@ export const SOUTH_INDIAN_RECIPES: Recipe[] = [
     prepTime: 480,
     cookTime: 30,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e47?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Raw Rice and Boiled Rice", nameMalayalam: "പച്ചരിയും പുഴുക്കലരിയും", amount: 2, unit: "cups", notes: "Coarsely ground", category: "staple" },
       { name: "Urad Dal", nameMalayalam: "ഉഴുന്ന്", amount: 1, unit: "cup", notes: "Soaked and ground", category: "staple" },
@@ -757,7 +757,7 @@ export const SOUTH_INDIAN_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 30,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Small Purple Baby Brinjals", nameMalayalam: "ചെറിയ വഴുതനങ്ങ", amount: 8, unit: "pieces", notes: "Slit in cross shape keeping stem intact", category: "produce" },
       { name: "Roasted Sesame Seeds (Ellu)", nameMalayalam: "എള്ള്", amount: 2, unit: "tbsp", notes: "Toasted", category: "spice" },
@@ -796,7 +796,7 @@ export const SOUTH_INDIAN_RECIPES: Recipe[] = [
     prepTime: 30,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Banana Blossom (Vazhaipoo)", nameMalayalam: "വാഴപ്പൂ", amount: 1, unit: "medium", notes: "Cleaned and soaked in buttermilk water to prevent darkening", category: "produce" },
       { name: "Toor Dal or Moong Dal", nameMalayalam: "പരിപ്പ്", amount: 0.25, unit: "cup", notes: "Cooked tender but firm", category: "staple" },

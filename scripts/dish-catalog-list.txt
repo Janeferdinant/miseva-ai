@@ -1,0 +1,235 @@
+// MAIN RECIPES (140)
+"kerala-avial": "", // [Kerala] Traditional Kerala Sadya Avial
+"kerala-thalassery-biryani": "", // [Kerala] Malabar Thalassery Dum Biryani
+"kerala-palappam-stew": "", // [Kerala] Palappam with Kerala Vegetable Stew
+"kerala-fish-curry": "", // [Kerala] Kerala Nadan Meen Curry (Kudampuli)
+"kerala-karimeen-pollichathu": "", // [Kerala] Karimeen Pollichathu in Banana Leaf
+"kerala-kadala-curry": "", // [Kerala] Kerala Black Chickpea Kadala Curry
+"kerala-egg-roast": "", // [Kerala] Nadan Mutta Roast (Kerala Egg Roast)
+"kerala-beef-ularthiyathu": "", // [Kerala] Kerala Beef Ularthiyathu (Slow Roast)
+"kerala-kalan": "", // [Kerala] Traditional Kerala Sadya Kaalan
+"kerala-erissery": "", // [Kerala] Mathanga Vanpayar Erissery (Pumpkin & Red Beans)
+"tn-chettinad-chicken": "", // [Tamil Nadu] Chettinad Pepper Chicken Curry
+"tn-madurai-idli-vada": "", // [Tamil Nadu] Madurai Mallipoo Idli & Crispy Medu Vada
+"tn-ven-pongal": "", // [Tamil Nadu] Traditional Ghee Ven Pongal
+"tn-kara-kuzhambu": "", // [Tamil Nadu] Chettinad Poondu Kara Kuzhambu (Garlic Curry)
+"tn-ambur-biryani": "", // [Tamil Nadu] Ambur Star Mutton Dum Biryani
+"tn-thanjavur-rasam": "", // [Tamil Nadu] Thanjavur Traditional Tomato Pepper Rasam
+"tn-paruppu-urundai": "", // [Tamil Nadu] Paruppu Urundai Kuzhambu (Lentil Dumpling Curry)
+"tn-kanchipuram-idli": "", // [Tamil Nadu] Kanchipuram Temple Idli
+"tn-ennai-kathirikai": "", // [Tamil Nadu] Ennai Kathirikai Kuzhambu (Stuffed Baby Eggplant)
+"tn-vazhaipoo-poriyal": "", // [Tamil Nadu] Vazhaipoo Poriyal (Banana Blossom Stir-Fry)
+"kar-bisi-bele-bath": "", // [Karnataka] Karnataka Bisi Bele Bath
+"kar-neer-dosa": "", // [Karnataka] Mangalorean Neer Dosa with Coconut Chutney
+"kar-kori-rotti": "", // [Karnataka] Mangalorean Kori Rotti (Crispy Wafers with Chicken Curry)
+"kar-mysore-masala-dosa": "", // [Karnataka] Mysore Masala Dosa with Spicy Red Chutney
+"kar-maddur-vada": "", // [Karnataka] Crispy Maddur Vada
+"kar-udupi-sambar": "", // [Karnataka] Authentic Udupi Temple Sambar
+"kar-kundapura-chicken": "", // [Karnataka] Kundapura Koli Saaru (Coastal Ghee Chicken Curry)
+"kar-benne-dosa": "", // [Karnataka] Davangere Benne Dosa (Butter Dosa)
+"kar-ragi-mudde": "", // [Karnataka] Karnataka Ragi Mudde with Soppina Saaru
+"kar-coorg-pandi-curry": "", // [Karnataka] Traditional Coorg Pandi Curry (Kachampuli Pork)
+"ap-hyderabadi-biryani": "", // [Andhra & Telangana] Hyderabadi Kachchi Gosht Dum Biryani
+"ap-gongura-mamsam": "", // [Andhra & Telangana] Andhra Gongura Mamsam (Mutton with Sorrel Leaves)
+"ap-mirchi-ka-salan": "", // [Andhra & Telangana] Hyderabadi Mirchi Ka Salan (Chili Peanut Gravy)
+"ap-pesarattu": "", // [Andhra & Telangana] Andhra MLA Pesarattu with Allam Pachadi
+"ap-royyala-vepudu": "", // [Andhra & Telangana] Andhra Royyala Vepudu (Spicy Prawn Roast)
+"ap-gutti-vankaya": "", // [Andhra & Telangana] Andhra Gutti Vankaya Kura (Stuffed Eggplant)
+"ap-natu-kodi-pulusu": "", // [Andhra & Telangana] Rayalaseema Natu Kodi Pulusu (Country Chicken Stew)
+"ap-hyderabadi-haleem": "", // [Andhra & Telangana] Hyderabadi Shahi Haleem
+"ap-tomato-pappu": "", // [Andhra & Telangana] Andhra Tomato Pappu with Ghee Tadka
+"ap-gongura-pachadi": "", // [Andhra & Telangana] Traditional Andhra Gongura Pachadi
+"pun-butter-chicken": "", // [Punjabi] Classic Murgh Makhani (Butter Chicken)
+"pun-dal-makhani": "", // [Punjabi] Slow-Simmered Punjabi Dal Makhani
+"pun-sarson-saag": "", // [Punjabi] Sarson Da Saag with Makki Di Roti
+"pun-amritsari-chole": "", // [Punjabi] Amritsari Pindi Chole & Puffy Bhature
+"pun-paneer-tikka-masala": "", // [Punjabi] Punjabi Paneer Tikka Masala
+"pun-rajma-chawal": "", // [Punjabi] Punjabi Dhaba Rajma with Steamed Jeera Rice
+"pun-kadhi-pakora": "", // [Punjabi] Punjabi Dahi Kadhi Pakora
+"pun-pindi-chana": "", // [Punjabi] Rawalpindi Style Pindi Chana
+"pun-amritsari-kulcha": "", // [Punjabi] Amritsari Aloo Pyaz Kulcha with Imli Chutney
+"pun-shahi-paneer": "", // [Punjabi] Shahi Paneer in Saffron Nut Gravy
+"mah-misal-pav": "", // [Maharashtrian] Kolhapuri Kat/Rassa Misal Pav
+"mah-puran-poli": "", // [Maharashtrian] Maharashtrian Puran Poli with Katachi Amti
+"mah-kanda-poha": "", // [Maharashtrian] Maharashtrian Kanda Batata Poha
+"mah-vada-pav": "", // [Maharashtrian] Mumbai Street Vada Pav with Dry Garlic Chutney
+"mah-malvani-fish": "", // [Maharashtrian] Malvani Surmai Fish Curry (Konkani Style)
+"mah-sabudana-khichdi": "", // [Maharashtrian] Maharashtrian Sabudana Khichdi
+"mah-bharli-vangi": "", // [Maharashtrian] Maharashtrian Bharli Vangi (Stuffed Brinjal)
+"mah-pitla-bhakri": "", // [Maharashtrian] Maharashtrian Pitla with Jowar Bhakri
+"mah-thalipeeth": "", // [Maharashtrian] Maharashtrian Bhajani Thalipeeth with White Butter
+"mah-pav-bhaji": "", // [Maharashtrian] Mumbai Butter Pav Bhaji
+"guj-surti-undhiyu": "", // [Gujarati] Authentic Surti Undhiyu
+"guj-khaman-dhokla": "", // [Gujarati] Gujarati Nylon Khaman Dhokla
+"guj-gujarati-kadhi": "", // [Gujarati] Sweet & Sour Gujarati Kadhi
+"guj-handvo": "", // [Gujarati] Gujarati Baked Vegetable Handvo
+"guj-methi-thepla": "", // [Gujarati] Gujarati Methi Thepla (Spiced Travel Flatbread)
+"guj-sev-tameta": "", // [Gujarati] Kathiyawadi Sev Tameta Nu Shaak
+"guj-dal-dhokli": "", // [Gujarati] One-Pot Gujarati Dal Dhokli
+"guj-fafda-sambharo": "", // [Gujarati] Gujarati Crispy Fafda with Raw Papaya Sambharo
+"guj-ringan-olo": "", // [Gujarati] Kathiyawadi Ringan No Olo (Smoked Eggplant Mash)
+"guj-vaghareli-khichdi": "", // [Gujarati] Gujarati Vaghareli Khichdi with Kadhi
+"ben-kosha-mangsho": "", // [Bengali] Kolkata Kosha Mangsho with Puffy Luchi
+"ben-shorshe-ilish": "", // [Bengali] Authentic Shorshe Ilish (Hilsa in Mustard Gravy)
+"ben-chingri-malai": "", // [Bengali] Bengali Chingri Malai Curry (Prawns in Coconut Cream)
+"ben-chholar-dal": "", // [Bengali] Bengali Chholar Dal with Coconut & Hing
+"ben-kolkata-biryani": "", // [Bengali] Kolkata Awadhi Chicken Biryani with Potato & Egg
+"ben-aloo-posto": "", // [Bengali] Traditional Bengali Aloo Posto
+"ben-shukto": "", // [Bengali] Traditional Bengali Shukto (Bitter-Sweet Stew)
+"ben-baigun-bhaja": "", // [Bengali] Bengali Begun Bhaja (Turmeric Spiced Eggplant)
+"ben-dhokar-dalna": "", // [Bengali] Bengali Dhokar Dalna (Lentil Cake Curry)
+"ben-macher-jhol": "", // [Bengali] Traditional Bengali Rui Macher Jhol
+"ita-risotto-funghi": "", // [Italian] Risotto ai Funghi Porcini (Wild Mushroom Risotto)
+"ita-margherita-pizza": "", // [Italian] Classic Neapolitan Margherita Pizza
+"ita-carbonara": "", // [Italian] Traditional Spaghetti alla Carbonara
+"ita-tagliatelle-bolognese": "", // [Italian] Tagliatelle al Ragù Bolognese
+"ita-penne-arrabbiata": "", // [Italian] Classic Penne all'Arrabbiata
+"ita-lasagna-bolognese": "", // [Italian] Classic Lasagna alla Bolognese
+"ita-osso-buco": "", // [Italian] Osso Buco alla Milanese with Gremolata
+"ita-fettuccine-alfredo": "", // [Italian] Traditional Roman Fettuccine Alfredo
+"ita-gnocchi-pesto": "", // [Italian] Handcrafted Gnocchi di Patate al Pesto Genovese
+"ita-minestrone": "", // [Italian] Classic Italian Minestrone Soup with Cannellini
+"jap-shoyu-ramen": "", // [Japanese] Tokyo Style Shoyu Ramen with Chashu
+"jap-chicken-katsu": "", // [Japanese] Crispy Chicken Katsu with Japanese Curry
+"jap-miso-soup": "", // [Japanese] Authentic Miso Soup with Tofu & Wakame
+"jap-teriyaki-chicken": "", // [Japanese] Authentic Japanese Chicken Teriyaki Donburi
+"jap-vegetable-tempura": "", // [Japanese] Crispy Vegetable Tempura with Tentsuyu Dip
+"jap-salmon-nigiri": "", // [Japanese] Handcrafted Salmon Nigiri & Spicy Tuna Roll
+"jap-okonomiyaki": "", // [Japanese] Osaka Style Cabbage Okonomiyaki
+"jap-beef-gyudon": "", // [Japanese] Traditional Japanese Beef Gyudon Bowl
+"jap-tempura-udon": "", // [Japanese] Traditional Japanese Tempura Udon Soup
+"jap-yakitori": "", // [Japanese] Authentic Charcoal Grilled Chicken Yakitori
+"mex-tacos-al-pastor": "", // [Mexican] Tacos al Pastor with Charred Pineapple
+"mex-guacamole-totopos": "", // [Mexican] Guacamole Tradicional with Crisp Totopos
+"mex-enchiladas-verdes": "", // [Mexican] Enchiladas Verdes Suizas con Pollo
+"mex-chiles-en-nogada": "", // [Mexican] Chiles en Nogada (Poblano in Walnut Sauce)
+"mex-pozole-rojo": "", // [Mexican] Pozole Rojo Traditional Hominy Broth
+"mex-birria-de-res": "", // [Mexican] Birria de Res with Rich Dip Consomé
+"mex-sopa-azteca": "", // [Mexican] Sopa Azteca (Smoky Tortilla Soup)
+"mex-elote-callejero": "", // [Mexican] Elote Asado Callejero (Mexican Street Corn)
+"mex-quesadillas-hongos": "", // [Mexican] Crispy Mushroom & Epazote Quesadillas
+"mex-huevos-rancheros": "", // [Mexican] Huevos Rancheros (Ranch-Style Fried Eggs)
+"chn-mapo-tofu": "", // [Chinese] Authentic Sichuan Mapo Tofu (麻婆豆腐)
+"chn-kung-pao-chicken": "", // [Chinese] Authentic Kung Pao Chicken (宫保鸡丁)
+"chn-cantonese-shumai": "", // [Chinese] Cantonese Dim Sum Pork & Shrimp Shumai (烧麦)
+"chn-peking-duck-wraps": "", // [Chinese] Traditional Peking Duck with Mandarin Pancakes (北京烤鸭)
+"chn-dan-dan-noodles": "", // [Chinese] Sichuan Dan Dan Noodles (担担面)
+"chn-yangchow-fried-rice": "", // [Chinese] Traditional Yangchow Wok Fried Rice (扬州炒饭)
+"chn-sweet-sour-fish": "", // [Chinese] Crispy Sweet & Sour Fish (Songshu Yu / 松鼠鱼)
+"chn-steamed-ginger-scallion-fish": "", // [Chinese] Cantonese Steamed Fish with Ginger & Scallions (清蒸鱼)
+"chn-wonton-soup": "", // [Chinese] Silky Pork & Prawn Wonton Soup (云吞汤)
+"chn-char-siu-chicken": "", // [Chinese] Cantonese Honey-Glazed Char Siu Chicken (叉烧)
+"tha-tom-yum-goong": "", // [Thai] Authentic Tom Yum Goong (ต้มยำกุ้ง)
+"tha-pad-thai-boran": "", // [Thai] Authentic Pad Thai Boran (ผัดไทยโบราณ)
+"tha-green-curry": "", // [Thai] Gaeng Keow Wan Gai (Thai Green Chicken Curry)
+"tha-massaman-curry": "", // [Thai] Royal Massaman Beef Curry with Potatoes (แกงมัสมั่น)
+"tha-som-tum": "", // [Thai] Som Tum Thai (Green Papaya Salad / ส้มตำไทย)
+"tha-pad-kra-pao": "", // [Thai] Pad Kra Pao Gai with Crispy Fried Egg (ผัดกะเพราไก่)
+"tha-tom-kha-gai": "", // [Thai] Tom Kha Gai (Coconut Galangal Chicken Soup / ต้มข่าไก่)
+"tha-red-curry": "", // [Thai] Gaeng Phed (Thai Red Curry with Roasted Duck / แกงเผ็ด)
+"tha-khao-soi": "", // [Thai] Khao Soi Chiang Mai Curry Noodles (ข้าวซอยไก่)
+"tha-pineapple-fried-rice": "", // [Thai] Khao Pad Sapparod (Pineapple Fried Rice / ข้าวผัดสับปะรด)
+"mde-hummus-bil-tahini": "", // [Middle Eastern] Traditional Creamy Hummus Bil Tahini (حمص بالطحينة)
+"mde-falafel-tahini": "", // [Middle Eastern] Golden Crispy Herbaceous Falafel (فلافل)
+"mde-shish-tawook": "", // [Middle Eastern] Lebanese Grilled Chicken Shish Tawook (شيش طاووق)
+"mde-shakshuka-feta": "", // [Middle Eastern] Classic Cast-Iron Shakshuka with Feta (شكشوكة)
+"mde-tabbouleh-salad": "", // [Middle Eastern] Authentic Levantine Parsley Tabbouleh (تبولة)
+"mde-lamb-kofta": "", // [Middle Eastern] Charred Spiced Lamb Kofta Kebabs (كفتة لحم)
+"mde-baba-ghanoush": "", // [Middle Eastern] Smoky Charred Eggplant Baba Ghanoush (بابا غنوج)
+"mde-jordanian-mansaf": "", // [Middle Eastern] Jordanian Royal Lamb Mansaf with Jameed (منسف أردني)
+"mde-fattoush-salad": "", // [Middle Eastern] Crisp Fattoush Salad with Pomegranate Molasses (فتوش)
+"mde-chicken-shawarma": "", // [Middle Eastern] Authentic Spiced Chicken Shawarma Platter (شاورما دجاج)
+
+// DESSERTS (40)
+"des-palada-pradhaman": "", // [payasam-pradhaman] Palada Pradhaman (Rich Condensed Milk Payasam)
+"des-ada-pradhaman": "", // [payasam-pradhaman] Traditional Ada Pradhaman with Dark Jaggery & Coconut Milk
+"des-parippu-payasam": "", // [payasam-pradhaman] Cherupayar Parippu Payasam (Moong Dal Payasam)
+"des-semiya-payasam": "", // [payasam-pradhaman] Roasted Vermicelli Semiya Payasam with Condensed Milk
+"des-paal-payasam": "", // [payasam-pradhaman] Ambalapuzha-Style Paal Payasam (Temple Pink Rice Pudding)
+"des-pazham-pradhaman": "", // [payasam-pradhaman] Nendran Pazham Pradhaman (Ripe Banana Payasam)
+"des-gothambu-payasam": "", // [payasam-pradhaman] Nurukku Gothambu Payasam (Broken Wheat Jaggery Payasam)
+"des-kadala-payasam": "", // [payasam-pradhaman] Kadala Parippu Payasam (Bengal Gram Jaggery Payasam)
+"des-aval-payasam": "", // [payasam-pradhaman] Aval Payasam (Beaten Rice & Jaggery Pudding)
+"des-chakka-pradhaman": "", // [payasam-pradhaman] Authentic Chakka Pradhaman (Jackfruit Preserve Pradhaman)
+"des-gulab-jamun": "", // [traditional-mithai] Melt-in-Mouth Khoya Gulab Jamun in Rose-Cardamom Syrup
+"des-rasmalai": "", // [traditional-mithai] Royal Bengali Rasmalai in Saffron-Pistachio Cream
+"des-jalebi": "", // [traditional-mithai] Crispy Saffron Jalebi (Spiral Syrupy Pretzels)
+"des-mysore-pak": "", // [traditional-mithai] Melt-in-Mouth Ghee Mysore Pak (South Indian Royal Fudge)
+"des-ukadiche-modak": "", // [traditional-mithai] Steamed Ukadiche Modak (Ganesh Chaturthi Special)
+"des-besan-ladoo": "", // [traditional-mithai] Danedar Besan Ladoo with Cardamom & Pistachios
+"des-kaju-katli": "", // [traditional-mithai] Silver-Leaf Kaju Katli (Cashew Nut Diamond Fudge)
+"des-motichoor-ladoo": "", // [traditional-mithai] Shahi Saffron Motichoor Ladoo (Tiny Pearl Ladoos)
+"des-gajar-halwa": "", // [traditional-mithai] Shahi Gajar Ka Halwa (Slow-Cooked Red Carrot Halwa)
+"des-sandesh": "", // [traditional-mithai] Traditional Bengali Nolen Gur Sandesh (Date Palm Fudge)
+"des-kerala-plum-cake": "", // [cakes-bakes] Traditional Kerala Christmas Plum Cake (Spiced Rich Fruit Cake)
+"des-fudgy-brownies": "", // [cakes-bakes] Classic Fudgy Dark Chocolate Brownies (Crinkly Top)
+"des-ny-cheesecake": "", // [cakes-bakes] Classic New York Baked Cheesecake with Berry Compote
+"des-cardamom-tea-cake": "", // [cakes-bakes] Cardamom & Pistachio Saffron Tea Cake
+"des-apple-crumble": "", // [cakes-bakes] Warm Cinnamon Apple Crumble with Vanilla Ice Cream
+"des-butter-croissants": "", // [cakes-bakes] French All-Butter Flaky Croissants (Viennoiserie)
+"des-red-velvet-cupcakes": "", // [cakes-bakes] Classic Red Velvet Cupcakes with Cream Cheese Swirl
+"des-banana-walnut-bread": "", // [cakes-bakes] Moist Banana Walnut Loaf Bread with Cinnamon
+"des-creme-brulee": "", // [cakes-bakes] Classic French Vanilla Bean Crème Brûlée
+"des-molten-lava-cake": "", // [cakes-bakes] Molten Dark Chocolate Lava Cake (Fondant au Chocolat)
+"des-italian-tiramisu": "", // [global-desserts] Authentic Italian Tiramisù Classico (Treviso Style)
+"des-vanilla-panna-cotta": "", // [global-desserts] Silky Vanilla Bean Panna Cotta with Raspberry Coulis
+"des-pistachio-baklava": "", // [global-desserts] Crispy Pistachio Honey Baklava (40 Phyllo Layers)
+"des-cheesy-kunafa": "", // [global-desserts] Traditional Cheesy Kunafa Nabulsia with Orange Blossom Syrup
+"des-strawberry-mochi": "", // [global-desserts] Japanese Ichigo Daifuku (Fresh Strawberry Mochi)
+"des-cinnamon-churros": "", // [global-desserts] Crispy Spanish Cinnamon-Sugar Churros with Warm Chocolate Dip
+"des-chocolate-eclairs": "", // [global-desserts] French Chocolate Glazed Éclairs with Vanilla Crème Pâtissière
+"des-tres-leches-cake": "", // [global-desserts] Mexican Pastel de Tres Leches (Three-Milk Sponge Cake)
+"des-turkish-delight": "", // [global-desserts] Traditional Rosewater Turkish Delight (Lokum)
+"des-matcha-souffle-cheesecake": "", // [global-desserts] Japanese Matcha Green Tea Soufflé Cotton Cheesecake
+
+// BEVERAGES (50)
+"bev-sweet-lime-ginger": "", // [fresh-juices] Kerala Sweet Lime (Mosambi) & Ginger Crush
+"bev-pomegranate-mint": "", // [fresh-juices] Ruby Pomegranate & Mint Cold-Press Elixir
+"bev-watermelon-basil": "", // [fresh-juices] Tropical Watermelon & Thai Basil Cooler
+"bev-abc-detox": "", // [fresh-juices] Classic ABC Detox Juice (Apple, Beetroot, Carrot)
+"bev-pineapple-pink-pepper": "", // [fresh-juices] Crushed Pineapple & Pink Peppercorn Cold Juice
+"bev-orange-juice": "", // [fresh-juices] Pure Cold-Pressed Valencia Orange Juice
+"bev-cucumber-celery": "", // [fresh-juices] Cooling Green Cucumber, Celery & Lemon Juice
+"bev-papaya-passionfruit": "", // [fresh-juices] Tropical Red Papaya & Passion Fruit Nectar
+"bev-amla-honey": "", // [fresh-juices] Fresh Amla (Indian Gooseberry) & Honey Immunity Shot
+"bev-guava-chili": "", // [fresh-juices] Ripe Pink Guava & Bird's Eye Chili Spicy Cooler
+"bev-sharjah-shake": "", // [smoothies-shakes] Authentic Malabar Sharjah Shake (Creamy Banana Horlicks)
+"bev-mango-mastani": "", // [smoothies-shakes] Pune Royal Alphonso Mango Mastani Shake
+"bev-chikoo-date-shake": "", // [smoothies-shakes] Chikoo (Sapota) & Medjool Date Energizer Shake
+"bev-blueberry-smoothie": "", // [smoothies-shakes] Wild Blueberry & Greek Yogurt Antioxidant Smoothie
+"bev-avocado-honey-smoothie": "", // [smoothies-shakes] Creamy Hass Avocado & Honey Green Smoothie
+"bev-strawberry-banana-smoothie": "", // [smoothies-shakes] Classic Strawberry Banana Protein Smoothie
+"bev-kesar-pista-shake": "", // [smoothies-shakes] Royal Kesar Pista Badam Shake (Saffron Pistachio Milk)
+"bev-peanut-butter-cacao": "", // [smoothies-shakes] Creamy Peanut Butter & Raw Cacao Power Shake
+"bev-tender-coconut-shake": "", // [smoothies-shakes] Malabar Tender Coconut (Elaneer) Pudding Shake
+"bev-berry-chia-smoothie": "", // [smoothies-shakes] Mixed Berry & Chia Seed Breakfast Smoothie
+"bev-kulukki-sarbath": "", // [traditional-refreshers] Spicy Malabar Kulukki Sarbath (Shaken Chili Lemonade)
+"bev-sambharam": "", // [traditional-refreshers] Traditional Kerala Sambharam (Moru / Spiced Buttermilk)
+"bev-nannari-sarbath": "", // [traditional-refreshers] Herbal Nannari Sarbath (Indian Sarsaparilla Root Cooler)
+"bev-punjabi-lassi": "", // [traditional-refreshers] Authentic Punjabi Sweet Lassi with Thick Malai Layer
+"bev-solkadhi": "", // [traditional-refreshers] Konkan Pink Solkadhi (Kokum & Coconut Digestive Drink)
+"bev-aam-panna": "", // [traditional-refreshers] Smoky Roasted Raw Mango Aam Panna
+"bev-madurai-jigarthanda": "", // [traditional-refreshers] Famous Madurai Royal Jigarthanda (Almond Gum Cooler)
+"bev-festive-thandai": "", // [traditional-refreshers] Shahi Banarasi Kesar Thandai (Spiced Holi Milk)
+"bev-bel-sharbat": "", // [traditional-refreshers] Traditional Ayurvedic Bel Ka Sharbat (Wood Apple Cooler)
+"bev-rose-milk-sabja": "", // [traditional-refreshers] Vintage South Indian Rose Milk with Sabja Seeds
+"bev-blue-curacao-fizz": "", // [mocktails-lemonades] Ocean Blue Curaçao Sparkling Citrus Fizz
+"bev-mint-mojito": "", // [mocktails-lemonades] Classic Virgin Mint & Cuban Lime Mojito
+"bev-spicy-guava-mary": "", // [mocktails-lemonades] Spicy Pink Guava Mary with Red Chili-Chaat Rim
+"bev-hibiscus-ginger": "", // [mocktails-lemonades] Crimson Hibiscus (Zobo / Sorrel) Ginger Blossom Cooler
+"bev-shikanji-lemonade": "", // [mocktails-lemonades] Delhi Street Masala Shikanji (Spiced Sparkling Lemonade)
+"bev-passion-fruit-spritzer": "", // [mocktails-lemonades] Kerala Passion Fruit & Jalapeño Sparkling Spritzer
+"bev-cucumber-rosemary-tonic": "", // [mocktails-lemonades] Cucumber Ribbon & Charred Rosemary Botanical Tonic
+"bev-pomegranate-fizz": "", // [mocktails-lemonades] Pomegranate & Rosemary Sparkling Holiday Fizz
+"bev-orange-cranberry-sunrise": "", // [mocktails-lemonades] Sunrise Orange & Cranberry Layered Mocktail
+"bev-lychee-lemongrass": "", // [mocktails-lemonades] Chilled Lychee & Lemongrass Sparkling Elixir
+"bev-kumbakonam-filter-coffee": "", // [teas-coffees] Authentic Kumbakonam Degree Filter Coffee
+"bev-mumbai-cutting-chai": "", // [teas-coffees] Authentic Mumbai Tapri Cutting Chai (Ginger-Cardamom)
+"bev-malabar-sulaimani": "", // [teas-coffees] Traditional Malabar Sulaimani (Spiced Black Tea with Lemon)
+"bev-kashmiri-noon-chai": "", // [teas-coffees] Kashmiri Noon Chai (Sheer Chai / Pink Salted Tea)
+"bev-matcha-latte": "", // [teas-coffees] Ceremonial Uji Matcha Green Tea Latte
+"bev-iced-cafe-con-leche": "", // [teas-coffees] Spanish Iced Café con Leche (Sweet Chilled Espresso)
+"bev-turkish-coffee": "", // [teas-coffees] Authentic Stovetop Turkish Cardamom Coffee (Türk Kahvesi)
+"bev-vietnamese-iced-coffee": "", // [teas-coffees] Vietnamese Iced Coffee (Cà Phê Sữa Đá)
+"bev-darjeeling-first-flush": "", // [teas-coffees] Darjeeling First Flush (Champagne of Teas)
+"bev-lemongrass-ginger-kadha": "", // [teas-coffees] Ayurvedic Lemongrass, Ginger & Tulsi Kadha (Herbal Infusion)

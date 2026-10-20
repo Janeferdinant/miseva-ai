@@ -20,7 +20,7 @@ export const MAHARASHTRA_GUJARAT_RECIPES: Recipe[] = [
     prepTime: 240,
     cookTime: 30,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Sprouted Moth Beans (Matki)", nameMalayalam: "മുളപ്പിച്ച പയർ", amount: 2, unit: "cups", notes: "Sprouted for 24 hours", category: "staple" },
       { name: "Mixed Farsan / Chivda", nameMalayalam: "ഫർസാൻ (മിക്സ്ചർ)", amount: 1.5, unit: "cups", notes: "Crunchy topping", category: "produce" },
@@ -60,7 +60,7 @@ export const MAHARASHTRA_GUJARAT_RECIPES: Recipe[] = [
     prepTime: 60,
     cookTime: 30,
     servings: 6,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1565557623262-b51c2513a643?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Chana Dal (Bengal Gram)", nameMalayalam: "കടലപ്പരിപ്പ്", amount: 1.5, unit: "cups", notes: "Cooked soft and drained", category: "staple" },
       { name: "Organic Jaggery (Gul)", nameMalayalam: "ശർക്കര", amount: 1.5, unit: "cups", notes: "Grated", category: "condiment" },
@@ -98,7 +98,7 @@ export const MAHARASHTRA_GUJARAT_RECIPES: Recipe[] = [
     prepTime: 10,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1610192244264-3f33de3f55e7?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Thick Flattened Rice (Jada Poha)", nameMalayalam: "തടി അവൽ", amount: 3, unit: "cups", notes: "Rinsed and drained", category: "staple" },
       { name: "Diced Potatoes (Batata)", nameMalayalam: "ഉരുളക്കിഴങ്ങ്", amount: 1, unit: "cup", notes: "Finely cubed", category: "produce" },
@@ -138,7 +138,7 @@ export const MAHARASHTRA_GUJARAT_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 20,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e4a?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Boiled and Mashed Potatoes", nameMalayalam: "ഉരുളക്കിഴങ്ങ് ഉടച്ചത്", amount: 3, unit: "cups", notes: "Tempered with mustard and turmeric", category: "produce" },
       { name: "Chickpea Flour (Besan)", nameMalayalam: "കടലപ്പൊടി", amount: 1.5, unit: "cups", notes: "For dipping batter", category: "staple" },
@@ -177,7 +177,7 @@ export const MAHARASHTRA_GUJARAT_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 20,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a3?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Surmai (Kingfish / Seer Fish) Steaks", nameMalayalam: "നെയ്മീൻ", amount: 500, unit: "g", notes: "Cleaned steaks", category: "protein" },
       { name: "Fresh Grated Coconut", nameMalayalam: "ചിരകിയ തേങ്ങ", amount: 1.5, unit: "cups", notes: "Finely ground", category: "produce" },
@@ -216,7 +216,7 @@ export const MAHARASHTRA_GUJARAT_RECIPES: Recipe[] = [
     prepTime: 360,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1601050690597-df0568f70953?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Tapioca Pearls (Sabudana)", nameMalayalam: "സാബുദാന", amount: 2, unit: "cups", notes: "Soaked for 6 hours until soft to center", category: "staple" },
       { name: "Roasted Peanuts (Coarsely Crushed)", nameMalayalam: "നിലക്കടല പൊടിച്ചത്", amount: 1, unit: "cup", notes: "Coarse peanut powder", category: "produce" },
@@ -255,7 +255,7 @@ export const MAHARASHTRA_GUJARAT_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1596797038530-2c107229654e?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Baby Eggplants (Vangi)", nameMalayalam: "ചെറിയ വഴുതനങ്ങ", amount: 8, unit: "pieces", notes: "Slit in cross shape with stems intact", category: "produce" },
       { name: "Roasted Peanuts (Ground)", nameMalayalam: "നിലക്കടല പൊടിച്ചത്", amount: 0.5, unit: "cup", notes: "Stuffing", category: "produce" },
@@ -295,7 +295,7 @@ export const MAHARASHTRA_GUJARAT_RECIPES: Recipe[] = [
     prepTime: 10,
     cookTime: 20,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1589302168068-964664d93dc2?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Gram Flour (Besan)", nameMalayalam: "കടലപ്പൊടി", amount: 1, unit: "cup", notes: "Whisked with water", category: "staple" },
       { name: "Garlic Cloves (Crushed)", nameMalayalam: "വെളുത്തുള്ളി", amount: 12, unit: "pieces", notes: "Generous garlic", category: "produce" },
@@ -335,7 +335,7 @@ export const MAHARASHTRA_GUJARAT_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1509440159596-0249088772fe?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Thalipeeth Bhajani Flour", nameMalayalam: "താലിപീത്ത് ഭജനി പൊടി", amount: 2, unit: "cups", notes: "Roasted multigrain and lentil blend", category: "staple" },
       { name: "Finely Chopped Red Onions", nameMalayalam: "സവാള", amount: 1, unit: "cup", notes: "Chopped", category: "produce" },
@@ -374,7 +374,7 @@ export const MAHARASHTRA_GUJARAT_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1606491956689-2ea866880c85?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Boiled Vegetables (Potatoes, Peas, Cauliflower)", nameMalayalam: "ഉരുളക്കിഴങ്ങ്, ഗ്രീൻപീസ്, കോളിഫ്ലവർ", amount: 3, unit: "cups", notes: "Boiled tender", category: "produce" },
       { name: "Finely Chopped Red Capsicum", nameMalayalam: "കുടമുളക്", amount: 1, unit: "cup", notes: "Adds crunch and sweetness", category: "produce" },
@@ -417,7 +417,7 @@ export const MAHARASHTRA_GUJARAT_RECIPES: Recipe[] = [
     prepTime: 40,
     cookTime: 50,
     servings: 6,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a19972?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Surti Papdi (Flat Beans)", nameMalayalam: "അമരപ്പയർ", amount: 300, unit: "g", notes: "Stringed and halved", category: "produce" },
       { name: "Purple Yam (Kand)", nameMalayalam: "കാച്ചിൽ (ചേന)", amount: 200, unit: "g", notes: "Cubed and fried lightly", category: "produce" },
@@ -457,7 +457,7 @@ export const MAHARASHTRA_GUJARAT_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 20,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e4b?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Gram Flour (Fine Besan)", nameMalayalam: "കടലപ്പൊടി", amount: 2, unit: "cups", notes: "Sifted", category: "staple" },
       { name: "Eno Fruit Salt / Citric Acid", nameMalayalam: "ഇനോ / സിട്രിക് ആസിഡ്", amount: 1, unit: "tbsp", notes: "Leavening agent", category: "condiment" },
@@ -496,7 +496,7 @@ export const MAHARASHTRA_GUJARAT_RECIPES: Recipe[] = [
     prepTime: 10,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1601050690597-df0568f70954?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Fresh Curd (Dahi)", nameMalayalam: "തൈര്", amount: 1, unit: "cup", notes: "Whisked smooth", category: "dairy" },
       { name: "Besan (Gram Flour)", nameMalayalam: "കടലപ്പൊടി", amount: 2, unit: "tbsp", notes: "Whisked with curd", category: "staple" },
@@ -536,7 +536,7 @@ export const MAHARASHTRA_GUJARAT_RECIPES: Recipe[] = [
     prepTime: 480,
     cookTime: 35,
     servings: 6,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1565557623262-b51c2513a644?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Handvo Flour (Rice, Chana, Toor, Urad Dal)", nameMalayalam: "ഹാൻഡ്‌വോ പൊടി", amount: 2, unit: "cups", notes: "Coarsely ground", category: "staple" },
       { name: "Sour Curd (Yogurt)", nameMalayalam: "തൈര്", amount: 0.5, unit: "cup", notes: "For fermentation", category: "dairy" },
@@ -575,7 +575,7 @@ export const MAHARASHTRA_GUJARAT_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1509440159596-0249088772fd?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Whole Wheat Flour (Atta)", nameMalayalam: "ഗോതമ്പുപൊടി", amount: 2, unit: "cups", notes: "Finely ground", category: "staple" },
       { name: "Fresh Methi Leaves (Fenugreek)", nameMalayalam: "ഉലുവയില", amount: 1.5, unit: "cups", notes: "Washed and finely chopped", category: "produce" },
@@ -614,7 +614,7 @@ export const MAHARASHTRA_GUJARAT_RECIPES: Recipe[] = [
     prepTime: 10,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1546833998-877b37c2e5ca?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Ripe Red Tomatoes", nameMalayalam: "തക്കാളി", amount: 5, unit: "pieces", notes: "Roughly chopped", category: "produce" },
       { name: "Thick Sev (Gathiya / Ratlami Sev)", nameMalayalam: "കാരസേവ് / ഘാത്തിയ", amount: 1.5, unit: "cups", notes: "Crunchy topping", category: "staple" },
@@ -653,7 +653,7 @@ export const MAHARASHTRA_GUJARAT_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a19973?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Toor Dal (Pigeon Peas)", nameMalayalam: "തുവരപ്പരിപ്പ്", amount: 1, unit: "cup", notes: "Pressure cooked soft", category: "staple" },
       { name: "Whole Wheat Flour (Atta)", nameMalayalam: "ഗോതമ്പുപൊടി", amount: 1, unit: "cup", notes: "For dhokli dough", category: "staple" },
@@ -694,7 +694,7 @@ export const MAHARASHTRA_GUJARAT_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 20,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1565557623262-b51c2513a645?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Besan (Gram Flour)", nameMalayalam: "കടലപ്പൊടി", amount: 2, unit: "cups", notes: "Fine quality", category: "staple" },
       { name: "Papad Khar / Baking Soda", nameMalayalam: "പാപ്പഡ് ഖാർ", amount: 0.5, unit: "tsp", notes: "For melt-in-mouth crispness", category: "condiment" },
@@ -733,7 +733,7 @@ export const MAHARASHTRA_GUJARAT_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1596797038530-2c107229654f?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Large Purple Eggplants (Bharta Baingan)", nameMalayalam: "വലിയ വഴുതനങ്ങ", amount: 2, unit: "pieces", notes: "Fire roasted and peeled", category: "produce" },
       { name: "Green Garlic (Hara Lehsun)", nameMalayalam: "പച്ച വെളുത്തുള്ളി", amount: 0.75, unit: "cup", notes: "Finely chopped winter garlic", category: "produce" },
@@ -772,7 +772,7 @@ export const MAHARASHTRA_GUJARAT_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 20,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1601050690597-df0568f70955?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Short Grain Rice", nameMalayalam: "അരി", amount: 1, unit: "cup", notes: "Rinsed", category: "staple" },
       { name: "Yellow Moong Dal (Split Moong)", nameMalayalam: "ചെറുപയർ പരിപ്പ്", amount: 0.5, unit: "cup", notes: "Rinsed", category: "staple" },

@@ -218,3 +218,18 @@ export const GLOBAL_CUISINES: CulinaryRegion[] = [
     description: "Fermented gochujang and doenjang depth, toasted sesame oil, garlic, and hot bubbling stone pot stews.",
   },
 ];
+
+export function getAllRegions(): CulinaryRegion[] {
+  return [...INDIAN_REGIONS, ...GLOBAL_CUISINES];
+}
+
+export function getRegionBySlug(slug: string): CulinaryRegion | undefined {
+  if (!slug || typeof slug !== "string") return undefined;
+  const normalized = slug.trim().toLowerCase();
+  return getAllRegions().find(
+    (r) =>
+      r.id.toLowerCase() === normalized ||
+      r.name.toLowerCase() === normalized ||
+      r.id.toLowerCase().replace(/-/g, "") === normalized.replace(/-/g, "")
+  );
+}

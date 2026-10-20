@@ -60,7 +60,7 @@ export const MEXICAN_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 0,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1540420773420-3366772f499c?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Ripe Hass Avocados", nameMalayalam: "അവോക്കാഡോ (ബട്ടർ ഫ്രൂട്ട്)", amount: 3, unit: "pieces", notes: "Slightly soft to gentle thumb pressure", category: "produce" },
       { name: "Serrano or Jalapeño Chiles", nameMalayalam: "പച്ചമുളക്", amount: 2, unit: "pieces", notes: "Finely minced with seeds for heat", category: "produce" },
@@ -182,7 +182,7 @@ export const MEXICAN_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 45,
     servings: 6,
-    imageUrl: "https://images.unsplash.com/photo-1547496502-affa22d38842?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1547496502-affa22d38845?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Canned or Prepared White Hominy", nameMalayalam: "ഹോമിനി കോൺ (വലിയ ചോളം)", amount: 800, unit: "g", notes: "Rinsed and drained", category: "staple" },
       { name: "Bone-in Chicken Thighs", nameMalayalam: "ചിക്കൻ", amount: 600, unit: "g", notes: "For rich golden broth", category: "protein" },
@@ -222,7 +222,7 @@ export const MEXICAN_RECIPES: Recipe[] = [
     prepTime: 25,
     cookTime: 120,
     servings: 6,
-    imageUrl: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1565299585323-38d6b0865b48?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Beef Chuck or Shank (or Mutton)", nameMalayalam: "ബീഫ് / മട്ടൺ", amount: 1000, unit: "g", notes: "Cut into large cubes", category: "protein" },
       { name: "Guajillo & Ancho Chiles", nameMalayalam: "വറ്റൽമുളക് കൂട്ടുകൾ", amount: 6, unit: "pieces", notes: "Stemmed and seeded", category: "spice" },
@@ -261,7 +261,7 @@ export const MEXICAN_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 20,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1547496502-affa22d38842?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1547496502-affa22d38846?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Crispy Fried Corn Tortilla Strips", nameMalayalam: "ടോർട്ടിയ ചിപ്സ്", amount: 2, unit: "cups", notes: "Cut into 1/4 inch matchsticks", category: "staple" },
       { name: "Ripe Roma Tomatoes", nameMalayalam: "തക്കാളി", amount: 5, unit: "pieces", notes: "Charred on skillet", category: "produce" },
@@ -300,7 +300,7 @@ export const MEXICAN_RECIPES: Recipe[] = [
     prepTime: 10,
     cookTime: 12,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1551504734-5ee1c4a1479c?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Fresh Sweet Corn on the Cob", nameMalayalam: "മധുരച്ചോളം", amount: 4, unit: "ears", notes: "Husked and silks removed", category: "produce" },
       { name: "Mexican Crema or Mayonnaise", nameMalayalam: "ക്രീം / മയോണൈസ്", amount: 0.5, unit: "cup", notes: "Equal mix", category: "dairy" },

@@ -20,7 +20,7 @@ export const NORTH_WEST_EAST_RECIPES: Recipe[] = [
     prepTime: 240,
     cookTime: 35,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae39b?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Boneless Chicken Thighs", nameMalayalam: "ചിക്കൻ", amount: 700, unit: "g", notes: "Tikka cut", category: "protein" },
       { name: "Ripe Red Tomatoes", nameMalayalam: "തക്കാളി", amount: 600, unit: "g", notes: "Pureed and strained", category: "produce" },
@@ -62,7 +62,7 @@ export const NORTH_WEST_EAST_RECIPES: Recipe[] = [
     prepTime: 480,
     cookTime: 90,
     servings: 5,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a19970?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Whole Black Lentils (Urad Sabut)", nameMalayalam: "മുഴു ഉഴുന്ന്", amount: 1.5, unit: "cups", notes: "Soaked for 8 hours", category: "staple" },
       { name: "Red Kidney Beans (Rajma)", nameMalayalam: "രാജ്മ", amount: 0.25, unit: "cup", notes: "Soaked for 8 hours", category: "staple" },
@@ -104,7 +104,7 @@ export const NORTH_WEST_EAST_RECIPES: Recipe[] = [
     prepTime: 30,
     cookTime: 45,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1589302168068-964664d93dc1?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Mustard Greens (Sarson)", nameMalayalam: "കടുകില", amount: 500, unit: "g", notes: "Washed and roughly chopped", category: "produce" },
       { name: "Spinach (Palak) and Bathua", nameMalayalam: "പാലക് ചീര", amount: 350, unit: "g", notes: "Balances mustard pungency", category: "produce" },
@@ -144,7 +144,7 @@ export const NORTH_WEST_EAST_RECIPES: Recipe[] = [
     prepTime: 480,
     cookTime: 35,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e49?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Kabuli Chickpeas (White Chana)", nameMalayalam: "വെള്ളക്കടല", amount: 2, unit: "cups", notes: "Soaked overnight with a pinch of baking soda", category: "staple" },
       { name: "Black Tea Bags", nameMalayalam: "കട്ടൻചായ ബാഗുകൾ", amount: 2, unit: "pieces", notes: "For natural dark color and tannins", category: "condiment" },
@@ -185,7 +185,7 @@ export const NORTH_WEST_EAST_RECIPES: Recipe[] = [
     prepTime: 30,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Fresh Malai Paneer", nameMalayalam: "പനീർ", amount: 400, unit: "g", notes: "Cut into 1.5-inch cubes", category: "protein" },
       { name: "Bell Peppers and Red Onions", nameMalayalam: "കുടമുളകും സവാളയും", amount: 200, unit: "g", notes: "Cut into squares", category: "produce" },
@@ -225,7 +225,7 @@ export const NORTH_WEST_EAST_RECIPES: Recipe[] = [
     prepTime: 480,
     cookTime: 40,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1546833998-877b37c2e5c9?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Red Kidney Beans (Rajma)", nameMalayalam: "രാജ്മ", amount: 1.5, unit: "cups", notes: "Soaked for 8 hours", category: "staple" },
       { name: "Finely Chopped Red Onions", nameMalayalam: "സവാള", amount: 2, unit: "pieces", notes: "Caramelized", category: "produce" },
@@ -264,7 +264,7 @@ export const NORTH_WEST_EAST_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 45,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1601050690597-df0568f70952?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Sour Curd (Khatta Dahi)", nameMalayalam: "പുളിയുള്ള തൈര്", amount: 1.5, unit: "cups", notes: "Whisked till smooth", category: "dairy" },
       { name: "Besan (Gram Flour)", nameMalayalam: "കടലപ്പൊടി", amount: 0.75, unit: "cup", notes: "Divided for kadhi and pakoras", category: "staple" },
@@ -304,7 +304,7 @@ export const NORTH_WEST_EAST_RECIPES: Recipe[] = [
     prepTime: 480,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a19971?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Kabuli Chickpeas", nameMalayalam: "വെള്ളക്കടല", amount: 2, unit: "cups", notes: "Boiled dark with tea bags", category: "staple" },
       { name: "Roasted Cumin Powder (Bhuna Jeera)", nameMalayalam: "വറുത്ത ജീരകപ്പൊടി", amount: 1.5, unit: "tbsp", notes: "Freshly roasted", category: "spice" },
@@ -344,7 +344,7 @@ export const NORTH_WEST_EAST_RECIPES: Recipe[] = [
     prepTime: 60,
     cookTime: 20,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "All-Purpose Flour (Maida)", nameMalayalam: "മൈദ", amount: 2.5, unit: "cups", notes: "Kneaded soft with curd and baking powder", category: "staple" },
       { name: "Desi Ghee", nameMalayalam: "നെയ്യ്", amount: 4, unit: "tbsp", notes: "For laminating layers", category: "oil" },
@@ -383,7 +383,7 @@ export const NORTH_WEST_EAST_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1596797038530-2c107229654d?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Fresh Malai Paneer", nameMalayalam: "പനീർ", amount: 400, unit: "g", notes: "Cut into triangles", category: "protein" },
       { name: "Cashews and Almonds (Blanched)", nameMalayalam: "കശുവണ്ടി, ബദാം", amount: 0.5, unit: "cup", notes: "Ground to silk paste", category: "produce" },

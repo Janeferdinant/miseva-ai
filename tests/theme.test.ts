@@ -28,4 +28,18 @@ describe("Theme System", () => {
     const validModes: ModeType[] = ["dark", "light"];
     expect(validModes.length).toBe(2);
   });
+
+  it("should define liquid-glass interactive button states and accessibility in globals.css", async () => {
+    const fs = await import("fs");
+    const path = await import("path");
+    const css = fs.readFileSync(path.resolve(process.cwd(), "app/globals.css"), "utf-8");
+
+    expect(css).toContain(".glass-button");
+    expect(css).toContain(".glass-button:hover");
+    expect(css).toContain(".glass-button:active");
+    expect(css).toContain(".glass-button:focus-visible");
+    expect(css).toContain(".glass-button:disabled");
+    expect(css).toContain("prefers-reduced-motion");
+    expect(css).toContain("touch-action: manipulation");
+  });
 });

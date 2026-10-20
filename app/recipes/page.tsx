@@ -20,9 +20,10 @@ function RecipesContent() {
   const searchParams = useSearchParams();
   const initialQuery = searchParams.get("q") || "";
   const initialQuick = searchParams.get("quick") === "true";
+  const initialCuisineParam = searchParams.get("cuisine") || searchParams.get("country") || "All";
 
   const [search, setSearch] = useState(initialQuery);
-  const [selectedCuisine, setSelectedCuisine] = useState<string>("All");
+  const [selectedCuisine, setSelectedCuisine] = useState<string>(initialCuisineParam);
   const [selectedDiet, setSelectedDiet] = useState<string>("All");
   const [selectedMeal, setSelectedMeal] = useState<string>("All");
   const [maxTime, setMaxTime] = useState<number>(initialQuick ? 25 : 120);
@@ -31,6 +32,13 @@ function RecipesContent() {
   useEffect(() => {
     if (initialQuery) setSearch(initialQuery);
   }, [initialQuery]);
+
+  useEffect(() => {
+    const c = searchParams.get("cuisine") || searchParams.get("country");
+    if (c) {
+      setSelectedCuisine(c);
+    }
+  }, [searchParams]);
 
   const cuisinesList = [
     "All",
@@ -77,7 +85,12 @@ function RecipesContent() {
 
       // Cuisine
       if (selectedCuisine !== "All") {
-        if (r.cuisine.toLowerCase() !== selectedCuisine.toLowerCase()) return false;
+        const sc = selectedCuisine.toLowerCase().replace(/-/g, " ").trim();
+        const rc = r.cuisine.toLowerCase().replace(/-/g, " ").trim();
+        const rsc = r.stateOrCountry.toLowerCase().replace(/-/g, " ").trim();
+        if (rc !== sc && !rsc.includes(sc) && !sc.includes(rc) && !sc.includes(rsc)) {
+          return false;
+        }
       }
 
       // Dietary

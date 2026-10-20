@@ -27,6 +27,17 @@ export default function ExportsPage() {
 
   const exportFiles = [
     {
+      title: "Miseva AI Complete Recipe Catalogue (Official Excel .XLSX)",
+      filename: "Miseva_AI_Complete_Recipe_Catalogue.xlsx",
+      path: "/exports/Miseva_AI_Complete_Recipe_Catalogue.xlsx",
+      records: "8 Comprehensive Sheets • 230 Dishes",
+      description: "Official 8-sheet Excel workbook containing Recipe Catalogue, Individual Ingredients, Ordered Preparation Steps (English & Malayalam), Image Registry, Semantic Image Audit, Duplicate Image Report, Bug & Regression Report, and KPI Summary Dashboard.",
+      size: "324 KB",
+      format: "Microsoft Excel (.XLSX) Multi-Sheet",
+      icon: FileSpreadsheet,
+      badge: "Authoritative Master Workbook",
+    },
+    {
       title: "Complete Culinary Database (CSV)",
       filename: "miseva_complete_culinary_database.csv",
       path: "/exports/miseva_complete_culinary_database.csv",

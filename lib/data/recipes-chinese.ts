@@ -140,7 +140,7 @@ export const CHINESE_RECIPES: Recipe[] = [
     prepTime: 40,
     cookTime: 60,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1514944298352-78d1239c0e0b?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Whole Duck or Duck Breasts with Skin", nameMalayalam: "താറാവ് ഇറച്ചി", amount: 800, unit: "g", notes: "Pricked and dried for crackling skin", category: "protein" },
       { name: "Maltose or Honey Glaze", nameMalayalam: "തേൻ / മാൾട്ടോസ്", amount: 3, unit: "tbsp", notes: "Mixed with Shaoxing wine and red vinegar", category: "condiment" },
@@ -179,7 +179,7 @@ export const CHINESE_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 12,
     servings: 2,
-    imageUrl: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1569718212165-3a8278d5f625?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Fresh Chinese Wheat Noodles", nameMalayalam: "നൂഡിൽസ്", amount: 300, unit: "g", notes: "Round alkaline fresh noodles", category: "staple" },
       { name: "Ground Pork or Chicken", nameMalayalam: "കൊത്തിയരിഞ്ഞ ഇറച്ചി", amount: 150, unit: "g", notes: "Minced fine", category: "protein" },
@@ -259,7 +259,7 @@ export const CHINESE_RECIPES: Recipe[] = [
     prepTime: 25,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a6?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Fresh Seabass or Tilapia Fillet", nameMalayalam: "മീൻ ഫില്ലറ്റ്", amount: 600, unit: "g", notes: "Skin-on, scored into crosshatch diamond batons", category: "protein" },
       { name: "Cornstarch for Dredging", nameMalayalam: "കോൺഫ്ലോർ", amount: 1, unit: "cup", notes: "Generously dusted between score marks", category: "staple" },
@@ -297,7 +297,7 @@ export const CHINESE_RECIPES: Recipe[] = [
     prepTime: 10,
     cookTime: 10,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a7?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Whole White Fish (Seabass or Pomfret)", nameMalayalam: "ആവോലി / മീൻ", amount: 600, unit: "g", notes: "Scaled, gutted, patted dry", category: "protein" },
       { name: "Fresh Young Ginger", nameMalayalam: "ഇഞ്ചി", amount: 50, unit: "g", notes: "Cut into hair-thin matchsticks", category: "produce" },
@@ -337,7 +337,7 @@ export const CHINESE_RECIPES: Recipe[] = [
     prepTime: 25,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1547496502-affa22d38847?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Square Thin Wonton Wrappers", nameMalayalam: "വോൺടോൺ ഷീറ്റ്", amount: 24, unit: "pieces", notes: "Extra-thin egg wrappers", category: "staple" },
       { name: "Peeled Tiger Prawns", nameMalayalam: "ചെമ്മീൻ", amount: 250, unit: "g", notes: "Coarsely chopped", category: "protein" },
@@ -376,7 +376,7 @@ export const CHINESE_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Boneless Chicken Thighs", nameMalayalam: "ചിക്കൻ തുടക്കഷണങ്ങൾ", amount: 650, unit: "g", notes: "Trimmed", category: "protein" },
       { name: "Red Fermented Bean Curd (Nanru)", nameMalayalam: "റെഡ് ഫെർമെന്റഡ് ബീൻ കർഡ്", amount: 1, unit: "block", notes: "Provides natural ruby color and umami", category: "condiment" },

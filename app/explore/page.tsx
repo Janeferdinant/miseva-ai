@@ -102,25 +102,20 @@ export default function ExploreCuisinesPage() {
       {/* Grid of Regions */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3.5">
         {filteredRegions.map((reg) => {
-          const isSelected = activeRegion?.id === reg.id;
           return (
-            <button
+            <Link
               key={reg.id}
-              onClick={() => setActiveRegion(reg)}
-              className={`p-3.5 rounded-2xl text-left transition-all flex flex-col justify-between ${
-                isSelected
-                  ? "glass-panel border-2 border-brand-primary shadow-lg scale-[1.03]"
-                  : "glass-card hover:border-brand-primary/60 hover:scale-[1.01]"
-              }`}
+              href={`/explore/${reg.id}`}
+              className="p-3.5 rounded-2xl text-left transition-all flex flex-col justify-between glass-card hover:border-brand-primary hover:shadow-md hover:scale-[1.02] group"
             >
               <div>
                 <div className="flex items-center justify-between">
-                  <span className="text-2xl">{reg.icon}</span>
+                  <span className="text-2xl group-hover:scale-110 transition-transform">{reg.icon}</span>
                   <span className="text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-white/10 text-foreground/70">
                     {reg.category}
                   </span>
                 </div>
-                <div className="text-sm font-bold text-foreground mt-2 line-clamp-1">
+                <div className="text-sm font-bold text-foreground mt-2 line-clamp-1 group-hover:text-brand-primary transition-colors">
                   {reg.name}
                 </div>
                 <div className="text-[11px] text-foreground/60 lang-ml line-clamp-1">
@@ -128,11 +123,11 @@ export default function ExploreCuisinesPage() {
                 </div>
               </div>
 
-              <div className="mt-2 text-[10px] text-brand-primary font-semibold flex items-center gap-0.5">
-                <span>View dishes</span>
-                <ChevronRight className="w-3 h-3" />
+              <div className="mt-2.5 text-[10px] text-brand-primary font-semibold flex items-center justify-between pt-1 border-t border-glass-border/40">
+                <span>Explore recipes</span>
+                <ChevronRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
               </div>
-            </button>
+            </Link>
           );
         })}
       </div>
