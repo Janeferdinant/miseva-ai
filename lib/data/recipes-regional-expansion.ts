@@ -625,7 +625,7 @@ export const REGIONAL_EXPANSION_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/92/Shahi_Paneer_with_mint.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    imageUrl: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Fresh Chhena (Soft Paneer)", nameMalayalam: "ഛേന (പനീർ)", amount: 300, unit: "g", notes: "Freshly curdled and drained", category: "dairy" },
       { name: "Semolina (Sooji)", nameMalayalam: "റവ", amount: 1.5, unit: "tbsp", notes: "For binding", category: "staple" },
@@ -832,7 +832,7 @@ export const REGIONAL_EXPANSION_RECIPES: Recipe[] = [
     prepTime: 360,
     cookTime: 20,
     servings: 4,
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Pitha_for_Wedding-_Pakan%2C_Patishapta%2C_Bharandash.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    imageUrl: "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Assamese Glutinous Bora Rice (Bora Saul)", nameMalayalam: "ബോറ അരിപ്പൊടി", amount: 2, unit: "cups", notes: "Soaked, drained, and pounded moist", category: "staple" },
       { name: "Black Sesame Seeds (Kala Til)", nameMalayalam: "കറുത്ത എള്ള്", amount: 0.75, unit: "cup", notes: "Dry roasted", category: "staple" },

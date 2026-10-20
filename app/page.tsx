@@ -21,7 +21,6 @@ import { RECIPES } from "@/lib/data/recipes";
 import { INDIAN_REGIONS, GLOBAL_CUISINES } from "@/lib/data/cuisines";
 import { RecipeCard } from "@/components/RecipeCard";
 import { HoloCulinaryRadar } from "@/components/motion/HoloCulinaryRadar";
-import { ContextualRecommendationCard } from "@/components/recommendations/ContextualRecommendationCard";
 
 export default function HomePage() {
   const router = useRouter();
@@ -208,8 +207,7 @@ export default function HomePage() {
         <HoloCulinaryRadar />
       </section>
 
-      {/* Intent-Driven AI Recommendation Module */}
-      <ContextualRecommendationCard currentPage="/home" />
+
 
       {/* 2. Dedicated Studios Trio: Desserts, Beverages, and Table Styling */}
       <section className="space-y-6">

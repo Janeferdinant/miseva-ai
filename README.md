@@ -7,63 +7,65 @@
 
 ---
 
-## 🌟 Overview
+## 🌟 Overview & Architecture
 
-**Miseva AI** is an intelligent, dual-platform culinary and lifestyle ecosystem combining the art of *mise en place* (culinary preparation and mindful organization) with *seva* (devoted hospitality and service).
+**Miseva AI** is an intelligent culinary ecosystem combining the art of *mise en place* (culinary preparation and mindful organization) with *seva* (devoted hospitality and service).
 
-1. **Responsive Next.js Web Application** (`/`): Next.js 16 (App Router, Turbopack, TypeScript, Tailwind CSS, liquid-glass aesthetic, 7 dynamic & futuristic themes).
-2. **Dedicated Native Android Application** (`android/`): Kotlin, Jetpack Compose Material 3, ViewModel, Room DB, Retrofit 2, Navigation Compose, Android Text-to-Speech, screen-awake cooking mode. Target SDK: API 36 (Android 16+ compliant).
-3. **Conversational AI Cooking Agent** (`lib/ai/cooking-agent.ts`): Adaptive step-by-step guidance, ingredient substitutions, and cooking science explanations.
-4. **30-Day Omnichannel Marketing Engine** (`app/marketing/`, `lib/marketing/`): Automated 30-day publishing flight calendar, bilingual scripts, visual asset generators, approval workflow, and growth analytics.
-5. **Verified 270-Asset Culinary Catalog**: Across 14 regional Indian and international cuisines (140 main recipes), Desserts Studio (40 items), Beverages Studio (50 items), and Table Styling Studio (40 concepts).
-6. **Bilingual English and Malayalam (മലയാളം ലിപി)**: Real-time speech synthesis, synchronized karaoke transcripts, and voice-guided hands-free cooking.
-7. **Indian Grocery Price Comparison**: Live retailer benchmarking across Blinkit, Zepto, Swiggy Instamart, Amazon Fresh, and Flipkart Grocery.
-8. **Table Styling Studio**: Interactive 2D top-down arrangement engine, moodboard generator, and curated tableware checklists.
-9. **Original Brand Identity & Visual Asset Pipeline**: Emerald green, saffron gold, warm ivory, and translucent liquid-glass design system with vector logos and 4K/HD culinary imagery.
+### Decoupled Repository Ecosystem
+In accordance with professional software architecture and repository separation standards, the Miseva AI platform is organized into two independent, production-grade repositories:
+
+1. **Miseva AI Primary Cuisine Application** (This Repository):
+   - **Repository:** [`Janeferdinant/miseva-ai`](https://github.com/Janeferdinant/miseva-ai)
+   - **Production URL:** [https://cusine-chi.vercel.app](https://cusine-chi.vercel.app)
+   - **Scope:** Global cuisine discovery, country and state navigation with 23 custom SVG emblems, recipe browsing, dynamic serving scaler, shopping lists, meal planner, Table Styling Studio, and verified culinary catalog.
+   - **Dedicated Malayalam Translation Engine:** Independent **“മലയാളത്തിൽ വായിക്കുക” (Read in Malayalam)** view preserving 100% of ingredient quantities, units, and sequential cooking steps in Malayalam Unicode script, decoupled from browser TTS speech synthesis.
+   - **Food-Only Visual Standards:** 275 audited culinary dishes (185 main recipes, 40 desserts, 50 beverages) featuring 100% unique images, authentic dish depiction, and strict exclusion of human figures.
+
+2. **Miseva AI Marketing & Automation Platform** (Standalone Repository):
+   - **Repository:** [`Janeferdinant/miseva-ai-marketing`](https://github.com/Janeferdinant/miseva-ai-marketing)
+   - **Production URL:** [https://miseva-ai-marketing.vercel.app](https://miseva-ai-marketing.vercel.app)
+   - **Scope:** 10-tab Marketing Hub, 30-day omnichannel campaign calendar, social publishing queue, approval workflows, growth experiments, media asset gallery, recommendation engine, and marketing analytics.
 
 ---
 
 ## 🏛️ Repository Architecture & Directory Map
 
-The codebase is organized into cleanly decoupled domains:
-
 ```
-cusine_adv/
-├── app/                          # Next.js 16 App Router (Routes & Server/Client Pages)
-│   ├── api/                      # REST API Endpoints (/api/recipes, /api/marketing, etc.)
+miseva-ai/
+├── app/                          # Next.js 16 App Router (26 Focused Culinary Routes)
+│   ├── api/                      # REST API Endpoints (/api/recipes, /api/beverages, etc.)
 │   ├── beverages/                # Beverages Studio showcase & recipe views
 │   ├── desserts/                 # Desserts Studio showcase & recipe views
-│   ├── marketing/                # 30-Day Social Media Automation Hub & Dashboard
+│   ├── explore/                  # Country & State Cuisine Navigation with SVG Emblems
 │   ├── meal-planner/             # 7-day nutritional meal planner & budget calculator
-│   ├── pricing/                  # 6-retailer Indian grocery price comparison
-│   ├── recipes/                  # Dynamic regional culinary pages ([slug])
+│   ├── recipes/                  # Dynamic regional culinary pages ([id])
+│   ├── shopping/                 # 6-retailer Indian grocery price comparison
 │   ├── table-styling/            # 2D top-down table arrangement & moodboard studio
-│   ├── globals.css               # Global theme tokens & Cyber Kitchen styling
+│   ├── globals.css               # Global theme tokens & Liquid Glass aesthetic
 │   ├── layout.tsx                # Root layout with theme provider & navigation
 │   └── page.tsx                  # Interactive homepage & culinary hero
 │
 ├── components/                   # Modular React Components & UI Widgets
-│   ├── culinary/                 # Recipe cards, cooking guides, ingredient scaling
-│   ├── marketing/                # Marketing calendar, content briefs, platform cards
-│   ├── motion/                   # HUD dock, holographic radar, canvas particles
-│   ├── navigation/               # Navbar, mobile drawer, cuisine mega-menu
-│   └── ui/                       # Glass cards, modals, buttons, badges, tabs
+│   ├── CuisineEmblem.tsx         # 23 Country & State Culinary Vector Emblems
+│   ├── MalayalamRecipeView.tsx   # Dedicated Malayalam Translation View & Formatter
+│   ├── Navbar.tsx                # Clean Culinary Navigation (Marketing Tab Decoupled)
+│   └── ThemeSelector.tsx         # 7-Palette Dynamic & Futuristic Theme Switcher
 │
 ├── lib/                          # Core Domain Logic, Data & Utility Services
-│   ├── ai/                       # Conversational Chef Agent & prompt sandboxing
-│   ├── catalog/                  # Curated recipes, beverages, desserts, tableware
-│   ├── marketing/                # 30-day flight calendar, content brief generation
-│   ├── pricing/                  # Grocery pricing models & live store adapters
-│   ├── speech/                   # Web Speech API & Malayalam phonetics engine
-│   └── theme/                    # 7-palette theme engine & Cyber Kitchen tokens
+│   ├── data/                     # Verified 275-dish catalog with unique food imagery
+│   ├── recipes/                  # Scaling, nutritional calculations, search filters
+│   └── storage/                  # User favorites and meal plan persistence
 │
-├── tests/                        # 30 Vitest Test Suites (129 Tests) in 5 Domains
-│   ├── audit/                    # AppSec, Play Store, and catalog integrity tests
-│   ├── culinary/                 # Recipe scaling, meal planner, table styling & AI agent tests
-│   ├── marketing/                # 30-day pipeline, approval scheduler, API tests
-│   ├── motion/                   # Canvas particles, HUD dock, holographic radar tests
-│   ├── theme/                    # Dynamic themes and Futuristic Cyber tokens tests
-│   └── README.md                 # Detailed test architecture & run instructions
+├── tests/                        # 26 Vitest Test Suites (106 Tests)
+│   ├── audit/                    # Image audit, AppSec, Excel validation tests
+│   ├── cuisine-emblems.test.ts   # 23-region cuisine emblem mapping tests
+│   ├── malayalam-translation.test.ts # Malayalam translation & unit preservation tests
+│   └── culinary/                 # Recipe scaling, meal planner & table styling tests
+│
+├── public/exports/               # Master Recipe Catalogue & Database CSV Exports
+│   ├── Miseva_AI_Complete_Recipe_Catalogue.xlsx # 8-sheet master workbook
+│   ├── miseva_complete_culinary_database.csv   # 275-dish master dataset
+│   └── gemini_recipe_image_prompts.csv         # Validated food-only generation prompts
 │
 ├── scripts/                      # Automation, Audit & Deployment Scripts
 │   ├── audit/                    # Image audits, catalog deduplication & integrity

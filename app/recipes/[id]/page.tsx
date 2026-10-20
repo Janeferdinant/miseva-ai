@@ -27,6 +27,7 @@ import { AudioNarrationPlayer } from "@/features/recipes/components/AudioNarrati
 import { HandsFreeCookingModal } from "@/features/recipes/components/HandsFreeCookingModal";
 import { RetailerPriceTable } from "@/features/recipes/components/RetailerPriceTable";
 import { toggleFavoriteRecipe, getFavoriteRecipeIds } from "@/lib/storage/user-store";
+import { MalayalamRecipeView } from "@/components/MalayalamRecipeView";
 
 export default function RecipeDetailPage({
   params,
@@ -234,6 +235,11 @@ export default function RecipeDetailPage({
           </div>
         </div>
       </div>
+
+      {/* Dedicated Malayalam Translation Section ("മലയാളത്തിൽ വായിക്കുക") */}
+      <section>
+        <MalayalamRecipeView recipe={recipe} />
+      </section>
 
       {/* Main Content Two-Column Grid: Left Ingredients & Scaling | Right Instructions & Audio */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">

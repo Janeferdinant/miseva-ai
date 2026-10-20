@@ -187,7 +187,7 @@ export const NORTH_EXPANSION_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 18,
     servings: 4,
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/16/Lamb_Saag_and_Chicken_Korma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    imageUrl: "https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Kashmiri Haakh / Collard Greens", nameMalayalam: "ഹാഖ് ഇലകൾ", amount: 500, unit: "g", notes: "Whole leaves with tender stems", category: "produce" },
       { name: "Pure Mustard Oil", nameMalayalam: "കടുകെണ്ണ", amount: 3, unit: "tbsp", notes: "Smoked", category: "oil" },
@@ -393,7 +393,7 @@ export const NORTH_EXPANSION_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Hernekeitto.jpg/1280px-Hernekeitto.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    imageUrl: "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Fresh Green Peas", nameMalayalam: "പച്ചപ്പട്ടാണി", amount: 500, unit: "g", notes: "Coarsely ground; reserve 0.5 cup whole", category: "produce" },
       { name: "Potatoes", nameMalayalam: "ഉരുളക്കിഴങ്ങ്", amount: 2, unit: "pieces", notes: "Cut into wedges", category: "produce" },

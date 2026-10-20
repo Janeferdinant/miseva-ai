@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound, useParams } from "next/navigation";
 import { DESSERT_RECIPES } from "@/lib/data/desserts";
+import { MalayalamRecipeView } from "@/components/MalayalamRecipeView";
 import {
   ArrowLeft,
   Flame,
@@ -158,6 +159,11 @@ export default function DessertDetailPage() {
           </div>
         </div>
       </div>
+
+      {/* Dedicated Malayalam Translation Section ("മലയാളത്തിൽ വായിക്കുക") */}
+      <section>
+        <MalayalamRecipeView recipe={dessert} />
+      </section>
 
       {/* Serving Scaler */}
       <div className="glass-panel p-4 rounded-2xl flex items-center justify-between gap-4">

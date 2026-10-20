@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound, useParams } from "next/navigation";
 import { BEVERAGE_RECIPES } from "@/lib/data/beverages";
+import { MalayalamRecipeView } from "@/components/MalayalamRecipeView";
 import {
   ArrowLeft,
   Clock,
@@ -157,6 +158,11 @@ export default function BeverageDetailPage() {
           </div>
         </div>
       </div>
+
+      {/* Dedicated Malayalam Translation Section ("മലയാളത്തിൽ വായിക്കുക") */}
+      <section>
+        <MalayalamRecipeView recipe={beverage} />
+      </section>
 
       {/* Serving & Sweetness Sliders */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

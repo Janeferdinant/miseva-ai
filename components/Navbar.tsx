@@ -39,7 +39,6 @@ export function Navbar() {
     { href: "/shopping", label: "Prices", labelMl: "വിലകൾ", icon: ShoppingCart },
     { href: "/coverage-audit", label: "Audit", labelMl: "ഓഡിറ്റ്", icon: ShieldCheck },
     { href: "/meal-planner", label: "Meal Plan", labelMl: "പ്ലാനർ", icon: Calendar },
-    { href: "/marketing", label: "Marketing", labelMl: "മാർക്കറ്റിംഗ്", icon: Sparkles, highlight: true },
     { href: "/app", label: "Android App", labelMl: "ആപ്പ്", icon: Smartphone },
   ];
 

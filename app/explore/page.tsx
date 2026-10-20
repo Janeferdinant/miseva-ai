@@ -6,6 +6,7 @@ import { Compass, Sparkles, MapPin, Search, Globe, ChevronRight } from "lucide-r
 import { INDIAN_REGIONS, GLOBAL_CUISINES, CulinaryRegion } from "@/lib/data/cuisines";
 import { RECIPES } from "@/lib/data/recipes";
 import { RecipeCard } from "@/components/RecipeCard";
+import { CuisineEmblem, getCuisineEmblemMeta } from "@/components/CuisineEmblem";
 
 export default function ExploreCuisinesPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
@@ -110,7 +111,10 @@ export default function ExploreCuisinesPage() {
             >
               <div>
                 <div className="flex items-center justify-between">
-                  <span className="text-2xl group-hover:scale-110 transition-transform">{reg.icon}</span>
+                  <div className="flex items-center gap-2">
+                    <CuisineEmblem regionId={reg.id} size="sm" />
+                    <span className="text-xl group-hover:scale-110 transition-transform">{reg.icon}</span>
+                  </div>
                   <span className="text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-white/10 text-foreground/70">
                     {reg.category}
                   </span>
@@ -136,18 +140,24 @@ export default function ExploreCuisinesPage() {
       {activeRegion && (
         <div className="rounded-3xl glass-panel p-6 sm:p-8 border border-brand-primary/40 space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-glass-border/60">
-            <div className="flex items-center gap-3">
-              <span className="text-4xl p-2 rounded-2xl glass-card">{activeRegion.icon}</span>
+            <div className="flex items-center gap-4">
+              <CuisineEmblem regionId={activeRegion.id} size="lg" />
               <div>
-                <div className="text-xs font-bold uppercase tracking-wider text-brand-primary">
-                  {activeRegion.category} Culinary Heritage
+                <div className="text-xs font-bold uppercase tracking-wider text-brand-primary flex items-center gap-2">
+                  <span>{activeRegion.category} Culinary Heritage</span>
+                  <span className="text-foreground/40">•</span>
+                  <span className="text-foreground/60 font-medium normal-case">{getCuisineEmblemMeta(activeRegion.id).primaryElement}</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground">
-                  {activeRegion.name} Cuisine
+                <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground flex items-center gap-2">
+                  <span>{activeRegion.name} Cuisine</span>
+                  <span className="text-2xl">{activeRegion.icon}</span>
                 </h2>
                 <div className="text-sm text-foreground/70 lang-ml font-medium">
                   {activeRegion.nameMalayalam}
                 </div>
+                <p className="text-xs text-foreground/60 mt-1 max-w-xl italic">
+                  "{getCuisineEmblemMeta(activeRegion.id).motif}"
+                </p>
               </div>
             </div>
 

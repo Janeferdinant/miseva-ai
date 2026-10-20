@@ -19,6 +19,7 @@ import { getRegionBySlug, getAllRegions } from "@/lib/data/cuisines";
 import { RECIPES } from "@/lib/data/recipes";
 import { RecipeCard } from "@/components/RecipeCard";
 import { DietaryType, MealType } from "@/lib/types/recipe";
+import { CuisineEmblem, getCuisineEmblemMeta } from "@/components/CuisineEmblem";
 
 export default function CountryCuisineDetailPage({
   params,
@@ -109,22 +110,26 @@ export default function CountryCuisineDetailPage({
         <div className="absolute top-0 right-0 w-96 h-96 bg-brand-primary/5 rounded-full blur-3xl pointer-events-none" />
 
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-          <div className="flex items-start sm:items-center gap-4">
-            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl glass-card flex items-center justify-center text-4xl sm:text-5xl border border-glass-border shadow-sm flex-shrink-0">
-              {region.icon}
-            </div>
+          <div className="flex items-start sm:items-center gap-5">
+            <CuisineEmblem regionId={region.id} size="xl" className="flex-shrink-0" />
             <div>
-              <div className="flex items-center gap-2">
-                <span className="text-xs font-bold uppercase tracking-wider text-brand-primary px-2 py-0.5 rounded-md bg-brand-primary/10">
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="text-xs font-bold uppercase tracking-wider text-brand-primary px-2.5 py-0.5 rounded-md bg-brand-primary/10 border border-brand-primary/20">
                   {region.category} Heritage
                 </span>
-                <span className="text-xs text-foreground/60">• Canonical: {region.id}</span>
+                <span className="text-xs font-semibold px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-foreground/80">
+                  {getCuisineEmblemMeta(region.id).primaryElement}
+                </span>
+                <span className="text-2xl">{region.icon}</span>
               </div>
               <h1 className="text-3xl sm:text-4xl font-black text-foreground mt-1">
                 {region.name} Cuisine
               </h1>
               <p className="text-base text-brand-primary font-semibold lang-ml mt-0.5">
                 {region.nameMalayalam}
+              </p>
+              <p className="text-xs text-foreground/60 mt-1 italic max-w-xl">
+                Emblem Motif: "{getCuisineEmblemMeta(region.id).motif}"
               </p>
             </div>
           </div>

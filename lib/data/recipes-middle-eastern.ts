@@ -376,7 +376,7 @@ export const MIDDLE_EASTERN_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a1/Dinner_at_Cafe_Ohlone%2C_May_2023_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    imageUrl: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Boneless Skinless Chicken Thighs", nameMalayalam: "ചിക്കൻ തുടക്കഷണങ്ങൾ", amount: 700, unit: "g", notes: "Trimmed", category: "protein" },
       { name: "Shawarma Spice Blend (Cardamom, Cumin, Coriander, Cinnamon)", nameMalayalam: "ഷവർമ മസാലക്കൂട്ട്", amount: 2, unit: "tbsp", notes: "Freshly ground", category: "spice" },

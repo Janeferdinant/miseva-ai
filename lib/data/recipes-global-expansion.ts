@@ -367,7 +367,7 @@ export const GLOBAL_EXPANSION_RECIPES: Recipe[] = [
     prepTime: 25,
     cookTime: 20,
     servings: 4,
-    imageUrl: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Polish_Korean_Cuisine_and_Culture_Exchanges_Gradmother%E2%80%99s_Recipes_05.jpg/1280px-Polish_Korean_Cuisine_and_Culture_Exchanges_Gradmother%E2%80%99s_Recipes_05.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    imageUrl: "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Korean Sweet Potato Starch Glass Noodles (Dangmyeon)", nameMalayalam: "ഡാങ്മിയോൺ ഗ്ലാസ് നൂഡിൽസ്", amount: 250, unit: "g", notes: "100% sweet potato starch noodles", category: "staple" },
       { name: "Fresh Baby Spinach", nameMalayalam: "ചീര", amount: 150, unit: "g", notes: "Blanched and seasoned", category: "produce" },
