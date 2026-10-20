@@ -42,7 +42,7 @@ describe("Multilingual Speech Engine & Voice Command Parser", () => {
   });
 
   it("should generate valid TTS audio URLs for Malayalam streaming speech", async () => {
-    const { getTtsAudioUrl } = await import("../lib/voice/speech-engine");
+    const { getTtsAudioUrl } = await import("@/lib/voice/speech-engine");
     const url = getTtsAudioUrl("നമസ്കാരം", "ml");
     expect(url).toContain("/api/tts");
     expect(url).toContain("lang=ml");
