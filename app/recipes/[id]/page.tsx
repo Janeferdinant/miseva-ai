@@ -32,6 +32,7 @@ import { RecipeCard } from "@/components/RecipeCard";
 import { RetailerPriceTable } from "@/features/recipes/components/RetailerPriceTable";
 import { toggleFavoriteRecipe, getFavoriteRecipeIds } from "@/lib/storage/user-store";
 import { MalayalamRecipeView } from "@/components/MalayalamRecipeView";
+import { RecipeJsonLd } from "@/components/seo/RecipeJsonLd";
 
 export default function RecipeDetailPage({
   params,
@@ -108,6 +109,9 @@ export default function RecipeDetailPage({
 
   return (
     <div className="space-y-12 py-4">
+      {/* Schema.org Structured Data */}
+      <RecipeJsonLd recipe={recipe} />
+
       {/* Back button and quick actions */}
       <div className="flex items-center justify-between">
         <Link
