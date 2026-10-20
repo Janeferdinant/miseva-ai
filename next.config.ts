@@ -1,9 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  turbopack: {
-    root: "C:/Users/Asus/Documents",
-  },
+  turbopack: process.env.VERCEL
+    ? undefined
+    : {
+        root: "C:/Users/Asus/Documents",
+      },
   reactStrictMode: true,
   images: {
     remotePatterns: [
