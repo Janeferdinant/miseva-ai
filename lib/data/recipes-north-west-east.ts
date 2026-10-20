@@ -20,7 +20,7 @@ export const NORTH_WEST_EAST_RECIPES: Recipe[] = [
     prepTime: 240,
     cookTime: 35,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae39b?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/64/Fire_Indian_Dinner_-_Chayote_curry.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Boneless Chicken Thighs", nameMalayalam: "ചിക്കൻ", amount: 700, unit: "g", notes: "Tikka cut", category: "protein" },
       { name: "Ripe Red Tomatoes", nameMalayalam: "തക്കാളി", amount: 600, unit: "g", notes: "Pureed and strained", category: "produce" },
@@ -62,7 +62,7 @@ export const NORTH_WEST_EAST_RECIPES: Recipe[] = [
     prepTime: 480,
     cookTime: 90,
     servings: 5,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a19970?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/74/A_North-Indian_Dinner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Whole Black Lentils (Urad Sabut)", nameMalayalam: "മുഴു ഉഴുന്ന്", amount: 1.5, unit: "cups", notes: "Soaked for 8 hours", category: "staple" },
       { name: "Red Kidney Beans (Rajma)", nameMalayalam: "രാജ്മ", amount: 0.25, unit: "cup", notes: "Soaked for 8 hours", category: "staple" },
@@ -104,7 +104,7 @@ export const NORTH_WEST_EAST_RECIPES: Recipe[] = [
     prepTime: 30,
     cookTime: 45,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1589302168068-964664d93dc1?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/da/Makke_di_roti_te_sarson_da_saag.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Mustard Greens (Sarson)", nameMalayalam: "കടുകില", amount: 500, unit: "g", notes: "Washed and roughly chopped", category: "produce" },
       { name: "Spinach (Palak) and Bathua", nameMalayalam: "പാലക് ചീര", amount: 350, unit: "g", notes: "Balances mustard pungency", category: "produce" },
@@ -144,7 +144,7 @@ export const NORTH_WEST_EAST_RECIPES: Recipe[] = [
     prepTime: 480,
     cookTime: 35,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e49?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/b4/South_Indian_Lunch_Thali.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Kabuli Chickpeas (White Chana)", nameMalayalam: "വെള്ളക്കടല", amount: 2, unit: "cups", notes: "Soaked overnight with a pinch of baking soda", category: "staple" },
       { name: "Black Tea Bags", nameMalayalam: "കട്ടൻചായ ബാഗുകൾ", amount: 2, unit: "pieces", notes: "For natural dark color and tannins", category: "condiment" },
@@ -225,7 +225,7 @@ export const NORTH_WEST_EAST_RECIPES: Recipe[] = [
     prepTime: 480,
     cookTime: 40,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833998-877b37c2e5c9?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/da/Indian_food_at_its_BEST.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Red Kidney Beans (Rajma)", nameMalayalam: "രാജ്മ", amount: 1.5, unit: "cups", notes: "Soaked for 8 hours", category: "staple" },
       { name: "Finely Chopped Red Onions", nameMalayalam: "സവാള", amount: 2, unit: "pieces", notes: "Caramelized", category: "produce" },
@@ -264,7 +264,7 @@ export const NORTH_WEST_EAST_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 45,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1601050690597-df0568f70952?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Food_for_Lunch_-_WLM2016_in_West_Bengal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Sour Curd (Khatta Dahi)", nameMalayalam: "പുളിയുള്ള തൈര്", amount: 1.5, unit: "cups", notes: "Whisked till smooth", category: "dairy" },
       { name: "Besan (Gram Flour)", nameMalayalam: "കടലപ്പൊടി", amount: 0.75, unit: "cup", notes: "Divided for kadhi and pakoras", category: "staple" },
@@ -304,7 +304,7 @@ export const NORTH_WEST_EAST_RECIPES: Recipe[] = [
     prepTime: 480,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a19971?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/40/I_ate_lunch_at_one_of_the_Indian_restaurants_inside_the_Southbank_food_court._%281544158588%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Kabuli Chickpeas", nameMalayalam: "വെള്ളക്കടല", amount: 2, unit: "cups", notes: "Boiled dark with tea bags", category: "staple" },
       { name: "Roasted Cumin Powder (Bhuna Jeera)", nameMalayalam: "വറുത്ത ജീരകപ്പൊടി", amount: 1.5, unit: "tbsp", notes: "Freshly roasted", category: "spice" },
@@ -383,7 +383,7 @@ export const NORTH_WEST_EAST_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1596797038530-2c107229654d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/44/Indian_Chinese_Dinner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Fresh Malai Paneer", nameMalayalam: "പനീർ", amount: 400, unit: "g", notes: "Cut into triangles", category: "protein" },
       { name: "Cashews and Almonds (Blanched)", nameMalayalam: "കശുവണ്ടി, ബദാം", amount: 0.5, unit: "cup", notes: "Ground to silk paste", category: "produce" },

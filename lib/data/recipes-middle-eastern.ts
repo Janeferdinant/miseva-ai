@@ -19,7 +19,7 @@ export const MIDDLE_EASTERN_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 40,
     servings: 6,
-    imageUrl: "https://images.unsplash.com/photo-1540420773420-3366772f499e?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Sev_2013-12-01_16-57.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Dried Kabuli Chickpeas", nameMalayalam: "വെള്ളക്കടല", amount: 250, unit: "g", notes: "Soaked overnight with 1/2 tsp baking soda", category: "staple" },
       { name: "Premium Sesame Tahini", nameMalayalam: "തഹീനി (എള്ള് പേസ്റ്റ്)", amount: 0.75, unit: "cup", notes: "Stone-ground runny tahini", category: "condiment" },
@@ -59,7 +59,7 @@ export const MIDDLE_EASTERN_RECIPES: Recipe[] = [
     prepTime: 25,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1541696432-82c6da8ce7c0?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/28/Tamale_lunch_at_the_National_Museum_of_the_American_Indian.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Dried Chickpeas", nameMalayalam: "വെള്ളക്കടല", amount: 300, unit: "g", notes: "Soaked for 18 hours in cold water (NEVER canned/cooked)", category: "staple" },
       { name: "Fresh Flat-Leaf Parsley & Cilantro", nameMalayalam: "മല്ലിയില, പാർസ്‌ലി", amount: 1.5, unit: "cups", notes: "Leaves and tender stems", category: "produce" },
@@ -99,7 +99,7 @@ export const MIDDLE_EASTERN_RECIPES: Recipe[] = [
     prepTime: 25,
     cookTime: 12,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1555939594-58d7cb561ad2?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/b0/Patvelia13-Bhatia_Residence%2CMumbai-Maharashtra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Boneless Chicken Breast or Thighs", nameMalayalam: "ചിക്കൻ", amount: 650, unit: "g", notes: "Cut into 1.5-inch cubes", category: "protein" },
       { name: "Thick Greek Yogurt / Labneh", nameMalayalam: "തൈര്", amount: 0.5, unit: "cup", notes: "Tenderizing marinade", category: "dairy" },
@@ -139,7 +139,7 @@ export const MIDDLE_EASTERN_RECIPES: Recipe[] = [
     prepTime: 10,
     cookTime: 20,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1525351484163-7529414344d9?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Breakfast_buffet_at_Novotel_Nairobi_Westlands_on_Day_4_Wikimania_2025_03.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Farm-Fresh Eggs", nameMalayalam: "മുട്ട", amount: 4, unit: "pieces", notes: "Whole eggs", category: "protein" },
       { name: "Crushed San Marzano Tomatoes", nameMalayalam: "തക്കാളി", amount: 400, unit: "g", notes: "Rich canned or ripe crushed", category: "produce" },
@@ -179,7 +179,7 @@ export const MIDDLE_EASTERN_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 0,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1540420773420-3366772f499f?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/9b/2019-02-04_%D1%81%D0%B0%D0%BB%D0%B0%D1%82%D0%B0_%D1%82%D0%B0%D0%B1%D1%83%D0%BB%D0%B5_%D1%81_%D0%BA%D0%B8%D0%BD%D0%BE%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Fresh Italian Flat-Leaf Parsley", nameMalayalam: "പാർസ്‌ലി / മല്ലിയില", amount: 3, unit: "bunches", notes: "Thoroughly washed, dried completely, finely hand-chopped", category: "produce" },
       { name: "Fresh Spearmint Leaves", nameMalayalam: "പുതിനയില", amount: 0.5, unit: "cup", notes: "Finely minced", category: "produce" },
@@ -219,7 +219,7 @@ export const MIDDLE_EASTERN_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 10,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1544025162-d7669426594b?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/ad/Patvelia18-Bhatia_Residence%2CMumbai-Maharashtra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Minced Lamb Shoulder (20% fat)", nameMalayalam: "ആട്ടിറച്ചി", amount: 600, unit: "g", notes: "Double ground", category: "protein" },
       { name: "Yellow Onion", nameMalayalam: "സവാള", amount: 1, unit: "piece", notes: "Grated and squeezed completely dry in cheesecloth", category: "produce" },
@@ -258,7 +258,7 @@ export const MIDDLE_EASTERN_RECIPES: Recipe[] = [
     prepTime: 10,
     cookTime: 20,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1540420773420-3366772f49a0?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Sev_Puri_%28Indian_Snack_Food%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Large Globe Eggplants", nameMalayalam: "വഴുതനങ്ങ", amount: 2, unit: "pieces", notes: "About 800g total", category: "produce" },
       { name: "Sesame Tahini", nameMalayalam: "തഹീനി", amount: 0.33, unit: "cup", notes: "Stone-ground", category: "condiment" },
@@ -297,7 +297,7 @@ export const MIDDLE_EASTERN_RECIPES: Recipe[] = [
     prepTime: 30,
     cookTime: 90,
     servings: 6,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a19976?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/9d/Roti_with_KadduGhost.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Bone-in Lamb Shanks or Shoulder", nameMalayalam: "ആട്ടിറച്ചി", amount: 1200, unit: "g", notes: "Cut into large celebration pieces", category: "protein" },
       { name: "Liquid Jameed or Fermented Greek Yogurt", nameMalayalam: "ജാമീദ് / കട്ടത്തൈര്", amount: 3, unit: "cups", notes: "Tangy dried goat yogurt dissolved in water", category: "dairy" },
@@ -336,7 +336,7 @@ export const MIDDLE_EASTERN_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 5,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1540420773420-3366772f49a1?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/85/South-Indian_thali.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Pita Flatbread", nameMalayalam: "ഖുബ്ബൂസ് / പിത്ത ബ്രെഡ്", amount: 2, unit: "loaves", notes: "Cut into 1-inch squares and fried/baked crisp", category: "staple" },
       { name: "Crisp Romaine Lettuce", nameMalayalam: "ലെറ്റൂസ്", amount: 1, unit: "head", notes: "Chopped into bite pieces", category: "produce" },
@@ -376,7 +376,7 @@ export const MIDDLE_EASTERN_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1529193591184-b1d58069ecde?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a1/Dinner_at_Cafe_Ohlone%2C_May_2023_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Boneless Skinless Chicken Thighs", nameMalayalam: "ചിക്കൻ തുടക്കഷണങ്ങൾ", amount: 700, unit: "g", notes: "Trimmed", category: "protein" },
       { name: "Shawarma Spice Blend (Cardamom, Cumin, Coriander, Cinnamon)", nameMalayalam: "ഷവർമ മസാലക്കൂട്ട്", amount: 2, unit: "tbsp", notes: "Freshly ground", category: "spice" },

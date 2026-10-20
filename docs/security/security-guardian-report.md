@@ -1,7 +1,7 @@
 # Security Guardian Audit Report — CulinaryVerse AI
 
 > **Auditor:** Security Guardian — AppSec & Play Store Compliance Auditor (Antigravity v2.0)  
-> **Timestamp:** 2026-10-20T09:12:35.393Z  
+> **Timestamp:** 2026-10-20T10:04:30.394Z  
 > **Release Security Gate Status:** **PASSED ✅**
 
 ---
@@ -39,7 +39,7 @@
 
 ## 📦 Software Bill of Materials (SBOM) Summary
 - **Format:** CycloneDX-JSON v1.5
-- **Total Tracked Components:** 17
+- **Total Tracked Components:** 19
 - **Vulnerability Status:** All dependencies vetted; zero known high/critical CVEs in active build.
 
 ---

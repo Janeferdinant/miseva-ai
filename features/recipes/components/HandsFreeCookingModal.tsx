@@ -145,7 +145,8 @@ export function HandsFreeCookingModal({
   const speakStep = (index: number) => {
     const step = steps[index];
     const text = lang === "ml" ? step.textMalayalam : step.text;
-    SpeechEngine.speak(`Step ${step.stepNumber}. ${text}`, lang);
+    const prefix = lang === "ml" ? `ഘട്ടം ${step.stepNumber}. ` : `Step ${step.stepNumber}. `;
+    SpeechEngine.speak(`${prefix}${text}`, lang);
   };
 
   const formatTimer = (sec: number) => {

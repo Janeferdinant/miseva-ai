@@ -20,7 +20,7 @@ export const KARNATAKA_ANDHRA_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 35,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e48?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/af/Lunch_from_Karnataka_on_a_plantain_leaf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Sona Masoori Rice", nameMalayalam: "സോനാ മസൂരി അരി", amount: 1, unit: "cup", notes: "Short grain rice", category: "staple" },
       { name: "Toor Dal (Pigeon Peas)", nameMalayalam: "തുവരപ്പരിപ്പ്", amount: 0.75, unit: "cup", notes: "Cooked soft", category: "staple" },
@@ -60,7 +60,7 @@ export const KARNATAKA_ANDHRA_RECIPES: Recipe[] = [
     prepTime: 180,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1610192244261-3f33de3f55e4?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/2e/Kadle_Bajil-my_home_Bangalore-Karnataka-06_pic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Raw White Rice (Sona Masoori)", nameMalayalam: "പച്ചരി", amount: 2, unit: "cups", notes: "Soaked for 3 hours", category: "staple" },
       { name: "Fresh Grated Coconut", nameMalayalam: "ചിരകിയ തേങ്ങ", amount: 0.5, unit: "cup", notes: "Grinds into batter", category: "produce" },
@@ -98,7 +98,7 @@ export const KARNATAKA_ANDHRA_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 35,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae399?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/c8/Kori_Rotti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Kori Rotti (Crisp Rice Wafers)", nameMalayalam: "കോരി റൊട്ടി", amount: 200, unit: "g", notes: "Thin crisp sheets", category: "staple" },
       { name: "Chicken (Curry Cut)", nameMalayalam: "കോഴിയിറച്ചി", amount: 750, unit: "g", notes: "Skinless bone-in", category: "protein" },
@@ -138,7 +138,7 @@ export const KARNATAKA_ANDHRA_RECIPES: Recipe[] = [
     prepTime: 480,
     cookTime: 20,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1589301760014-d929f3979dbe?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a2/South-Indian_Breakfast.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Fermented Dosa Batter", nameMalayalam: "ദോശമാവ്", amount: 4, unit: "cups", notes: "Made with parboiled rice, urad, and chana dal", category: "staple" },
       { name: "Red Garlic Chutney", nameMalayalam: "ചുവന്ന വെളുത്തുള്ളി ചട്ണി", amount: 0.5, unit: "cup", notes: "Byadagi chilies, garlic, roasted gram", category: "spice" },
@@ -175,7 +175,7 @@ export const KARNATAKA_ANDHRA_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 20,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1565557623262-b51c2513a642?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Maddur_vada_and_Gulab_jamun.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Fine Semolina (Rava)", nameMalayalam: "റവ", amount: 1, unit: "cup", notes: "Roasted", category: "staple" },
       { name: "Rice Flour", nameMalayalam: "അരിപ്പൊടി", amount: 0.5, unit: "cup", notes: "For crispness", category: "staple" },
@@ -215,7 +215,7 @@ export const KARNATAKA_ANDHRA_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833998-877b37c2e5c7?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a7/Udupi_style_Mattu_Gulla_Sambar_-My_Home_Bangalore-Karnataka-pic_12_Bisu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Toor Dal (Pigeon Peas)", nameMalayalam: "തുവരപ്പരിപ്പ്", amount: 0.75, unit: "cup", notes: "Pressure cooked soft", category: "staple" },
       { name: "Ash Gourd and Drumsticks", nameMalayalam: "കുമ്പളങ്ങ, മുരിങ്ങക്ക", amount: 250, unit: "g", notes: "Diced", category: "produce" },
@@ -294,7 +294,7 @@ export const KARNATAKA_ANDHRA_RECIPES: Recipe[] = [
     prepTime: 480,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1610192244262-3f33de3f55e5?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Bennedose.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Raw Rice and Idli Rice", nameMalayalam: "പച്ചരിയും പുഴുക്കലരിയും", amount: 3, unit: "cups", notes: "Soaked", category: "staple" },
       { name: "Poha (Flattened Rice)", nameMalayalam: "അവൽ", amount: 0.5, unit: "cup", notes: "For fluffiness", category: "staple" },
@@ -332,7 +332,7 @@ export const KARNATAKA_ANDHRA_RECIPES: Recipe[] = [
     prepTime: 10,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1601050690597-df0568f70951?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4a/Food_on_banana_leaf%21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Finger Millet Flour (Ragi Pudi)", nameMalayalam: "റാഗിപ്പൊടി", amount: 2, unit: "cups", notes: "Pure organic ragi", category: "staple" },
       { name: "Water", nameMalayalam: "വെള്ളം", amount: 4, unit: "cups", notes: "For cooking ragi", category: "staple" },
@@ -372,7 +372,7 @@ export const KARNATAKA_ANDHRA_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 45,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1544025162-d76694265948?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d7/Pandi_Curry.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Pork (with balanced fat)", nameMalayalam: "പോർക്ക് ഇറച്ചി", amount: 800, unit: "g", notes: "Cut into 1.5-inch cubes", category: "protein" },
       { name: "Kachampuli (Coorg Garcinia Vinegar)", nameMalayalam: "കച്ചമ്പുളി", amount: 1, unit: "tbsp", notes: "Tart dark fruit extract", category: "condiment" },
@@ -414,7 +414,7 @@ export const KARNATAKA_ANDHRA_RECIPES: Recipe[] = [
     prepTime: 480,
     cookTime: 50,
     servings: 6,
-    imageUrl: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f9?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Long-Grain Aged Basmati Rice", nameMalayalam: "ബസ്മതി അരി", amount: 600, unit: "g", notes: "Aged 2 years, soaked 45 mins", category: "staple" },
       { name: "Tender Goat Mutton", nameMalayalam: "മട്ടൺ", amount: 900, unit: "g", notes: "Shoulder and leg cuts", category: "protein" },
@@ -456,7 +456,7 @@ export const KARNATAKA_ANDHRA_RECIPES: Recipe[] = [
     prepTime: 25,
     cookTime: 40,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae39a?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Mutton (Curry Cut)", nameMalayalam: "മട്ടൺ", amount: 750, unit: "g", notes: "Bone-in tender pieces", category: "protein" },
       { name: "Red Stemmed Gongura Leaves (Sorrel)", nameMalayalam: "ഗോംഗുരയില", amount: 4, unit: "bunches", notes: "Washed and leaves plucked", category: "produce" },
@@ -496,7 +496,7 @@ export const KARNATAKA_ANDHRA_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996f?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/78/Mirchi_ka_salan_and_Dahi_chutney.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Bhavnagri Large Green Chilies", nameMalayalam: "വലിയ പച്ചമുളക് (ബജ്ജി മുളക്)", amount: 8, unit: "pieces", notes: "Slit and deseeded", category: "produce" },
       { name: "Roasted Peanuts", nameMalayalam: "നിലക്കടല", amount: 0.25, unit: "cup", notes: "Skinned", category: "produce" },
@@ -537,7 +537,7 @@ export const KARNATAKA_ANDHRA_RECIPES: Recipe[] = [
     prepTime: 360,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1610192244263-3f33de3f55e6?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/cd/Indian_Food_Surti_Locho.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Whole Green Moong Dal (Pesalu)", nameMalayalam: "പച്ച ചെറുപയർ", amount: 2, unit: "cups", notes: "Soaked for 6 hours", category: "staple" },
       { name: "Fresh Ginger", nameMalayalam: "ഇഞ്ചി", amount: 2, unit: "inch", notes: "Peeled", category: "produce" },
@@ -616,7 +616,7 @@ export const KARNATAKA_ANDHRA_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 30,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1596797038530-2c107229654c?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Small Purple Brinjals (Vankaya)", nameMalayalam: "ചെറിയ വഴുതനങ്ങ", amount: 8, unit: "pieces", notes: "Slit in cross shape", category: "produce" },
       { name: "Roasted Peanuts and Sesame", nameMalayalam: "നിലക്കടല, എള്ള്", amount: 3, unit: "tbsp", notes: "Ground to stuffing paste", category: "spice" },
@@ -655,7 +655,7 @@ export const KARNATAKA_ANDHRA_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 45,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1604382354936-07c5d9983bd4?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Ckicken_tikka_dinner_cooking_food_Indian.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Country Chicken (Natu Kodi)", nameMalayalam: "നാടൻ കോഴിയിറച്ചി", amount: 800, unit: "g", notes: "Bone-in skin-on pieces", category: "protein" },
       { name: "Poppy Seeds (Gasa Gasalu)", nameMalayalam: "കസ്കസ്", amount: 1.5, unit: "tbsp", notes: "Soaked and ground", category: "spice" },
@@ -695,7 +695,7 @@ export const KARNATAKA_ANDHRA_RECIPES: Recipe[] = [
     prepTime: 60,
     cookTime: 180,
     servings: 6,
-    imageUrl: "https://images.unsplash.com/photo-1544025162-d76694265949?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Boneless Mutton", nameMalayalam: "മട്ടൺ", amount: 750, unit: "g", notes: "Tender chunks", category: "protein" },
       { name: "Broken Wheat (Dalia)", nameMalayalam: "ഗോതമ്പ് നുറുക്ക്", amount: 1, unit: "cup", notes: "Soaked for 2 hours", category: "staple" },
@@ -736,7 +736,7 @@ export const KARNATAKA_ANDHRA_RECIPES: Recipe[] = [
     prepTime: 10,
     cookTime: 20,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833998-877b37c2e5c8?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/63/Perfect_South_Indian_Indian_Lunch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Toor Dal (Kandi Pappu)", nameMalayalam: "തുവരപ്പരിപ്പ്", amount: 1, unit: "cup", notes: "Rinsed", category: "staple" },
       { name: "Ripe Country Tomatoes", nameMalayalam: "തക്കാളി", amount: 4, unit: "pieces", notes: "Chopped", category: "produce" },
@@ -776,7 +776,7 @@ export const KARNATAKA_ANDHRA_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 15,
     servings: 6,
-    imageUrl: "https://images.unsplash.com/photo-1540420773420-3366772f499a?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/62/Gongura_Pachdi_Tempering_ingredients.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Fresh Gongura Leaves", nameMalayalam: "ഗോംഗുരയില", amount: 3, unit: "bunches", notes: "Washed and dried completely", category: "produce" },
       { name: "Dry Red Chilies", nameMalayalam: "വറ്റൽമുളക്", amount: 15, unit: "pieces", notes: "Guntur and Byadagi mix", category: "spice" },

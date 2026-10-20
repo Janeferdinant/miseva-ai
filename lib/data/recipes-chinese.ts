@@ -61,7 +61,7 @@ export const CHINESE_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 8,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Kung_pao_chicken_food_dinner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Boneless Chicken Thighs", nameMalayalam: "ചിക്കൻ", amount: 450, unit: "g", notes: "Diced into 1/2-inch cubes", category: "protein" },
       { name: "Dried Whole Sichuan Chiles", nameMalayalam: "വറ്റൽമുളക്", amount: 12, unit: "pieces", notes: "Snipped into halves, seeds shaken out", category: "spice" },
@@ -101,7 +101,7 @@ export const CHINESE_RECIPES: Recipe[] = [
     prepTime: 30,
     cookTime: 10,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/7e/DFC_3931_A_close-up_of_a_cluster_of_steamed_wontons_with_yellow_wrappers_arranged_on_a_woven_bamboo_tray.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Pork Shoulder", nameMalayalam: "ഇറച്ചി", amount: 300, unit: "g", notes: "Coarsely hand-minced with 20% fat", category: "protein" },
       { name: "Raw Tiger Prawns", nameMalayalam: "ചെമ്മീൻ", amount: 200, unit: "g", notes: "Peeled, deveined, chopped into chunks", category: "protein" },
@@ -140,7 +140,7 @@ export const CHINESE_RECIPES: Recipe[] = [
     prepTime: 40,
     cookTime: 60,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1514944298352-78d1239c0e0b?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/9b/Peking_Duck_Wrap.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Whole Duck or Duck Breasts with Skin", nameMalayalam: "താറാവ് ഇറച്ചി", amount: 800, unit: "g", notes: "Pricked and dried for crackling skin", category: "protein" },
       { name: "Maltose or Honey Glaze", nameMalayalam: "തേൻ / മാൾട്ടോസ്", amount: 3, unit: "tbsp", notes: "Mixed with Shaoxing wine and red vinegar", category: "condiment" },
@@ -179,7 +179,7 @@ export const CHINESE_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 12,
     servings: 2,
-    imageUrl: "https://images.unsplash.com/photo-1569718212165-3a8278d5f625?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/14/Sichuan_Restaurant%2C_Acton%2C_London_%284467149904%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Fresh Chinese Wheat Noodles", nameMalayalam: "നൂഡിൽസ്", amount: 300, unit: "g", notes: "Round alkaline fresh noodles", category: "staple" },
       { name: "Ground Pork or Chicken", nameMalayalam: "കൊത്തിയരിഞ്ഞ ഇറച്ചി", amount: 150, unit: "g", notes: "Minced fine", category: "protein" },
@@ -219,7 +219,7 @@ export const CHINESE_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 8,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/c1/Hot_Lime_Soup.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Day-Old Jasmine Rice", nameMalayalam: "വേവിച്ച ജാസ്മിൻ അരി", amount: 4, unit: "cups", notes: "Chilled overnight, grains separated", category: "staple" },
       { name: "Fresh Large Eggs", nameMalayalam: "മുട്ട", amount: 3, unit: "pieces", notes: "Lightly beaten with pinch of salt", category: "protein" },
@@ -259,7 +259,7 @@ export const CHINESE_RECIPES: Recipe[] = [
     prepTime: 25,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a6?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/bc/%E5%B9%B2%E7%85%B8%E7%89%9B%E8%82%89%E4%B8%9D_Crispy_Beef_Strips_-_Sung%27s_Kitchen_%283042618951%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Fresh Seabass or Tilapia Fillet", nameMalayalam: "മീൻ ഫില്ലറ്റ്", amount: 600, unit: "g", notes: "Skin-on, scored into crosshatch diamond batons", category: "protein" },
       { name: "Cornstarch for Dredging", nameMalayalam: "കോൺഫ്ലോർ", amount: 1, unit: "cup", notes: "Generously dusted between score marks", category: "staple" },
@@ -297,7 +297,7 @@ export const CHINESE_RECIPES: Recipe[] = [
     prepTime: 10,
     cookTime: 10,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a7?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Patvelia4-Bhatia_Residence%2CMumbai-Maharashtra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Whole White Fish (Seabass or Pomfret)", nameMalayalam: "ആവോലി / മീൻ", amount: 600, unit: "g", notes: "Scaled, gutted, patted dry", category: "protein" },
       { name: "Fresh Young Ginger", nameMalayalam: "ഇഞ്ചി", amount: 50, unit: "g", notes: "Cut into hair-thin matchsticks", category: "produce" },
@@ -337,7 +337,7 @@ export const CHINESE_RECIPES: Recipe[] = [
     prepTime: 25,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1547496502-affa22d38847?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/47/BrownRice_ChickenMeal-Home-AndhraPradesh-002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Square Thin Wonton Wrappers", nameMalayalam: "വോൺടോൺ ഷീറ്റ്", amount: 24, unit: "pieces", notes: "Extra-thin egg wrappers", category: "staple" },
       { name: "Peeled Tiger Prawns", nameMalayalam: "ചെമ്മീൻ", amount: 250, unit: "g", notes: "Coarsely chopped", category: "protein" },
@@ -376,7 +376,7 @@ export const CHINESE_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Patvelia3-Bhatia_Residence%2CMumbai-Maharashtra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Boneless Chicken Thighs", nameMalayalam: "ചിക്കൻ തുടക്കഷണങ്ങൾ", amount: 650, unit: "g", notes: "Trimmed", category: "protein" },
       { name: "Red Fermented Bean Curd (Nanru)", nameMalayalam: "റെഡ് ഫെർമെന്റഡ് ബീൻ കർഡ്", amount: 1, unit: "block", notes: "Provides natural ruby color and umami", category: "condiment" },

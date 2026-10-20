@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { ResilientImage } from "@/components/ResilientImage";
 import { DESSERT_RECIPES } from "@/lib/data/desserts";
 import { Cake, Sparkles, Clock, Flame, IndianRupee, Search, ShieldCheck, Download } from "lucide-react";
 
@@ -116,8 +117,9 @@ export default function DessertsStudioPage() {
             <div>
               {/* Media Card */}
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-black/20">
-                <Image
+                <ResilientImage
                   src={dessert.imageUrl}
+                  fallbackSrc="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1200&q=80"
                   alt={dessert.title}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

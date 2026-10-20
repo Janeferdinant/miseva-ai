@@ -481,7 +481,7 @@ export const SOUTH_INDIAN_RECIPES: Recipe[] = [
     prepTime: 480,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1589301760014-d929f3979dbd?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/27/South_Indian_Breakfast.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Idli Rice (Parboiled)", nameMalayalam: "ഇഡ്ഡലി അരി", amount: 3, unit: "cups", notes: "Soaked for 4 hours", category: "staple" },
       { name: "Whole White Urad Dal (Gota)", nameMalayalam: "ഉഴുന്ന്", amount: 1, unit: "cup", notes: "Fluffy stone ground", category: "staple" },
@@ -561,7 +561,7 @@ export const SOUTH_INDIAN_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a1996e?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Garlic Cloves (Poondu)", nameMalayalam: "വെളുത്തുള്ളി", amount: 25, unit: "pieces", notes: "Peeled whole", category: "produce" },
       { name: "Small Shallots", nameMalayalam: "ചെറിയ ഉള്ളി", amount: 15, unit: "pieces", notes: "Whole peeled", category: "produce" },
@@ -718,7 +718,7 @@ export const SOUTH_INDIAN_RECIPES: Recipe[] = [
     prepTime: 480,
     cookTime: 30,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e47?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1610192244261-3f33de3f55e4?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Raw Rice and Boiled Rice", nameMalayalam: "പച്ചരിയും പുഴുക്കലരിയും", amount: 2, unit: "cups", notes: "Coarsely ground", category: "staple" },
       { name: "Urad Dal", nameMalayalam: "ഉഴുന്ന്", amount: 1, unit: "cup", notes: "Soaked and ground", category: "staple" },
@@ -757,7 +757,7 @@ export const SOUTH_INDIAN_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 30,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/52/A_typical_south_Indian_lunch_plate.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Small Purple Baby Brinjals", nameMalayalam: "ചെറിയ വഴുതനങ്ങ", amount: 8, unit: "pieces", notes: "Slit in cross shape keeping stem intact", category: "produce" },
       { name: "Roasted Sesame Seeds (Ellu)", nameMalayalam: "എള്ള്", amount: 2, unit: "tbsp", notes: "Toasted", category: "spice" },

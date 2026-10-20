@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { ResilientImage } from "@/components/ResilientImage";
 import { BEVERAGE_RECIPES } from "@/lib/data/beverages";
 import { GlassWater, Sparkles, Clock, Flame, IndianRupee, Search, Sun, Snowflake } from "lucide-react";
 
@@ -131,8 +132,9 @@ export default function BeveragesStudioPage() {
             <div>
               {/* Media Card */}
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-black/20">
-                <Image
+                <ResilientImage
                   src={beverage.imageUrl}
+                  fallbackSrc="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=1200&q=80"
                   alt={beverage.title}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

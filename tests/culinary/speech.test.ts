@@ -40,4 +40,12 @@ describe("Multilingual Speech Engine & Voice Command Parser", () => {
   it("should return UNKNOWN for unrecognized phrases", () => {
     expect(parseVoiceCommand("what is the weather today").type).toBe("UNKNOWN");
   });
+
+  it("should generate valid TTS audio URLs for Malayalam streaming speech", async () => {
+    const { getTtsAudioUrl } = await import("../lib/voice/speech-engine");
+    const url = getTtsAudioUrl("നമസ്കാരം", "ml");
+    expect(url).toContain("/api/tts");
+    expect(url).toContain("lang=ml");
+    expect(url).toContain("text=%E0%B4%A8%E0%B4%AE%E0%B4%B8%E0%B5%8D%E0%B4%95%E0%B4%BE%E0%B4%B0%E0%B4%82");
+  });
 });

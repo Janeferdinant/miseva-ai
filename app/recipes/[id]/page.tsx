@@ -40,11 +40,17 @@ export default function RecipeDetailPage({
     notFound();
   }
 
+  const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1546833999-56f576340395?auto=format&fit=crop&w=1200&q=80";
+  const [heroImg, setHeroImg] = useState(recipe.imageUrl);
   const [servings, setServings] = useState(recipe.servings);
   const [checkedIngredients, setCheckedIngredients] = useState<Record<string, boolean>>({});
   const [isHandsFreeOpen, setIsHandsFreeOpen] = useState(false);
   const [isFavorite, setIsFavorite] = useState(false);
   const [copiedLink, setCopiedLink] = useState(false);
+
+  React.useEffect(() => {
+    setHeroImg(recipe.imageUrl);
+  }, [recipe.imageUrl]);
 
   React.useEffect(() => {
     const favs = getFavoriteRecipeIds();
@@ -132,9 +138,12 @@ export default function RecipeDetailPage({
       <div className="relative rounded-3xl glass-panel overflow-hidden border border-glass-border shadow-glass">
         <div className="relative h-72 sm:h-96 w-full">
           <img
-            src={recipe.imageUrl}
+            src={heroImg}
             alt={recipe.title}
             className="w-full h-full object-cover"
+            onError={() => {
+              if (heroImg !== FALLBACK_IMAGE) setHeroImg(FALLBACK_IMAGE);
+            }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
         </div>

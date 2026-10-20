@@ -49,7 +49,8 @@ describe("Excel Workbook Quality & Data Integrity Validation", { timeout: 20000 
       expect(id).toBeTruthy();
       expect(title).toBeTruthy();
       expect(cuisine).toBeTruthy();
-      expect(imageUrl).toContain("images.unsplash.com");
+      expect(imageUrl.startsWith("https://")).toBe(true);
+      expect(imageUrl.includes("images.unsplash.com") || imageUrl.includes("upload.wikimedia.org")).toBe(true);
 
       recipeIds.add(id);
     }

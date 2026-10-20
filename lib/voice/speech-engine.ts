@@ -108,7 +108,14 @@ export function parseVoiceCommand(transcript: string): VoiceCommandResult {
 }
 
 /**
- * Speech Synthesis Helper with Malayalam Voice Detection & Fallback
+ * Generate streaming TTS URL from internal Next.js API
+ */
+export function getTtsAudioUrl(text: string, lang: LanguageType): string {
+  return `/api/tts?text=${encodeURIComponent(text)}&lang=${lang}`;
+}
+
+/**
+ * Speech Synthesis Helper with Malayalam Streaming TTS & SpeechSynthesis Fallback
  */
 export class SpeechEngine {
   private static synth: SpeechSynthesis | null =
@@ -116,8 +123,11 @@ export class SpeechEngine {
       ? window.speechSynthesis
       : null;
 
+  private static activeAudio: HTMLAudioElement | null = null;
+
   public static isSupported(): boolean {
-    return typeof window !== "undefined" && "speechSynthesis" in window;
+    // True on all browsers that have either HTML5 Audio or SpeechSynthesis
+    return typeof window !== "undefined";
   }
 
   public static isRecognitionSupported(): boolean {
@@ -135,7 +145,6 @@ export class SpeechEngine {
   public static findVoice(lang: LanguageType): SpeechSynthesisVoice | null {
     const voices = this.getVoices();
     if (lang === "ml") {
-      // Look for Malayalam specifically
       const mlVoice = voices.find(
         (v) =>
           v.lang.toLowerCase().includes("ml") ||
@@ -143,7 +152,6 @@ export class SpeechEngine {
       );
       if (mlVoice) return mlVoice;
 
-      // Fallback: Indian English voice with accurate phonetics
       const indianVoice = voices.find(
         (v) =>
           v.lang.toLowerCase().includes("en-in") ||
@@ -151,7 +159,6 @@ export class SpeechEngine {
       );
       if (indianVoice) return indianVoice;
     } else {
-      // English voice (prefer Indian English or standard English)
       const enVoice =
         voices.find((v) => v.lang.toLowerCase().includes("en-in")) ||
         voices.find((v) => v.lang.toLowerCase().startsWith("en")) ||
@@ -171,13 +178,46 @@ export class SpeechEngine {
       onError?: (err: any) => void;
     }
   ): void {
-    if (!this.synth) {
-      callbacks?.onError?.("Speech synthesis not supported in this environment");
+    this.stop(); // Stop any pending speech or audio
+
+    // For Malayalam, always use the dedicated high-fidelity streaming neural TTS endpoint
+    if (lang === "ml" || !this.synth) {
+      if (typeof window === "undefined") {
+        callbacks?.onError?.("Audio playback not supported in server environment");
+        return;
+      }
+
+      try {
+        const url = getTtsAudioUrl(text, lang);
+        const audio = new Audio(url);
+        audio.playbackRate = Math.max(0.7, Math.min(1.5, rate));
+        this.activeAudio = audio;
+
+        audio.onplay = () => {
+          callbacks?.onStart?.();
+        };
+
+        audio.onended = () => {
+          this.activeAudio = null;
+          callbacks?.onEnd?.();
+        };
+
+        audio.onerror = (e) => {
+          this.activeAudio = null;
+          callbacks?.onError?.(e);
+        };
+
+        audio.play().catch((err) => {
+          this.activeAudio = null;
+          callbacks?.onError?.(err);
+        });
+      } catch (err) {
+        callbacks?.onError?.(err);
+      }
       return;
     }
 
-    this.stop(); // Stop any pending speech
-
+    // Standard English or local voice synthesis
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.rate = Math.max(0.7, Math.min(1.5, rate));
     utterance.pitch = 1.0;
@@ -187,7 +227,7 @@ export class SpeechEngine {
       utterance.voice = voice;
       utterance.lang = voice.lang;
     } else {
-      utterance.lang = lang === "ml" ? "ml-IN" : "en-IN";
+      utterance.lang = "en-IN";
     }
 
     if (callbacks?.onStart) utterance.onstart = callbacks.onStart;
@@ -198,18 +238,33 @@ export class SpeechEngine {
   }
 
   public static stop(): void {
+    if (this.activeAudio) {
+      try {
+        this.activeAudio.pause();
+        this.activeAudio.currentTime = 0;
+      } catch (_) {}
+      this.activeAudio = null;
+    }
     if (this.synth) {
-      this.synth.cancel();
+      try {
+        this.synth.cancel();
+      } catch (_) {}
     }
   }
 
   public static pause(): void {
+    if (this.activeAudio) {
+      this.activeAudio.pause();
+    }
     if (this.synth) {
       this.synth.pause();
     }
   }
 
   public static resume(): void {
+    if (this.activeAudio) {
+      this.activeAudio.play().catch(() => {});
+    }
     if (this.synth) {
       this.synth.resume();
     }

@@ -147,7 +147,7 @@ export const THAI_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 60,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1546833999-b9f581a19975?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/3/36/Patvelia8-Bhatia_Residence%2CMumbai-Maharashtra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Beef Chuck or Shank", nameMalayalam: "ബീഫ്", amount: 600, unit: "g", notes: "Cut into 1.5-inch hearty cubes", category: "protein" },
       { name: "Massaman Curry Paste", nameMalayalam: "മസ്സമാൻ പേസ്റ്റ്", amount: 4, unit: "tbsp", notes: "Rich with roasted spices", category: "condiment" },
@@ -188,7 +188,7 @@ export const THAI_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 0,
     servings: 2,
-    imageUrl: "https://images.unsplash.com/photo-1540420773420-3366772f499d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/0a/Som_tam_thai.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Unripe Green Papaya", nameMalayalam: "പച്ച പപ്പായ", amount: 300, unit: "g", notes: "Peeled and hand-shredded into crisp matchsticks", category: "produce" },
       { name: "Thai Bird's Eye Chilies", nameMalayalam: "കാന്താരിമുളക്", amount: 4, unit: "pieces", notes: "Adjust for spice tolerance", category: "produce" },
@@ -229,7 +229,7 @@ export const THAI_RECIPES: Recipe[] = [
     prepTime: 10,
     cookTime: 6,
     servings: 2,
-    imageUrl: "https://images.unsplash.com/photo-1525755662778-989d0524087f?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/25/Tuna_steak_and_roasted_broccoli%2C_with_garlic_olive_oil%2C_salt%2C_and_black_pepper%2C_on_naan_with_Indian_mixed_pickles_-_Massachusetts.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Boneless Chicken Thigh", nameMalayalam: "ചിക്കൻ", amount: 350, unit: "g", notes: "Coarsely hand-chopped with knife", category: "protein" },
       { name: "Fresh Thai Holy Basil (Bai Kra Pao)", nameMalayalam: "ഹോളി ബേസിൽ / കൃഷ്ണതുളസി", amount: 1.5, unit: "cups", notes: "Distinct peppery leaves", category: "produce" },
@@ -269,7 +269,7 @@ export const THAI_RECIPES: Recipe[] = [
     prepTime: 10,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1547496502-affa22d38848?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/2e/Tom_kha_gai_%2818877504789%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Boneless Chicken Breast or Thigh", nameMalayalam: "ചിക്കൻ", amount: 400, unit: "g", notes: "Thinly sliced", category: "protein" },
       { name: "Full-Fat Coconut Milk", nameMalayalam: "തേങ്ങാപ്പാൽ", amount: 2, unit: "cups", notes: "Rich and creamy", category: "dairy" },
@@ -309,7 +309,7 @@ export const THAI_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70ce?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/41/Patvelia9-Bhatia_Residence%2CMumbai-Maharashtra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Roasted Duck Breast or Chicken", nameMalayalam: "റോസ്റ്റ് ചെയ്ത താറാവ് / ചിക്കൻ", amount: 450, unit: "g", notes: "Sliced into bite-sized medallions", category: "protein" },
       { name: "Thai Red Curry Paste (Prik Gaeng Phed)", nameMalayalam: "റെഡ് കറി പേസ്റ്റ്", amount: 3, unit: "tbsp", notes: "Dried red chili base", category: "condiment" },
@@ -348,7 +348,7 @@ export const THAI_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 30,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1569718212165-3a8278d5f626?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6c/Khao_soi_Chiang_Mai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Fresh Chinese Egg Noodles", nameMalayalam: "എഗ്ഗ് നൂഡിൽസ്", amount: 400, unit: "g", notes: "Divided (300g boiled, 100g deep-fried for crisp top)", category: "staple" },
       { name: "Chicken Drumsticks", nameMalayalam: "ചിക്കൻ ലെഗ്ഗ്", amount: 4, unit: "pieces", notes: "Bone-in tender drumsticks", category: "protein" },
@@ -387,7 +387,7 @@ export const THAI_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 10,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1603133872878-684f208fb84c?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/20/Herring_in_dill-herb_sauce_and_chili_powder%2C_on_peas_and_broccoli_in_garlic_olive_oil%2C_on_an_unfortunately_smashed_plate_-_Massachusetts.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Day-Old Jasmine Rice", nameMalayalam: "വേവിച്ച ജാസ്മിൻ അരി", amount: 4, unit: "cups", notes: "Chilled overnight", category: "staple" },
       { name: "Fresh Pineapple Chunks", nameMalayalam: "പൈനാപ്പിൾ കഷ്ണങ്ങൾ", amount: 1.5, unit: "cups", notes: "Bite-sized sweet cubes", category: "produce" },

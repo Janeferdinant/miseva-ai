@@ -171,7 +171,7 @@ export const TABLE_STYLING_CONCEPTS: TableStylingConcept[] = [
     tableShape: "rectangular",
     colorPalette: { primary: "#880E4F", secondary: "#D4AF37", accent: "#004D40", neutral: "#FFFFFF" },
     servingStyle: "family-sharing",
-    moodBoardImageUrl: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1200&q=80",
+    moodBoardImageUrl: "https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&w=1200&q=80",
     tableclothRunner: "White damask cotton Dastarkhan over Persian crimson rug.",
     plateAndCutleryArrangement: "Silver-plated communal biryani platters with small crystal dessert bowls.",
     centerpieceAndFlorals: "Silver Gulabpash filled with Damascus rose water, surrounded by fresh red rose garlands.",

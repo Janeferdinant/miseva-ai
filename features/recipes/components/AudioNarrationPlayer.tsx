@@ -73,6 +73,9 @@ export function AudioNarrationPlayer({ steps, recipeTitle }: AudioNarrationPlaye
 
     setIsPlaying(true);
     SpeechEngine.speak(fullNarration, narrationLang, speed, {
+      onStart: () => {
+        setIsPlaying(true);
+      },
       onEnd: () => {
         setIsPlaying(false);
       },

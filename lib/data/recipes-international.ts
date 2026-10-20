@@ -137,7 +137,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 180,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1621996346565-e3d5d6281724?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1546549032-9571cd6b27df?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Coarsely Ground Beef & Pork", nameMalayalam: "ബീഫ്, പോർക്ക് കീമ", amount: 500, unit: "g", notes: "Minced mix", category: "protein" },
       { name: "Soffritto (Onion, Celery, Carrot)", nameMalayalam: "സവാള, കാരറ്റ്, സെലറി", amount: 150, unit: "g", notes: "Finely diced mirepoix", category: "produce" },
@@ -256,7 +256,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 150,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1544025162-d7669426594a?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Cross-Cut Beef or Veal Shanks", nameMalayalam: "ബീഫ് ഷാങ്ക് (മജ്ജയോടുകൂടിയത്)", amount: 4, unit: "pieces", notes: "Thick cut with center marrow", category: "protein" },
       { name: "Dry White Wine", nameMalayalam: "വൈറ്റ് വൈൻ", amount: 1, unit: "cup", notes: "Pinot Grigio", category: "condiment" },
@@ -331,7 +331,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 40,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1551183053-bf91a1d81142?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/b6/Complete_traditional_Odia_vegetarian_lunch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Russet or Yukon Gold Potatoes", nameMalayalam: "ഉരുളക്കിഴങ്ങ്", amount: 800, unit: "g", notes: "Baked dry and riced", category: "produce" },
       { name: "Tipo 00 Flour", nameMalayalam: "മൈദ", amount: 150, unit: "g", notes: "Minimal flour for pillowy lightness", category: "staple" },
@@ -370,7 +370,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 15,
     cookTime: 30,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1547496502-affa22d38843?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Cannellini Beans (Cooked)", nameMalayalam: "വെള്ള ബീൻസ്", amount: 1.5, unit: "cups", notes: "Tender white beans", category: "staple" },
       { name: "Ditalini Pasta", nameMalayalam: "ഡിതാലിനി പാസ്ത", amount: 0.5, unit: "cup", notes: "Small soup pasta", category: "staple" },
@@ -411,7 +411,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 60,
     cookTime: 120,
     servings: 2,
-    imageUrl: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Shoyu_Ramen_%40_Shichisai_%40_Tokyo_Ramen_Street_%2813165344585%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Fresh Alkaline Ramen Noodles", nameMalayalam: "രാമെൻ നൂഡിൽസ്", amount: 260, unit: "g", notes: "Fresh wavy noodles", category: "staple" },
       { name: "Rolled Chashu Pork Belly", nameMalayalam: "ഷാഷു പോർക്ക്", amount: 4, unit: "slices", notes: "Braised in soy and mirin", category: "protein" },
@@ -450,7 +450,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 25,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1604382354936-07c5d9983bd5?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/b8/HK_%E5%B0%96%E6%B2%99%E5%92%80%E6%9D%B1_TST_East_%E9%BA%BC%E5%9C%B0%E9%81%93_69_Mody_Road_%E5%B8%9D%E8%8B%91%E9%85%92%E5%BA%97_Royal_Garden_Hotel_%E9%9B%85%E8%8B%91%E5%BA%A7_The_Greenery_Restaurant_buffet_diner_food_%E5%8D%B0%E5%BA%A6%E9%A3%9F%E5%93%81_Indian_cuisine_Papadum_November_2022_Px3_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Chicken Breast Fillets", nameMalayalam: "ചിക്കൻ ബ്രെസ്റ്റ്", amount: 4, unit: "pieces", notes: "Pounded to 1/2-inch thickness", category: "protein" },
       { name: "Japanese Panko Breadcrumbs", nameMalayalam: "പാങ്കോ ബ്രെഡ്ക്രംബ്സ്", amount: 2, unit: "cups", notes: "Airy Japanese flakes", category: "staple" },
@@ -489,7 +489,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 5,
     cookTime: 10,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1547496502-affa22d38844?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Dashi Broth (Kombu & Shiitake or Bonito)", nameMalayalam: "ഡാഷി സൂപ്പ്", amount: 4, unit: "cups", notes: "Fresh umami stock", category: "produce" },
       { name: "Japanese Miso Paste (Awase or Shiro Miso)", nameMalayalam: "മിസോ പേസ്റ്റ്", amount: 3, unit: "tbsp", notes: "Fermented soybean paste", category: "condiment" },
@@ -527,7 +527,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 10,
     cookTime: 15,
     servings: 2,
-    imageUrl: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae39d?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/57/Food_Plate_after_dinner_at_MTR_Restaurant%2C_Indiaranagar%2C_Bangalore%2C_Karnatak.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Boneless Chicken Thighs (Skin-on)", nameMalayalam: "ചിക്കൻ തുടക്കഷണങ്ങൾ", amount: 400, unit: "g", notes: "Skin on for crispy glaze", category: "protein" },
       { name: "Japanese Soy Sauce (Shoyu)", nameMalayalam: "സോയ സോസ്", amount: 2, unit: "tbsp", notes: "Brewed soy", category: "condiment" },
@@ -566,7 +566,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 20,
     cookTime: 15,
     servings: 4,
-    imageUrl: "https://images.unsplash.com/photo-1565557623262-b51c2513a647?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=1200&q=80",
     ingredients: [
       { name: "Assorted Vegetables (Lotus root, Kabocha pumpkin, Sweet potato, Shiitake)", nameMalayalam: "പച്ചക്കറികൾ", amount: 350, unit: "g", notes: "Thinly sliced", category: "produce" },
       { name: "Ice-Cold Water with Ice Cubes", nameMalayalam: "ഐസ് വെള്ളം", amount: 1, unit: "cup", notes: "Prevents gluten formation", category: "condiment" },
@@ -682,7 +682,7 @@ export const INTERNATIONAL_RECIPES: Recipe[] = [
     prepTime: 10,
     cookTime: 12,
     servings: 2,
-    imageUrl: "https://images.unsplash.com/photo-1534939561126-855b8675edd8?auto=format&fit=crop&w=1200&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/19/023_Yoshinoya_fast_food_restaurant_chain_in_Japan_-_gyudon_bowl_restaurant.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     ingredients: [
       { name: "Thinly Shaved Beef (Ribeye / Chuck)", nameMalayalam: "നേർത്ത ബീഫ് കഷണങ്ങൾ", amount: 250, unit: "g", notes: "Hot-pot thin", category: "protein" },
       { name: "Sweet Onions", nameMalayalam: "സവാള", amount: 1, unit: "large", notes: "Thinly sliced", category: "produce" },

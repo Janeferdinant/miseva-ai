@@ -25,6 +25,13 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
     setIsFavorite(next);
   };
 
+  const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1546833999-56f576340395?auto=format&fit=crop&w=1200&q=80";
+  const [imgSrc, setImgSrc] = useState(recipe.imageUrl);
+
+  useEffect(() => {
+    setImgSrc(recipe.imageUrl);
+  }, [recipe.imageUrl]);
+
   return (
     <Link
       href={`/recipes/${recipe.slug || recipe.id}`}
@@ -33,10 +40,13 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
       {/* Top Visual Container */}
       <div className="relative h-48 w-full overflow-hidden bg-white/5">
         <img
-          src={recipe.imageUrl}
+          src={imgSrc}
           alt={recipe.title}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           loading="lazy"
+          onError={() => {
+            if (imgSrc !== FALLBACK_IMAGE) setImgSrc(FALLBACK_IMAGE);
+          }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
 
