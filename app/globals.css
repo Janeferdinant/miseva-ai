@@ -1,0 +1,315 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans Malayalam', sans-serif;
+  }
+
+  /* 1. Emerald Kitchen (Default) */
+  :root[data-theme="emerald"][data-mode="dark"],
+  :root[data-theme="emerald"]:not([data-mode="light"]) {
+    --background: #06140e;
+    --foreground: #ecfdf5;
+    --glass-surface: rgba(6, 26, 18, 0.65);
+    --glass-border: rgba(52, 211, 153, 0.22);
+    --glass-highlight: rgba(167, 243, 208, 0.15);
+    --glass-glow: rgba(16, 185, 129, 0.3);
+    --glass-shadow: rgba(0, 0, 0, 0.45);
+    --glass-shadow-hover: rgba(16, 185, 129, 0.25);
+    --brand-primary: #10b981;
+    --brand-secondary: #059669;
+    --brand-accent: #f59e0b;
+    --brand-muted: #064e3b;
+    --card-bg: rgba(10, 36, 26, 0.6);
+  }
+  :root[data-theme="emerald"][data-mode="light"] {
+    --background: #f0fdf4;
+    --foreground: #064e3b;
+    --glass-surface: rgba(255, 255, 255, 0.75);
+    --glass-border: rgba(16, 185, 129, 0.25);
+    --glass-highlight: rgba(255, 255, 255, 0.8);
+    --glass-glow: rgba(16, 185, 129, 0.2);
+    --glass-shadow: rgba(6, 78, 59, 0.08);
+    --glass-shadow-hover: rgba(16, 185, 129, 0.2);
+    --brand-primary: #059669;
+    --brand-secondary: #047857;
+    --brand-accent: #d97706;
+    --brand-muted: #d1fae5;
+    --card-bg: rgba(255, 255, 255, 0.7);
+  }
+
+  /* 2. Saffron & Spice */
+  :root[data-theme="saffron"][data-mode="dark"] {
+    --background: #170d06;
+    --foreground: #fff7ed;
+    --glass-surface: rgba(35, 18, 8, 0.65);
+    --glass-border: rgba(249, 115, 22, 0.25);
+    --glass-highlight: rgba(254, 215, 170, 0.15);
+    --glass-glow: rgba(234, 88, 12, 0.35);
+    --glass-shadow: rgba(0, 0, 0, 0.5);
+    --glass-shadow-hover: rgba(249, 115, 22, 0.28);
+    --brand-primary: #f97316;
+    --brand-secondary: #ea580c;
+    --brand-accent: #eab308;
+    --brand-muted: #7c2d12;
+    --card-bg: rgba(43, 21, 9, 0.65);
+  }
+  :root[data-theme="saffron"][data-mode="light"] {
+    --background: #fff7ed;
+    --foreground: #7c2d12;
+    --glass-surface: rgba(255, 255, 255, 0.8);
+    --glass-border: rgba(249, 115, 22, 0.3);
+    --glass-highlight: rgba(255, 255, 255, 0.9);
+    --glass-glow: rgba(234, 88, 12, 0.2);
+    --glass-shadow: rgba(124, 45, 18, 0.08);
+    --glass-shadow-hover: rgba(249, 115, 22, 0.2);
+    --brand-primary: #ea580c;
+    --brand-secondary: #c2410c;
+    --brand-accent: #d97706;
+    --brand-muted: #ffedd5;
+    --card-bg: rgba(255, 255, 255, 0.75);
+  }
+
+  /* 3. Ocean Mist */
+  :root[data-theme="ocean"][data-mode="dark"] {
+    --background: #05131a;
+    --foreground: #f0fdfa;
+    --glass-surface: rgba(8, 28, 38, 0.65);
+    --glass-border: rgba(20, 184, 166, 0.25);
+    --glass-highlight: rgba(153, 246, 228, 0.15);
+    --glass-glow: rgba(13, 148, 136, 0.35);
+    --glass-shadow: rgba(0, 0, 0, 0.5);
+    --glass-shadow-hover: rgba(20, 184, 166, 0.3);
+    --brand-primary: #14b8a6;
+    --brand-secondary: #0d9488;
+    --brand-accent: #38bdf8;
+    --brand-muted: #134e4a;
+    --card-bg: rgba(10, 37, 51, 0.6);
+  }
+  :root[data-theme="ocean"][data-mode="light"] {
+    --background: #f0fdfa;
+    --foreground: #134e4a;
+    --glass-surface: rgba(255, 255, 255, 0.8);
+    --glass-border: rgba(20, 184, 166, 0.25);
+    --glass-highlight: rgba(255, 255, 255, 0.9);
+    --glass-glow: rgba(20, 184, 166, 0.2);
+    --glass-shadow: rgba(19, 78, 74, 0.08);
+    --glass-shadow-hover: rgba(20, 184, 166, 0.2);
+    --brand-primary: #0d9488;
+    --brand-secondary: #0f766e;
+    --brand-accent: #0284c7;
+    --brand-muted: #ccfbf1;
+    --card-bg: rgba(255, 255, 255, 0.75);
+  }
+
+  /* 4. Midnight Gourmet */
+  :root[data-theme="midnight"][data-mode="dark"] {
+    --background: #090b14;
+    --foreground: #f8fafc;
+    --glass-surface: rgba(19, 23, 39, 0.68);
+    --glass-border: rgba(147, 51, 234, 0.25);
+    --glass-highlight: rgba(216, 180, 254, 0.15);
+    --glass-glow: rgba(168, 85, 247, 0.35);
+    --glass-shadow: rgba(0, 0, 0, 0.6);
+    --glass-shadow-hover: rgba(168, 85, 247, 0.3);
+    --brand-primary: #a855f7;
+    --brand-secondary: #9333ea;
+    --brand-accent: #ec4899;
+    --brand-muted: #581c87;
+    --card-bg: rgba(24, 29, 49, 0.65);
+  }
+  :root[data-theme="midnight"][data-mode="light"] {
+    --background: #faf5ff;
+    --foreground: #3b0764;
+    --glass-surface: rgba(255, 255, 255, 0.82);
+    --glass-border: rgba(168, 85, 247, 0.3);
+    --glass-highlight: rgba(255, 255, 255, 0.9);
+    --glass-glow: rgba(168, 85, 247, 0.2);
+    --glass-shadow: rgba(59, 7, 100, 0.08);
+    --glass-shadow-hover: rgba(168, 85, 247, 0.2);
+    --brand-primary: #9333ea;
+    --brand-secondary: #7e22ce;
+    --brand-accent: #db2777;
+    --brand-muted: #f3e8ff;
+    --card-bg: rgba(255, 255, 255, 0.8);
+  }
+
+  /* 5. Rose Quartz */
+  :root[data-theme="rose"][data-mode="dark"] {
+    --background: #190a10;
+    --foreground: #fff1f2;
+    --glass-surface: rgba(38, 14, 24, 0.68);
+    --glass-border: rgba(244, 63, 94, 0.28);
+    --glass-highlight: rgba(254, 205, 211, 0.15);
+    --glass-glow: rgba(244, 63, 94, 0.35);
+    --glass-shadow: rgba(0, 0, 0, 0.55);
+    --glass-shadow-hover: rgba(244, 63, 94, 0.3);
+    --brand-primary: #f43f5e;
+    --brand-secondary: #e11d48;
+    --brand-accent: #fb7185;
+    --brand-muted: #881337;
+    --card-bg: rgba(45, 17, 28, 0.65);
+  }
+  :root[data-theme="rose"][data-mode="light"] {
+    --background: #fff1f2;
+    --foreground: #881337;
+    --glass-surface: rgba(255, 255, 255, 0.82);
+    --glass-border: rgba(244, 63, 94, 0.28);
+    --glass-highlight: rgba(255, 255, 255, 0.9);
+    --glass-glow: rgba(244, 63, 94, 0.2);
+    --glass-shadow: rgba(136, 19, 55, 0.08);
+    --glass-shadow-hover: rgba(244, 63, 94, 0.2);
+    --brand-primary: #e11d48;
+    --brand-secondary: #be123c;
+    --brand-accent: #f43f5e;
+    --brand-muted: #ffe4e6;
+    --card-bg: rgba(255, 255, 255, 0.8);
+  }
+
+  /* 6. Ivory Luxury */
+  :root[data-theme="ivory"][data-mode="dark"] {
+    --background: #14120f;
+    --foreground: #fefce8;
+    --glass-surface: rgba(33, 29, 23, 0.7);
+    --glass-border: rgba(217, 119, 6, 0.28);
+    --glass-highlight: rgba(254, 240, 138, 0.15);
+    --glass-glow: rgba(217, 119, 6, 0.35);
+    --glass-shadow: rgba(0, 0, 0, 0.55);
+    --glass-shadow-hover: rgba(217, 119, 6, 0.3);
+    --brand-primary: #eab308;
+    --brand-secondary: #ca8a04;
+    --brand-accent: #f59e0b;
+    --brand-muted: #713f12;
+    --card-bg: rgba(40, 35, 28, 0.65);
+  }
+  :root[data-theme="ivory"][data-mode="light"] {
+    --background: #fdfbf7;
+    --foreground: #451a03;
+    --glass-surface: rgba(255, 255, 255, 0.85);
+    --glass-border: rgba(217, 119, 6, 0.25);
+    --glass-highlight: rgba(255, 255, 255, 0.95);
+    --glass-glow: rgba(217, 119, 6, 0.18);
+    --glass-shadow: rgba(69, 26, 3, 0.07);
+    --glass-shadow-hover: rgba(217, 119, 6, 0.18);
+    --brand-primary: #b45309;
+    --brand-secondary: #92400e;
+    --brand-accent: #d97706;
+    --brand-muted: #fef3c7;
+    --card-bg: rgba(255, 255, 255, 0.85);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden;
+  }
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: var(--glass-surface);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 32px 0 var(--glass-shadow);
+  border-radius: 1rem;
+}
+
+.glass-card {
+  background: var(--glass-surface);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 20px 0 var(--glass-shadow);
+  border-radius: 0.875rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  border-color: var(--brand-primary);
+  box-shadow: 0 12px 35px 0 var(--glass-shadow-hover);
+  transform: translateY(-2px);
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  color: var(--foreground);
+  border-radius: 0.625rem;
+  padding: 0.625rem 1rem;
+  transition: all 0.2s ease;
+}
+
+.glass-input:focus {
+  outline: none;
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 0 3px var(--glass-glow);
+}
+
+.glass-button {
+  background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 0.625rem;
+  padding: 0.625rem 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px 0 var(--glass-glow);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px 0 var(--glass-glow);
+  filter: brightness(1.08);
+}
+
+.glass-button:active {
+  transform: translateY(1px);
+}
+
+.glass-button-secondary {
+  background: var(--glass-surface);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  color: var(--foreground);
+  font-weight: 500;
+  border-radius: 0.625rem;
+  padding: 0.625rem 1.25rem;
+  transition: all 0.2s ease;
+}
+
+.glass-button-secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--brand-primary);
+}
+
+/* Malayalam Text Readability Helper */
+.lang-ml {
+  font-family: 'Noto Sans Malayalam', var(--font-sans);
+  line-height: 1.75;
+  letter-spacing: 0.015em;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--glass-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-primary);
+}
