@@ -22,6 +22,9 @@ import { INDIAN_REGIONS, GLOBAL_CUISINES } from "@/lib/data/cuisines";
 import { RecipeCard } from "@/components/RecipeCard";
 import { HoloCulinaryRadar } from "@/components/motion/HoloCulinaryRadar";
 
+import { QuickActionPanel } from "@/components/home/QuickActionPanel";
+import { CuratedCollections } from "@/components/home/CuratedCollections";
+
 export default function HomePage() {
   const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
@@ -39,74 +42,64 @@ export default function HomePage() {
 
   return (
     <div className="space-y-16 py-4">
-      {/* 1. Hero Section */}
-      <section className="relative rounded-3xl glass-panel p-6 sm:p-10 lg:p-14 overflow-hidden border border-glass-border shadow-glass">
-        {/* Decorative glass glow blobs */}
-        <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 rounded-full bg-emerald-500/20 blur-3xl pointer-events-none" />
-        <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-amber-500/20 blur-3xl pointer-events-none" />
-
+      {/* 1. Hero Section: Competitor-Inspired Culinary Editorial */}
+      <section className="relative rounded-3xl glass-panel p-6 sm:p-10 lg:p-12 overflow-hidden border border-glass-border shadow-glass bg-gradient-to-br from-emerald-500/10 via-background to-amber-500/10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
           <div className="lg:col-span-7 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-card text-xs font-bold text-emerald-400 border border-emerald-500/30">
-              <Sparkles className="w-4 h-4 animate-spin text-amber-400" />
-              <span>Miseva AI • Your World. Your Kitchen. Your AI Chef.</span>
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-card text-xs font-bold text-brand-primary border border-brand-primary/30">
+              <Sparkles className="w-4 h-4 text-amber-400" />
+              <span>Miseva AI • Premium Culinary Ecosystem</span>
             </div>
 
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-foreground leading-[1.12]">
-              Your World. Your Kitchen.{" "}
+              Discover the World.{" "}
               <span className="bg-gradient-to-r from-emerald-400 via-amber-400 to-yellow-300 bg-clip-text text-transparent">
-                Your AI Chef.
+                Cook Something Wonderful.
               </span>
             </h1>
 
             <p className="text-base sm:text-lg text-foreground/85 leading-relaxed font-medium">
-              Inspired by the culinary discipline of <em>mise en place</em> and devoted hospitality, Miseva AI helps you discover authentic recipes, cook hands-free with bilingual English and Malayalam AI voice guidance, compare Indian grocery prices, and style breathtaking dining tables.
+              Explore authentic regional recipes, cook with the ingredients you have, plan your meals and follow clear cooking instructions in your preferred language.
             </p>
 
-            <p className="text-sm sm:text-base text-emerald-400 lang-ml font-semibold">
-              നിങ്ങളുടെ ലോകം. നിങ്ങളുടെ അടുക്കള. നിങ്ങളുടെ എ.ഐ ഷെഫ് — മലയാളത്തിലും ഇംഗ്ലീഷിലും തത്സമയ ശബ്ദ സഹായത്തോടെ.
+            <p className="text-sm sm:text-base text-brand-primary lang-ml font-semibold">
+              നിങ്ങളുടെ ലോകം. നിങ്ങളുടെ അടുക്കള. നിങ്ങളുടെ എ.ഐ ഷെഫ് — മലയാളത്തിലും ഇംഗ്ലീഷിലും തത്സമയ പാചക മാർഗ്ഗനിർദ്ദേശങ്ങളോടെ.
             </p>
 
             {/* Primary Action Buttons */}
             <div className="flex flex-wrap items-center gap-3 pt-2">
               <Link
                 href="/recipes"
-                className="px-5 py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white font-bold text-sm shadow-lg shadow-emerald-900/30 transition-all flex items-center gap-2"
+                className="px-6 py-3.5 rounded-xl bg-brand-primary hover:bg-brand-primary/90 text-background font-extrabold text-sm shadow-lg shadow-emerald-900/30 transition-all flex items-center gap-2 active:scale-95"
               >
-                <span>Start Cooking</span>
+                <span>Find a Recipe</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
-                href="/ai-chef"
-                className="px-5 py-3 rounded-xl glass-button text-sm font-bold text-foreground border border-white/20 hover:border-amber-400/50 transition-all flex items-center gap-2"
+                href="/explore"
+                className="px-6 py-3.5 rounded-xl glass-button text-sm font-bold text-foreground border border-white/20 hover:border-brand-primary/50 transition-all flex items-center gap-2 active:scale-95"
               >
-                <Bot className="w-4 h-4 text-amber-400" />
-                <span>Try AI Chef</span>
+                <Compass className="w-4 h-4 text-brand-primary" />
+                <span>Explore Global Cuisines</span>
               </Link>
               <Link
-                href="/table-styling"
-                className="px-5 py-3 rounded-xl glass-card text-sm font-bold text-foreground/90 border border-white/10 hover:border-emerald-400/50 transition-all flex items-center gap-2"
+                href="/ingredient-finder"
+                className="px-5 py-3.5 rounded-xl glass-card text-sm font-bold text-foreground/90 border border-white/10 hover:border-brand-primary/50 transition-all flex items-center gap-2"
               >
-                <Compass className="w-4 h-4 text-emerald-400" />
-                <span>Table Styling</span>
-              </Link>
-              <Link
-                href="/app"
-                className="px-5 py-3 rounded-xl bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border border-amber-500/30 text-sm font-bold transition-all flex items-center gap-2"
-              >
-                <span>Android App</span>
+                <Sparkles className="w-4 h-4 text-amber-400" />
+                <span>Pantry Finder</span>
               </Link>
             </div>
 
             {/* Search Bar Form */}
             <form onSubmit={handleSearchSubmit} className="pt-2">
               <div className="relative max-w-xl flex items-center">
-                <Search className="w-5 h-5 text-emerald-400 absolute left-4" />
+                <Search className="w-5 h-5 text-brand-primary absolute left-4" />
                 <input
                   type="text"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Search dish, ingredient, state (e.g. Meen Curry, Risotto, Sadya)..."
+                  placeholder="Search dish, ingredient, state (e.g. Meen Curry, Biryani, Risotto)..."
                   className="w-full pl-12 pr-28 py-3.5 sm:py-4 rounded-2xl glass-input text-sm sm:text-base font-medium text-foreground shadow-lg"
                 />
                 <button
@@ -126,7 +119,7 @@ export default function HomePage() {
                   <button
                     key={tag}
                     onClick={() => router.push(`/recipes?q=${encodeURIComponent(tag)}`)}
-                    className="px-2.5 py-1 rounded-lg glass-card text-foreground hover:border-emerald-400 transition-colors text-[11px]"
+                    className="px-2.5 py-1 rounded-lg glass-card text-foreground hover:border-brand-primary transition-colors text-[11px]"
                   >
                     {tag}
                   </button>
@@ -137,31 +130,31 @@ export default function HomePage() {
 
           {/* Hero Visual Card (Right: 5 Columns) */}
           <div className="lg:col-span-5 relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20 group">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/20 group aspect-[4/3] bg-black/40">
               <img
                 src="/brand/images/hero-culinary.jpg"
-                alt="Miseva AI Signature Culinary Masterpiece"
-                className="w-full h-80 sm:h-96 object-cover group-hover:scale-105 transition-transform duration-700"
+                alt="Authentic Culinary Masterpiece"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-              <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl glass-card border border-white/20 backdrop-blur-md">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl glass-card border border-white/20 backdrop-blur-md">
                 <div className="flex items-center justify-between mb-1">
-                  <span className="text-xs font-bold text-amber-400 uppercase tracking-wider">Signature Creation</span>
-                  <span className="text-[10px] font-semibold text-emerald-300 bg-emerald-950/80 px-2 py-0.5 rounded-full border border-emerald-500/30">
+                  <span className="text-xs font-extrabold text-amber-400 uppercase tracking-wider">Editor's Signature</span>
+                  <span className="text-[10px] font-bold text-emerald-300 bg-emerald-950/80 px-2.5 py-0.5 rounded-full border border-emerald-500/30">
                     Bilingual Voice Ready
                   </span>
                 </div>
                 <h4 className="text-sm font-bold text-white">Kerala Meen Chatti & Saffron Risotto</h4>
-                <p className="text-[11px] text-white/70">Mise en place guidance with real-time audio navigation</p>
+                <p className="text-[11px] text-white/70">Authentic recipes, step-by-step guidance & cultural technique</p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Floating Capability Badges */}
+        {/* Value Proposition Strip */}
         <div className="mt-10 pt-6 border-t border-glass-border/60 grid grid-cols-2 sm:grid-cols-4 gap-4">
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center text-emerald-400">
+            <div className="w-8 h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center text-brand-primary">
               <Volume2 className="w-4 h-4" />
             </div>
             <div>
@@ -176,12 +169,12 @@ export default function HomePage() {
             </div>
             <div>
               <div className="text-xs font-bold text-foreground">Live Price Compare</div>
-              <div className="text-[10px] text-foreground/60">6 Indian Retailers</div>
+              <div className="text-[10px] text-foreground/60">5 Indian Retailers</div>
             </div>
           </div>
 
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center text-emerald-400">
+            <div className="w-8 h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center text-brand-primary">
               <Bot className="w-4 h-4" />
             </div>
             <div>
@@ -196,15 +189,20 @@ export default function HomePage() {
             </div>
             <div>
               <div className="text-xs font-bold text-foreground">Food Safety Layer</div>
-              <div className="text-[10px] text-foreground/60">Allergens & Safe Temps</div>
+              <div className="text-[10px] text-foreground/60">Allergens & Safe Storage</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Holographic Culinary Telemetry HUD Module */}
-      <section className="space-y-4">
-        <HoloCulinaryRadar />
+      {/* 2. Prominent Quick-Action Entry Points */}
+      <section>
+        <QuickActionPanel />
+      </section>
+
+      {/* 3. Featured Curated Cooking Collections */}
+      <section>
+        <CuratedCollections />
       </section>
 
 
