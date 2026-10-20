@@ -5,27 +5,27 @@ import { BEVERAGE_RECIPES } from "@/lib/data/beverages";
 import { buildAuthoritativeImageRegistry, buildImageAuditRecords } from "@/lib/data/image-registry";
 
 describe("Dish-to-Image Comprehensive Audit & Registry Validation", () => {
-  it("audits the complete catalog of 230 distinct culinary dishes", () => {
-    expect(RECIPES.length).toBe(140);
+  it("audits the complete catalog of 275 distinct culinary dishes", () => {
+    expect(RECIPES.length).toBe(185);
     expect(DESSERT_RECIPES.length).toBe(40);
     expect(BEVERAGE_RECIPES.length).toBe(50);
     const total = RECIPES.length + DESSERT_RECIPES.length + BEVERAGE_RECIPES.length;
-    expect(total).toBe(230);
+    expect(total).toBe(275);
 
     const registry = buildAuthoritativeImageRegistry();
-    expect(registry.length).toBe(230);
+    expect(registry.length).toBe(275);
   });
 
-  it("guarantees 100% uniqueness of image URLs across all 230 dishes (zero duplicates)", () => {
+  it("guarantees 100% uniqueness of image URLs across all 275 dishes (zero duplicates)", () => {
     const allUrls = [
       ...RECIPES.map((r) => r.imageUrl),
       ...DESSERT_RECIPES.map((d) => d.imageUrl),
       ...BEVERAGE_RECIPES.map((b) => b.imageUrl),
     ];
-    expect(allUrls.length).toBe(230);
+    expect(allUrls.length).toBe(275);
 
     const uniqueSet = new Set(allUrls);
-    expect(uniqueSet.size).toBe(230);
+    expect(uniqueSet.size).toBe(275);
   });
 
   it("verifies Japanese salmon nigiri sushi does not use living aquarium fish photo", () => {
@@ -61,9 +61,9 @@ describe("Dish-to-Image Comprehensive Audit & Registry Validation", () => {
     }
   });
 
-  it("generates complete Image Audit records for all 230 dishes with resolution statuses", () => {
+  it("generates complete Image Audit records for all 275 dishes with resolution statuses", () => {
     const auditRecords = buildImageAuditRecords();
-    expect(auditRecords.length).toBe(230);
+    expect(auditRecords.length).toBe(275);
 
     const salmonAudit = auditRecords.find((a) => a.recipeId === "jap-salmon-nigiri");
     expect(salmonAudit).toBeDefined();

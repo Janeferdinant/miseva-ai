@@ -17,6 +17,7 @@ import {
   X,
   Languages,
   Smartphone,
+  ShieldCheck,
 } from "lucide-react";
 import { ThemeSelector } from "./ThemeSelector";
 import { useTheme } from "@/lib/theme/theme-context";
@@ -36,6 +37,7 @@ export function Navbar() {
     { href: "/table-styling", label: "Table Styling", labelMl: "മേശാലങ്കാരം", icon: UtensilsCrossed, highlight: true },
     { href: "/ai-chef", label: "AI Chef", labelMl: "എ.ഐ ഷെഫ്", icon: Bot },
     { href: "/shopping", label: "Prices", labelMl: "വിലകൾ", icon: ShoppingCart },
+    { href: "/coverage-audit", label: "Audit", labelMl: "ഓഡിറ്റ്", icon: ShieldCheck },
     { href: "/meal-planner", label: "Meal Plan", labelMl: "പ്ലാനർ", icon: Calendar },
     { href: "/marketing", label: "Marketing", labelMl: "മാർക്കറ്റിംഗ്", icon: Sparkles, highlight: true },
     { href: "/app", label: "Android App", labelMl: "ആപ്പ്", icon: Smartphone },

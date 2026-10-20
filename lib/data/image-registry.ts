@@ -55,6 +55,7 @@ export function buildAuthoritativeImageRegistry(): ImageRegistryEntry[] {
       status = "Corrected and Verified";
     }
 
+    const isWiki = r.imageUrl.includes("wikimedia.org");
     entries.push({
       imageId,
       recipeId: r.id,
@@ -62,8 +63,8 @@ export function buildAuthoritativeImageRegistry(): ImageRegistryEntry[] {
       cuisine: r.cuisine,
       category: "Main",
       imageUrl: r.imageUrl,
-      source: "Unsplash Verified Culinary Library",
-      license: "Unsplash Free Commercial License",
+      source: isWiki ? "Wikimedia Commons (Creative Commons / Public Domain)" : "Unsplash Verified Culinary Library",
+      license: isWiki ? "CC BY-SA / Public Domain" : "Unsplash Free Commercial License",
       dimensions: "1200 x 800",
       format: "JPEG",
       fileSizeBytes: 245000,

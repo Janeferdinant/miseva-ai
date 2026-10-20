@@ -137,4 +137,64 @@ describe("Database Coverage Audit — 10+ Minimum Rule Enforcement", () => {
       ).toBeGreaterThanOrEqual(10);
     }
   });
+
+  describe("Geographic Coverage & Regional Minimum (>= 5 Complete Recipes per Region)", () => {
+    it("should guarantee every single listed culinary region contains at least 5 complete, authentic recipes", async () => {
+      const { performGeographicCoverageAudit } = await import("@/lib/data/coverage-audit-service");
+      const audit = performGeographicCoverageAudit();
+
+      expect(audit.regions.length).toBe(23);
+      expect(audit.summary.belowMinimumRegions).toBe(0);
+      expect(audit.summary.zeroRecipeRegions).toBe(0);
+      expect(audit.summary.compliantRegions).toBe(23);
+      expect(audit.summary.status).toBe("PASSED");
+      expect(audit.summary.overallComplianceRate).toBe(100);
+
+      for (const reg of audit.regions) {
+        expect(
+          reg.completeRecipes,
+          `Region '${reg.name}' failed minimum of 5 recipes: found ${reg.completeRecipes}`
+        ).toBeGreaterThanOrEqual(5);
+
+        expect(reg.recipesWithValidImages).toBeGreaterThanOrEqual(5);
+        expect(reg.recipesWithCompleteIngredients).toBeGreaterThanOrEqual(5);
+        expect(reg.recipesWithCompleteInstructions).toBeGreaterThanOrEqual(5);
+        expect(reg.recipesWithShoppingList).toBeGreaterThanOrEqual(5);
+        expect(reg.status).toBe("COMPLIANT");
+        expect(reg.missingFields.length).toBe(0);
+      }
+    });
+
+    it("verifies the 9 previous shortfall regions each have at least 5 fully detailed authentic recipes", async () => {
+      const { performGeographicCoverageAudit } = await import("@/lib/data/coverage-audit-service");
+      const audit = performGeographicCoverageAudit();
+
+      const shortfallRegionIds = [
+        "kashmir",
+        "uttar-pradesh",
+        "delhi",
+        "goa",
+        "rajasthan",
+        "odisha",
+        "assam-northeast",
+        "france",
+        "korea",
+      ];
+
+      for (const rId of shortfallRegionIds) {
+        const region = audit.regions.find((r) => r.id === rId);
+        expect(region, `Region '${rId}' not found in audit`).toBeDefined();
+        expect(region!.completeRecipes, `Region '${rId}' has fewer than 5 recipes`).toBeGreaterThanOrEqual(5);
+        expect(region!.recipes.length).toBeGreaterThanOrEqual(5);
+        // Verify every recipe has Malayalam translations and step-by-step instructions
+        for (const r of region!.recipes) {
+          expect(r.titleMalayalam).toBeTruthy();
+          expect(r.imageUrl).toMatch(/^https?:\/\//);
+          expect(r.ingredientCount).toBeGreaterThanOrEqual(3);
+          expect(r.instructionCount).toBeGreaterThanOrEqual(2);
+        }
+      }
+    });
+  });
 });
+

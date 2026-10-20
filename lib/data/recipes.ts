@@ -9,6 +9,9 @@ import { MEXICAN_RECIPES } from "./recipes-mexican";
 import { CHINESE_RECIPES } from "./recipes-chinese";
 import { THAI_RECIPES } from "./recipes-thai";
 import { MIDDLE_EASTERN_RECIPES } from "./recipes-middle-eastern";
+import { NORTH_EXPANSION_RECIPES } from "./recipes-north-expansion";
+import { REGIONAL_EXPANSION_RECIPES } from "./recipes-regional-expansion";
+import { GLOBAL_EXPANSION_RECIPES } from "./recipes-global-expansion";
 
 export const RECIPES: Recipe[] = [
   ...SOUTH_INDIAN_RECIPES,
@@ -21,6 +24,9 @@ export const RECIPES: Recipe[] = [
   ...CHINESE_RECIPES,
   ...THAI_RECIPES,
   ...MIDDLE_EASTERN_RECIPES,
+  ...NORTH_EXPANSION_RECIPES,
+  ...REGIONAL_EXPANSION_RECIPES,
+  ...GLOBAL_EXPANSION_RECIPES,
 ];
 
 export function getRecipeById(id: string): Recipe | undefined {

@@ -3,6 +3,7 @@ import { RECIPES } from "@/lib/data/recipes";
 import { DESSERT_RECIPES } from "@/lib/data/desserts";
 import { BEVERAGE_RECIPES } from "@/lib/data/beverages";
 import { TABLE_STYLING_CONCEPTS } from "@/lib/data/table-styling-concepts";
+import { performGeographicCoverageAudit } from "@/lib/data/coverage-audit-service";
 
 export async function GET() {
   const indianCuisines = [
@@ -93,6 +94,7 @@ export async function GET() {
       const count = TABLE_STYLING_CONCEPTS.filter((t) => t.collection === col).length;
       return { collection: col, count, compliant: count >= 10 };
     }),
+    geographicCoverage: performGeographicCoverageAudit(),
   };
 
   const allCompliant =
@@ -101,7 +103,8 @@ export async function GET() {
     audit.mealCategories.every((c) => c.compliant) &&
     audit.desserts.every((c) => c.compliant) &&
     audit.beverages.every((c) => c.compliant) &&
-    audit.tableStyling.every((c) => c.compliant);
+    audit.tableStyling.every((c) => c.compliant) &&
+    audit.geographicCoverage.summary.status === "PASSED";
 
   audit.status = allCompliant ? "PASSED" : "FAILED";
 

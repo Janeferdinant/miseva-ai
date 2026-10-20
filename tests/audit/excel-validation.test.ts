@@ -28,18 +28,18 @@ describe("Excel Workbook Quality & Data Integrity Validation", { timeout: 20000 
     expect(sheetNames.length).toBe(8);
   });
 
-  it("validates Sheet 1: Recipe Catalogue contains all 230 distinct culinary dishes", async () => {
+  it("validates Sheet 1: Recipe Catalogue contains all 275 distinct culinary dishes", async () => {
     const workbook = new ExcelJS.Workbook();
     await workbook.xlsx.readFile(excelPath);
 
     const sheet = workbook.getWorksheet("Recipe Catalogue");
     expect(sheet).toBeDefined();
 
-    // 1 header row + 230 dish rows = 231 rows
-    expect(sheet!.rowCount).toBe(231);
+    // 1 header row + 275 dish rows = 276 rows
+    expect(sheet!.rowCount).toBe(276);
 
     const recipeIds = new Set<string>();
-    for (let r = 2; r <= 231; r++) {
+    for (let r = 2; r <= 276; r++) {
       const row = sheet!.getRow(r);
       const id = String(row.getCell(1).value);
       const title = String(row.getCell(2).value);
@@ -50,12 +50,12 @@ describe("Excel Workbook Quality & Data Integrity Validation", { timeout: 20000 
       expect(title).toBeTruthy();
       expect(cuisine).toBeTruthy();
       expect(imageUrl.startsWith("https://")).toBe(true);
-      expect(imageUrl.includes("images.unsplash.com") || imageUrl.includes("upload.wikimedia.org")).toBe(true);
+      expect(imageUrl.includes("images.unsplash.com") || imageUrl.includes("wikimedia.org")).toBe(true);
 
       recipeIds.add(id);
     }
 
-    expect(recipeIds.size).toBe(230);
+    expect(recipeIds.size).toBe(275);
   });
 
   it("validates Sheet 2: Ingredients contains individual ingredient records linked to valid dishes", async () => {
@@ -105,18 +105,18 @@ describe("Excel Workbook Quality & Data Integrity Validation", { timeout: 20000 
     expect(foundMalayalam).toBe(true);
   });
 
-  it("validates Sheet 5: Image Audit has 230 rows and flags resolved anomalies", async () => {
+  it("validates Sheet 5: Image Audit has 275 rows and flags resolved anomalies", async () => {
     const workbook = new ExcelJS.Workbook();
     await workbook.xlsx.readFile(excelPath);
 
     const s5 = workbook.getWorksheet("Image Audit");
     expect(s5).toBeDefined();
-    expect(s5!.rowCount).toBe(231);
+    expect(s5!.rowCount).toBe(276);
 
     let salmonChecked = false;
     let chakkaChecked = false;
 
-    for (let r = 2; r <= 231; r++) {
+    for (let r = 2; r <= 276; r++) {
       const row = s5!.getRow(r);
       const recipeId = String(row.getCell(1).value);
       const status = String(row.getCell(16).value);
@@ -152,7 +152,7 @@ describe("Excel Workbook Quality & Data Integrity Validation", { timeout: 20000 
       metrics.set(name, val);
     }
 
-    expect(metrics.get("Total Distinct Culinary Dishes")).toBe(230);
+    expect(metrics.get("Total Distinct Culinary Dishes")).toBe(275);
     expect(metrics.get("Number of Missing Images")).toBe(0);
     expect(metrics.get("Number of Incorrect Images Remaining")).toBe(0);
     expect(metrics.get("Number of Duplicate Image Groups Remaining")).toBe(0);

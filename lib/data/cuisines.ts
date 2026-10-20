@@ -209,12 +209,21 @@ export const GLOBAL_CUISINES: CulinaryRegion[] = [
     description: "The mother sauces, slow braising, aromatic mirepoix, brown butter, wine reductions, and artisanal pastry.",
   },
   {
+    id: "china",
+    name: "Chinese",
+    nameMalayalam: "ചൈനീസ്",
+    category: "Global",
+    specialties: ["Crispy Peking Duck", "Kung Pao Chicken", "Fiery Mapo Tofu", "Steamed Dim Sum Shumai", "Handmade Wonton Soup"],
+    icon: "🥢",
+    description: "Centuries of wok hei mastery, Sichuan peppercorn tingling numbing sensation, Cantonese steaming refinement, and handmade dim sum.",
+  },
+  {
     id: "korea",
     name: "Korean",
     nameMalayalam: "കൊറിയൻ",
     category: "Global",
     specialties: ["Sizzling Dolsot Bibimbap", "Kimchi Jjigae", "Crispy Korean Fried Chicken", "Bulgogi"],
-    icon: "🥢",
+    icon: "🍲",
     description: "Fermented gochujang and doenjang depth, toasted sesame oil, garlic, and hot bubbling stone pot stews.",
   },
 ];
