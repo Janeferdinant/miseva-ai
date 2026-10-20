@@ -75,4 +75,31 @@ describe("Dish-to-Image Comprehensive Audit & Registry Validation", () => {
     expect(chakkaAudit?.finalAuditStatus).toBe("Corrected and Verified");
     expect(chakkaAudit?.detectedProblem).toContain("packaging");
   });
+
+  it("verifies 100% uniqueness of images across all 40 table styling concepts", async () => {
+    const { TABLE_STYLING_CONCEPTS } = await import("@/lib/data/table-styling-concepts");
+    expect(TABLE_STYLING_CONCEPTS.length).toBe(40);
+
+    const moodUrls = TABLE_STYLING_CONCEPTS.map((c) => c.moodBoardImageUrl);
+    expect(moodUrls.length).toBe(40);
+
+    const uniqueMoods = new Set(moodUrls);
+    expect(uniqueMoods.size).toBe(40);
+
+    for (const url of moodUrls) {
+      expect(url).toBeDefined();
+      expect(url.length).toBeGreaterThan(10);
+      expect(url !== "undefined").toBe(true);
+    }
+
+    // Zero cross-tab collisions with culinary catalog
+    const foodUrls = new Set([
+      ...RECIPES.map((r) => r.imageUrl),
+      ...DESSERT_RECIPES.map((d) => d.imageUrl),
+      ...BEVERAGE_RECIPES.map((b) => b.imageUrl),
+    ]);
+    for (const url of moodUrls) {
+      expect(foodUrls.has(url)).toBe(false);
+    }
+  });
 });
