@@ -432,7 +432,7 @@ export function StepByStepCookingMode({
                     </div>
 
                     <div className="font-mono font-bold text-foreground/80">
-                      {ing.formattedAmount} {ing.unit}
+                      {ing.amount} {ing.unit}
                     </div>
                   </div>
                 );

@@ -57,7 +57,7 @@ export function buildRecipeSchemaJsonLd(recipe: Recipe) {
     },
     recipeIngredient: recipe.ingredients.map(
       (ing) =>
-        `${ing.formattedAmount || ing.amount} ${ing.unit} ${ing.name}${
+        `${ing.amount} ${ing.unit} ${ing.name}${
           ing.nameMalayalam ? ` (${ing.nameMalayalam})` : ""
         }`
     ),
