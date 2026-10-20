@@ -77,4 +77,20 @@ describe("Cuisine & Country Navigation and Routing", () => {
       expect(resolved?.description).toBeTruthy();
     }
   });
+
+  it("includes dedicated ingredient finder and excludes marketing tab from culinary navigation", async () => {
+    // Read components/Navbar.tsx to verify navigation items
+    const fs = await import("fs");
+    const path = await import("path");
+    const navbarCode = fs.readFileSync(path.resolve(process.cwd(), "components/Navbar.tsx"), "utf-8");
+    
+    expect(navbarCode).toContain('href: "/ingredient-finder"');
+    expect(navbarCode).toContain('Ingredient Finder');
+    expect(navbarCode).toContain('href: "/explore"');
+    expect(navbarCode).toContain('href: "/recipes"');
+    expect(navbarCode).toContain('href: "/meal-planner"');
+    expect(navbarCode).toContain('href: "/table-styling"');
+    expect(navbarCode).not.toContain('href: "/marketing"');
+    expect(navbarCode).not.toContain('href: "/campaigns"');
+  });
 });

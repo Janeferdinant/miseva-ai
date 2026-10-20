@@ -32,14 +32,12 @@ export function Navbar() {
   const navLinks = [
     { href: "/explore", label: "Cuisines", labelMl: "സംസ്ഥാനങ്ങൾ", icon: Compass },
     { href: "/recipes", label: "Recipes", labelMl: "വിഭവങ്ങൾ", icon: BookOpen },
-    { href: "/desserts", label: "Desserts", labelMl: "മധുരങ്ങൾ", icon: Cake },
-    { href: "/beverages", label: "Beverages", labelMl: "പാനീയങ്ങൾ", icon: GlassWater },
-    { href: "/table-styling", label: "Table Styling", labelMl: "മേശാലങ്കാരം", icon: UtensilsCrossed, highlight: true },
+    { href: "/ingredient-finder", label: "Ingredient Finder", labelMl: "ചേരുവ തിരച്ചിൽ", icon: Sparkles, highlight: true },
+    { href: "/meal-planner", label: "Meal Planner", labelMl: "പ്ലാനർ", icon: Calendar },
+    { href: "/desserts", label: "Desserts & Juices", labelMl: "മധുരങ്ങൾ", icon: Cake },
+    { href: "/table-styling", label: "Table Styling", labelMl: "മേശാലങ്കാരം", icon: UtensilsCrossed },
     { href: "/ai-chef", label: "AI Chef", labelMl: "എ.ഐ ഷെഫ്", icon: Bot },
     { href: "/shopping", label: "Prices", labelMl: "വിലകൾ", icon: ShoppingCart },
-    { href: "/coverage-audit", label: "Audit", labelMl: "ഓഡിറ്റ്", icon: ShieldCheck },
-    { href: "/meal-planner", label: "Meal Plan", labelMl: "പ്ലാനർ", icon: Calendar },
-    { href: "/app", label: "Android App", labelMl: "ആപ്പ്", icon: Smartphone },
   ];
 
   const toggleLanguage = () => {
