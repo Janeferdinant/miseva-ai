@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { DESSERT_RECIPES } from '../lib/data/desserts';
+import { DESSERT_RECIPES } from '../../lib/data/desserts';
 
 console.log('Total Desserts:', DESSERT_RECIPES.length);
 const urlMap = new Map<string, string[]>();

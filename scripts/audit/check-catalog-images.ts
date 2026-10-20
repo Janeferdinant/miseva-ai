@@ -1,5 +1,5 @@
-import { RECIPES } from '../lib/data/recipes';
-import { BEVERAGE_RECIPES } from '../lib/data/beverages';
+import { RECIPES } from '../../lib/data/recipes';
+import { BEVERAGE_RECIPES } from '../../lib/data/beverages';
 
 console.log('Total Main Recipes:', RECIPES.length);
 const recUrlMap = new Map<string, number>();

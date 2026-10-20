@@ -109,7 +109,7 @@ The platform strictly adheres to the rule: **Every cuisine, category, dessert su
 # Install dependencies
 npm install
 
-# Run automated test suite (all 44 tests across 9 suites)
+# Run automated test suite (all 64 tests across 12 suites)
 npm test
 
 # Run type check
@@ -120,6 +120,15 @@ npm run build
 
 # Run development server
 npm run dev
+
+# Generate complete recipe catalogue Excel export (8 sheets)
+npm run export:excel
+
+# Generate CSV and JSON database exports
+npm run export:db
+
+# Run full catalog image duplicate audit (230 unique dishes)
+npm run audit:catalog
 ```
 
 The web application will be accessible at `http://localhost:3000`.
@@ -149,6 +158,7 @@ Miseva AI incorporates an autonomous three-gate release pipeline:
 
 ## 📄 Documentation & Release Packages
 
+- **[Central Documentation Hub](file:///c:/Users/Asus/Documents/cusine/docs/README.md)** — Comprehensive index of all technical documentation and specifications
 - [Brand Guidelines & Design Tokens](file:///c:/Users/Asus/Documents/cusine/docs/brand/brand-guidelines.md)
 - [Logo Usage Guide](file:///c:/Users/Asus/Documents/cusine/docs/brand/logo-usage-guide.md)
 - [Visual Asset Pipeline](file:///c:/Users/Asus/Documents/cusine/docs/brand/visual-asset-pipeline.md)
@@ -162,9 +172,10 @@ Miseva AI incorporates an autonomous three-gate release pipeline:
 - [Security Guardian Audit Report](file:///c:/Users/Asus/Documents/cusine/docs/security/security-guardian-report.md)
 - [Permission Justification Matrix](file:///c:/Users/Asus/Documents/cusine/docs/release/permission-justification-matrix.md)
 - [Google Play Data Safety Declaration](file:///c:/Users/Asus/Documents/cusine/docs/release/google-play-data-safety.md)
-- [Feature Parity Matrix](file:///c:/Users/Asus/Documents/cusine/docs/feature-parity-matrix.md)
-- [Coverage Audit Report](file:///c:/Users/Asus/Documents/cusine/docs/coverage-audit-report.md)
+- [Feature Parity Matrix](file:///c:/Users/Asus/Documents/cusine/docs/audit/feature-parity-matrix.md)
+- [Coverage Audit Report](file:///c:/Users/Asus/Documents/cusine/docs/audit/coverage-audit-report.md)
 - [Android Setup Guide](file:///c:/Users/Asus/Documents/cusine/android/README.md)
+- [Miseva AI Complete Recipe Catalogue (Excel)](file:///c:/Users/Asus/Documents/cusine/public/exports/Miseva_AI_Complete_Recipe_Catalogue.xlsx)
 
 ---
 

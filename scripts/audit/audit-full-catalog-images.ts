@@ -1,6 +1,6 @@
-import { RECIPES } from '../lib/data/recipes';
-import { DESSERT_RECIPES } from '../lib/data/desserts';
-import { BEVERAGE_RECIPES } from '../lib/data/beverages';
+import { RECIPES } from '../../lib/data/recipes';
+import { DESSERT_RECIPES } from '../../lib/data/desserts';
+import { BEVERAGE_RECIPES } from '../../lib/data/beverages';
 
 console.log('=== FULL CATALOG IMAGE AUDIT REPORT ===');
 console.log(`Main Recipes: ${RECIPES.length}`);

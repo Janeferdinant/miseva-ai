@@ -11,7 +11,10 @@
     "lint": "next lint",
     "security:audit": "npx tsx scripts/security-guardian.ts",
     "release:android-audit": "npx tsx scripts/android-release-readiness.ts",
-    "deploy:verify": "npx tsx scripts/deploy-verification.ts"
+    "deploy:verify": "npx tsx scripts/deploy-verification.ts",
+    "export:excel": "npx tsx scripts/exports/generate-recipe-excel.ts",
+    "export:db": "npx tsx scripts/exports/generate-database-exports.ts",
+    "audit:catalog": "npx tsx scripts/audit/audit-full-catalog-images.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",

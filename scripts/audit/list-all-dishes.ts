@@ -1,6 +1,6 @@
-import { RECIPES } from '../lib/data/recipes';
-import { DESSERT_RECIPES } from '../lib/data/desserts';
-import { BEVERAGE_RECIPES } from '../lib/data/beverages';
+import { RECIPES } from '../../lib/data/recipes';
+import { DESSERT_RECIPES } from '../../lib/data/desserts';
+import { BEVERAGE_RECIPES } from '../../lib/data/beverages';
 import fs from 'fs';
 
 const lines: string[] = [];
@@ -17,5 +17,5 @@ for (const b of BEVERAGE_RECIPES) {
   lines.push(`"${b.id}": "", // [${b.subcategory}] ${b.title}`);
 }
 
-fs.writeFileSync('scripts/dish-catalog-list.txt', lines.join('\n'), 'utf-8');
+fs.writeFileSync('scripts/audit/dish-catalog-list.txt', lines.join('\n'), 'utf-8');
 console.log('Exported dish catalogue list to scripts/dish-catalog-list.txt');

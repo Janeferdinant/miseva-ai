@@ -1,4 +1,4 @@
-import { RECIPES } from '../lib/data/recipes';
+import { RECIPES } from '../../lib/data/recipes';
 
 const m = new Map<string, typeof RECIPES>();
 for (const r of RECIPES) {
